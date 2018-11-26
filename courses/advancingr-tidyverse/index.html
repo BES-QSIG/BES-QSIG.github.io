@@ -404,7 +404,7 @@ output: html_document
 
 <p>Now that we have our first piece of content, we can test the <code>.Rmd</code> file by compiling it to <code>.html</code>. To compile your <code>.Rmd</code> file into a <code>.html</code> document, you should press the <code>Knit</code> button in the taskbar:</p>
 
-<p><img src="{{ site.baseurl }}/courses/advancingr/Knit_HTML_Screenshot.jpg" alt="Img"></p>
+<p><img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/Knit_HTML_Screenshot.jpg" alt="Img"></p>
 
 <p>Not only does a preview appear in the <code>Viewer</code> window in RStudio, but it also saves a <code>.html</code> file to the same folder where you saved your <code>.Rmd</code> file.</p>
 
@@ -485,7 +485,7 @@ plot(dataframe)
 
 <p>You can run an individual chunk of code at any time by placing your cursor inside the code chunk and selecting <code>Run -&gt; Run Current Chunk</code>:</p>
 
-<p><img src="{{ site.baseurl }}/courses/advancingr/run_sel.png" alt="Img" style="width: 900px;"/></p>
+<p><img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/run_sel.png" alt="Img" style="width: 900px;"/></p>
 
 <h3 id="summary-of-code-chunk-instructions">Summary of  code chunk instructions</h3>
 
@@ -672,7 +672,7 @@ load(&quot;LPDdata_Feb2016.RData&quot;)
 head(LPDdata_Feb2016)
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/wide.png" alt="Img" style="width: 600px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/wide.png" alt="Img" style="width: 600px;"/> </center></p>
 
 <p>At the moment, each row contains a population that has been monitored over time and towards the right of the data frame there are lots of columns with population estimates for each year. To make this data &ldquo;tidy&rdquo; (one column per variable) we can use <code>gather()</code> to transform the data so there is a new column containing all the years for each population and an adjacent column containing all the population estimates for those years.</p>
 
@@ -707,7 +707,7 @@ LPD_long$biome &lt;- gsub(&quot;/&quot;, &quot;&quot;, LPD_long$biome, fixed = T
 head(LPD_long)
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/long.png" alt="Img" style="width: 600px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/long.png" alt="Img" style="width: 600px;"/> </center></p>
 
 <p>Now that our dataset is <em>tidy</em> we can get it ready for our analysis. We want to only use populations that have more than 5 years of data to make sure our analysis has enough data to capture population change. We should also scale the population data, because since the data come from many species, the units and magnitude of the data are very different - imagine tiny fish whose abundance is in the millions, and large carnivores whose abundance is much smaller. Scaling also normalises the data, as later on we will be using linear models assuming a normal distribution. To do all of this in one go, we can use pipes.</p>
 
@@ -814,7 +814,7 @@ forest.panel &lt;- grid.arrange(forest.hist, duration.forests, ncol = 2)
 ggsave(forest.panel, file = &quot;forest_panel.png&quot;, height = 5, width = 10)
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/forest_panel.png" alt="Img" style="width: 900px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/forest_panel.png" alt="Img" style="width: 900px;"/> </center></p>
 
 <p>We are now ready to model how each population has changed over time. There are 1785 populations, so with this one code chunk, we will run 1785 models and tidy up their outputs. You can read through the line-by-line comments to get a feel for what each line of code is doing.</p>
 
@@ -869,7 +869,7 @@ forest.slopes &lt;- LPD.forest %&gt;%
 ggsave(density.slopes, filename = &quot;slopes_duration.png&quot;, height = 6, width = 6)
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/slopes_duration.png" alt="Img" style="width: 600px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/slopes_duration.png" alt="Img" style="width: 600px;"/> </center></p>
 
 <p><a name="pipes"></a></p>
 
@@ -921,8 +921,8 @@ do(ggsave(ggplot(., aes(x = estimate)) +
 
 <p>If you go check out your folder now, you should see four histograms, one per taxa:
 <center>
-  <img src="{{ site.baseurl }}/courses/advancingr/folder.png" alt="Img" style="width: 500px;"/>
-  <img src="{{ site.baseurl }}/courses/advancingr/mamm.png" alt="Img" style="width: 500px;"/>
+  <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/folder.png" alt="Img" style="width: 500px;"/>
+  <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/mamm.png" alt="Img" style="width: 500px;"/>
 </center></p>
 
 <p>Another way to make all those histograms in one go is by creating a function for it. In general, whenever you find yourself copying and pasting lots of code only to change the object name, you&rsquo;re probably in a position to swap all the code with a function - you can then apply the function using the <code>purrr</code> package.</p>
@@ -1057,7 +1057,7 @@ In drawGrob(x) : reached elapsed time limit
                size = 2, colour = &quot;darkgreen&quot;))
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/deer_map.png" alt="Img" style="width: 900px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_map.png" alt="Img" style="width: 900px;"/> </center></p>
 
 <p>The map already looks fine, but we can customise it further to add more information. For example, we can add labels for the locations of some of the monitored populations and we can add plots of population change next to our map.</p>
 
@@ -1232,7 +1232,7 @@ deer.panel &lt;- grid.arrange(row1, row2, nrow = 2, heights = c(1.2, 0.8))
 ggsave(deer.panel, filename = &quot;deer_panel2.png&quot;, height = 10, width = 15)
 </code></pre>
 
-<p><center> <img src="{{ site.baseurl }}/courses/advancingr/deer_panel2.png" alt="Img" style="width: 900px;"/> </center></p>
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_panel2.png" alt="Img" style="width: 900px;"/> </center></p>
 
 <h3 id="a-challenge-for-later-if-you-are-keen">A challenge for later if you are keen</h3>
 

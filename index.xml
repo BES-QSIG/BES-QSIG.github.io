@@ -72,7 +72,7 @@ output: html_document
 
 &lt;p&gt;Now that we have our first piece of content, we can test the &lt;code&gt;.Rmd&lt;/code&gt; file by compiling it to &lt;code&gt;.html&lt;/code&gt;. To compile your &lt;code&gt;.Rmd&lt;/code&gt; file into a &lt;code&gt;.html&lt;/code&gt; document, you should press the &lt;code&gt;Knit&lt;/code&gt; button in the taskbar:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/Knit_HTML_Screenshot.jpg&#34; alt=&#34;Img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/Knit_HTML_Screenshot.jpg&#34; alt=&#34;Img&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Not only does a preview appear in the &lt;code&gt;Viewer&lt;/code&gt; window in RStudio, but it also saves a &lt;code&gt;.html&lt;/code&gt; file to the same folder where you saved your &lt;code&gt;.Rmd&lt;/code&gt; file.&lt;/p&gt;
 
@@ -153,7 +153,7 @@ plot(dataframe)
 
 &lt;p&gt;You can run an individual chunk of code at any time by placing your cursor inside the code chunk and selecting &lt;code&gt;Run -&amp;gt; Run Current Chunk&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/run_sel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/run_sel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;summary-of-code-chunk-instructions&#34;&gt;Summary of  code chunk instructions&lt;/h3&gt;
 
@@ -340,7 +340,7 @@ load(&amp;quot;LPDdata_Feb2016.RData&amp;quot;)
 head(LPDdata_Feb2016)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/wide.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/wide.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;At the moment, each row contains a population that has been monitored over time and towards the right of the data frame there are lots of columns with population estimates for each year. To make this data &amp;ldquo;tidy&amp;rdquo; (one column per variable) we can use &lt;code&gt;gather()&lt;/code&gt; to transform the data so there is a new column containing all the years for each population and an adjacent column containing all the population estimates for those years.&lt;/p&gt;
 
@@ -375,7 +375,7 @@ LPD_long$biome &amp;lt;- gsub(&amp;quot;/&amp;quot;, &amp;quot;&amp;quot;, LPD_l
 head(LPD_long)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/long.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/long.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that our dataset is &lt;em&gt;tidy&lt;/em&gt; we can get it ready for our analysis. We want to only use populations that have more than 5 years of data to make sure our analysis has enough data to capture population change. We should also scale the population data, because since the data come from many species, the units and magnitude of the data are very different - imagine tiny fish whose abundance is in the millions, and large carnivores whose abundance is much smaller. Scaling also normalises the data, as later on we will be using linear models assuming a normal distribution. To do all of this in one go, we can use pipes.&lt;/p&gt;
 
@@ -482,7 +482,7 @@ forest.panel &amp;lt;- grid.arrange(forest.hist, duration.forests, ncol = 2)
 ggsave(forest.panel, file = &amp;quot;forest_panel.png&amp;quot;, height = 5, width = 10)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/forest_panel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/forest_panel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;We are now ready to model how each population has changed over time. There are 1785 populations, so with this one code chunk, we will run 1785 models and tidy up their outputs. You can read through the line-by-line comments to get a feel for what each line of code is doing.&lt;/p&gt;
 
@@ -537,7 +537,7 @@ forest.slopes &amp;lt;- LPD.forest %&amp;gt;%
 ggsave(density.slopes, filename = &amp;quot;slopes_duration.png&amp;quot;, height = 6, width = 6)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/slopes_duration.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/slopes_duration.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;pipes&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -589,8 +589,8 @@ do(ggsave(ggplot(., aes(x = estimate)) +
 
 &lt;p&gt;If you go check out your folder now, you should see four histograms, one per taxa:
 &lt;center&gt;
-  &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/folder.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
-  &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/mamm.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
+  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/folder.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
+  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/mamm.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Another way to make all those histograms in one go is by creating a function for it. In general, whenever you find yourself copying and pasting lots of code only to change the object name, you&amp;rsquo;re probably in a position to swap all the code with a function - you can then apply the function using the &lt;code&gt;purrr&lt;/code&gt; package.&lt;/p&gt;
@@ -725,7 +725,7 @@ In drawGrob(x) : reached elapsed time limit
                size = 2, colour = &amp;quot;darkgreen&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/deer_map.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_map.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;The map already looks fine, but we can customise it further to add more information. For example, we can add labels for the locations of some of the monitored populations and we can add plots of population change next to our map.&lt;/p&gt;
 
@@ -900,7 +900,7 @@ deer.panel &amp;lt;- grid.arrange(row1, row2, nrow = 2, heights = c(1.2, 0.8))
 ggsave(deer.panel, filename = &amp;quot;deer_panel2.png&amp;quot;, height = 10, width = 15)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/deer_panel2.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_panel2.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;a-challenge-for-later-if-you-are-keen&#34;&gt;A challenge for later if you are keen&lt;/h3&gt;
 
