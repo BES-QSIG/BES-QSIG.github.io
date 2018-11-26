@@ -42,7 +42,7 @@
 
 &lt;p&gt;R Markdown uses &lt;a href=&#34;http://www.markdowntutorial.com&#34; target=&#34;_blank&#34;&gt;markdown syntax&lt;/a&gt;. Markdown is a very simple &amp;lsquo;markup&amp;rsquo; language which provides methods for creating documents with headers, images, links etc. from plain text files, while keeping the original plain text file easy to read. You can convert Markdown documents to other file types like &lt;code&gt;.html&lt;/code&gt; or &lt;code&gt;.pdf&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ site.baseurl }}/courses/advancingr/md_script.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;{{ Site.baseurl }}/courses/advancingr/md_script.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;2-download-r-markdown&#34;&gt;2. Download R Markdown&lt;/h2&gt;
 
