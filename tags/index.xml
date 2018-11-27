@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/tags/</link>
+    <link>https://BES-QSIG.github.io/tags/</link>
     <description>Recent content in Tags on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Courses</title>
-      <link>/tags/courses/</link>
+      <link>https://BES-QSIG.github.io/tags/courses/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/courses/</guid>
+      <guid>https://BES-QSIG.github.io/tags/courses/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://BES-QSIG.github.io/tags/r/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://BES-QSIG.github.io/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spatial</title>
-      <link>/tags/spatial/</link>
+      <link>https://BES-QSIG.github.io/tags/spatial/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/spatial/</guid>
+      <guid>https://BES-QSIG.github.io/tags/spatial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>/tags/tidyverse/</link>
+      <link>https://BES-QSIG.github.io/tags/tidyverse/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tidyverse/</guid>
+      <guid>https://BES-QSIG.github.io/tags/tidyverse/</guid>
       <description></description>
     </item>
     

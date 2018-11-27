@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/courses/</link>
+    <link>https://BES-QSIG.github.io/courses/</link>
     <description>Recent content in Courses on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advancing Your R</title>
-      <link>/courses/advancingr/</link>
+      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/courses/advancingr/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
       <description>Getting here The course is taking place in the Waterhouse Room at the Foresight Centre, University of Liverpool.
  Road From the M62 (end of motorway 3 miles)
 From the M53( Wirral/Mersey Tunnels 3&amp;frasl;4 mile)
@@ -25,24 +25,6 @@ Please use L3 5DA for sat nav
 Rail Liverpool Lime St Station is a 10 minute walk.
 For local public transport please contact Merseytravel
 Air Liverpool John Lennon Airport is 7 Miles away from the Foresight Centre.</description>
-    </item>
-    
-    <item>
-      <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>/courses/advancingr-tidyverse/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/advancingr-tidyverse/</guid>
-      <description>PART I: Create a reproducible report using Markdown 1. What is R Markdown? R Markdown allows you to create documents that serve as a neat record of your analysis. In the world of reproducible research, we want other researchers to easily understand what we did in our analysis. You might choose to create an R markdown document as an appendix to a paper or project assignment that you are doing, upload it to an online repository such as Github, or simply to keep as a personal record so you can quickly look back at your code and see what you did.</description>
-    </item>
-    
-    <item>
-      <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>/courses/advancingr-spatial/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/advancingr-spatial/</guid>
-      <description></description>
     </item>
     
   </channel>
