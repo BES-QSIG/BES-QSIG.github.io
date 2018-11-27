@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/</link>
+    <link>/</link>
     <description>Recent content in BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
-      <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
+      <link>/post/welcome-to-new-site/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
+      <guid>/post/welcome-to-new-site/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
 
 &lt;p&gt;Our aim as a group is to:&lt;/p&gt;
@@ -26,32 +26,56 @@
 &lt;li&gt;Provide a forum to advance quantitative ecology in its own right&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;https://BES-QSIG.github.io/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Advancing Your R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
+      <link>/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
+      <guid>/courses/advancingr/</guid>
       <description>
 
 &lt;h2 id=&#34;getting-here&#34;&gt;Getting here&lt;/h2&gt;
 
+&lt;p&gt;The course is taking place in the Waterhouse Room at the &lt;a href=&#34;https://www.liverpool.ac.uk/conferences-and-events/venue-finder/foresight-centre/&#34; target=&#34;_blank&#34;&gt;Foresight Centre&lt;/a&gt;, University of Liverpool.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.7435965583238!2d-2.9694946677972656!3d53.40866296464316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b211782d9e8e3%3A0x8524f47e6bc7433d!2sForesight+Centre+(Block+J)%2C+Liverpool+L3+5QA!5e0!3m2!1sen!2suk!4v1543347942213&#34; width=&#34;600&#34; height=&#34;450&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;road&#34;&gt;Road&lt;/h3&gt;
+
+&lt;p&gt;From the M62 (end of motorway 3 miles)&lt;/p&gt;
+
+&lt;p&gt;From the M53( Wirral/Mersey Tunnels &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; mile)&lt;/p&gt;
+
+&lt;p&gt;Please use L3 5DA for sat nav&lt;/p&gt;
+
+&lt;h3 id=&#34;rail&#34;&gt;Rail&lt;/h3&gt;
+
+&lt;p&gt;Liverpool Lime St Station is a 10 minute walk.&lt;/p&gt;
+
+&lt;p&gt;For local public transport please contact Merseytravel&lt;/p&gt;
+
+&lt;h3 id=&#34;air&#34;&gt;Air&lt;/h3&gt;
+
+&lt;p&gt;Liverpool John Lennon  Airport is 7 Miles away from the Foresight Centre.&lt;/p&gt;
+
+&lt;p&gt;The Airlink 500 loops to the city centre every 30 minutes.&lt;/p&gt;
+
 &lt;h2 id=&#34;pre-course-instructions&#34;&gt;Pre-course Instructions&lt;/h2&gt;
 
-&lt;p&gt;This is where the installation stuff needs to go.&lt;/p&gt;
+&lt;p&gt;Below see instructions on the software and R packages to install &lt;strong&gt;before&lt;/strong&gt; you arrive. Note that you will receive the greatest benefit of the course if you have already installed the software and packages.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
+      <link>/courses/advancingr-tidyverse/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
+      <guid>/courses/advancingr-tidyverse/</guid>
       <description>
 
 &lt;h1 id=&#34;part-i-create-a-reproducible-report-using-markdown&#34;&gt;PART I: Create a reproducible report using Markdown&lt;/h1&gt;
@@ -974,19 +998,19 @@ Take what you have learned about pipes and make a map for the five most well-sam
     
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
+      <link>/courses/advancingr-spatial/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
+      <guid>/courses/advancingr-spatial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Advancing your R</title>
-      <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
+      <link>/events/2018-12-3-advancing-your-r/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
+      <guid>/events/2018-12-3-advancing-your-r/</guid>
       <description>
 
 &lt;p&gt;The British Ecological Society Quantitative Ecology Group are hosting a two-day R workshop which will cover reproducible data manipulation and visualisation workflows in R. Day One will be focussed on the tidyverse, while Day Two will move into working with spatial data.&lt;/p&gt;
@@ -1006,6 +1030,16 @@ Take what you have learned about pipes and make a map for the five most well-sam
 &lt;p&gt;The option is available to come to both days, or just one of the two. Lunch and refreshments will be provided.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.eventbrite.co.uk/e/advancing-your-r-tickets-49210051589&#34; target=&#34;_blank&#34;&gt;SOLD OUT&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
