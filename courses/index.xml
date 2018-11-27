@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/courses/</link>
+    <link>/courses/</link>
     <description>Recent content in Courses on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://BES-QSIG.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advancing Your R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
+      <link>/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
+      <guid>/courses/advancingr/</guid>
       <description>Getting here Pre-course Instructions This is where the installation stuff needs to go.</description>
     </item>
     
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
+      <link>/courses/advancingr-tidyverse/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
+      <guid>/courses/advancingr-tidyverse/</guid>
       <description>PART I: Create a reproducible report using Markdown 1. What is R Markdown? R Markdown allows you to create documents that serve as a neat record of your analysis. In the world of reproducible research, we want other researchers to easily understand what we did in our analysis. You might choose to create an R markdown document as an appendix to a paper or project assignment that you are doing, upload it to an online repository such as Github, or simply to keep as a personal record so you can quickly look back at your code and see what you did.</description>
     </item>
     
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
+      <link>/courses/advancingr-spatial/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
+      <guid>/courses/advancingr-spatial/</guid>
       <description></description>
     </item>
     
