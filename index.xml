@@ -11,6 +11,26 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Welcome to the new Quantitative Ecology Blog</title>
+      <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
+      <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
+
+&lt;p&gt;Our aim as a group is to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support quantitative skills development for all ecologists&lt;/li&gt;
+&lt;li&gt;Improve dissemination of new quantitative methods to their users&lt;/li&gt;
+&lt;li&gt;Provide a forum to advance quantitative ecology in its own right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;https://BES-QSIG.github.io/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Advancing Your R</title>
       <link>https://BES-QSIG.github.io/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>

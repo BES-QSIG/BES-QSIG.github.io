@@ -1,5 +1,26 @@
 [
   {
+    "authors": [
+      "Laura Graham"
+    ],
+    "categories": [],
+    "content": "We have migrated from our old Wordpress site in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.\nOur aim as a group is to:\n Support quantitative skills development for all ecologists Improve dissemination of new quantitative methods to their users Provide a forum to advance quantitative ecology in its own right  If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please contact us.\n",
+    "date": 1543276800,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1543276800,
+    "objectID": "6c2e4b1cbfc388c512d2100ea72573f4",
+    "permalink": "https://BES-QSIG.github.io/post/welcome-to-new-site/",
+    "publishdate": "2018-11-27T00:00:00Z",
+    "relpermalink": "/post/welcome-to-new-site/",
+    "section": "post",
+    "summary": "We have migrated from our old Wordpress site in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.\nOur aim as a group is to:\n Support quantitative skills development for all ecologists Improve dissemination of new quantitative methods to their users Provide a forum to advance quantitative ecology in its own right  If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please contact us.",
+    "tags": [],
+    "title": "Welcome to the new Quantitative Ecology Blog",
+    "type": "post"
+  },
+  {
     "authors": null,
     "categories": null,
     "content": " Getting here Pre-course Instructions This is where the installation stuff needs to go.\n",
