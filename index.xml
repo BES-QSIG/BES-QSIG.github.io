@@ -38,6 +38,33 @@
       <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
       <description>
 
+&lt;h2 id=&#34;pre-course-instructions&#34;&gt;Pre-course Instructions&lt;/h2&gt;
+
+&lt;p&gt;Below see instructions on the software and R packages to install &lt;strong&gt;before&lt;/strong&gt; you arrive. Note that you will receive the greatest benefit of the course if you have already installed the software and packages.&lt;/p&gt;
+
+&lt;p&gt;You will need to have an up-to-date installation of &lt;a href=&#34;https://cran.r-project.org/mirrors.html&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34; target=&#34;_blank&#34;&gt;RStudio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You will need to install &lt;a href=&#34;https://www.postgresql.org/download/&#34; target=&#34;_blank&#34;&gt;PostgreSQL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You will also need to install some R packages using the below code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;rmarkdown&amp;quot;)
+install.packages(&amp;quot;tidyverse&amp;quot;)
+install.packages(&amp;quot;broom&amp;quot;)
+install.packages(&amp;quot;ggExtra&amp;quot;)
+install.packages(&amp;quot;maps&amp;quot;)
+install.packages(&amp;quot;RColorBrewer&amp;quot;)
+install.packages(&amp;quot;gridExtra&amp;quot;)
+install.packages(&amp;quot;rgbif&amp;quot;)
+install.packages(&amp;quot;CoordinateCleaner&amp;quot;)
+install.packages(&amp;quot;ggrepel&amp;quot;)
+install.packages(&amp;quot;png&amp;quot;)
+install.packages(&amp;quot;mapdata&amp;quot;)
+install.packages(&amp;quot;ggthemes&amp;quot;)
+install.packages(&amp;quot;sf&amp;quot;)
+install.packages(&amp;quot;RPostgreSQL&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;getting-here&#34;&gt;Getting here&lt;/h2&gt;
 
 &lt;p&gt;The course is taking place in the Waterhouse Room at the &lt;a href=&#34;https://www.liverpool.ac.uk/conferences-and-events/venue-finder/foresight-centre/&#34; target=&#34;_blank&#34;&gt;Foresight Centre&lt;/a&gt;, University of Liverpool.&lt;/p&gt;
@@ -63,10 +90,6 @@
 &lt;p&gt;Liverpool John Lennon  Airport is 7 Miles away from the Foresight Centre.&lt;/p&gt;
 
 &lt;p&gt;The Airlink 500 loops to the city centre every 30 minutes.&lt;/p&gt;
-
-&lt;h2 id=&#34;pre-course-instructions&#34;&gt;Pre-course Instructions&lt;/h2&gt;
-
-&lt;p&gt;Below see instructions on the software and R packages to install &lt;strong&gt;before&lt;/strong&gt; you arrive. Note that you will receive the greatest benefit of the course if you have already installed the software and packages.&lt;/p&gt;
 </description>
     </item>
     
