@@ -15,9 +15,9 @@
   
     
   
-  <meta name="description" content="For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
+  <meta name="description" content="Install packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
 if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
-What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
+PART I: What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://BES-QSIG.github.io/courses/advancingr-spatial/">
@@ -98,9 +98,9 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
   <meta property="og:site_name" content="BES QUANTITATIVE ECOLOGY GROUP">
   <meta property="og:url" content="https://BES-QSIG.github.io/courses/advancingr-spatial/">
   <meta property="og:title" content="Day Two: Spatial data manipulation and visualisation in R | BES QUANTITATIVE ECOLOGY GROUP">
-  <meta property="og:description" content="For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
+  <meta property="og:description" content="Install packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
 if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
-What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
+PART I: What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
   
   
     
@@ -310,8 +310,9 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
 
       <nav id="TableOfContents">
 <ul>
-<li><a href="#what-is-a-spatial-object">What is a spatial object?</a></li>
-<li><a href="#building-and-working-with-spatial-objects-using-sf-in-r">Building and working with spatial objects using sf in R</a>
+<li><a href="#install-packages">Install packages</a></li>
+<li><a href="#part-i-what-is-a-spatial-object">PART I: What is a spatial object?</a></li>
+<li><a href="#part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</a>
 <ul>
 <li><a href="#modify-sf-sfc-objects">Modify sf - sfc objects</a>
 <ul>
@@ -323,7 +324,7 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
 <li><a href="#union-merge-and-melt-objects">Union (merge and melt) objects</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#load-and-manipulate-spatial-objects">Load and manipulate spatial objects</a>
+<li><a href="#part-iii-load-and-manipulate-spatial-objects">PART III: Load and manipulate spatial objects</a>
 <ul>
 <li><a href="#raster-object">Raster object</a>
 <ul>
@@ -334,7 +335,7 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
 <li><a href="#read-and-write-your-spatial-object-in-shapefile">Read and write your spatial object in Shapefile</a></li>
 <li><a href="#subseting-and-filtering">Subseting and filtering</a></li>
 </ul></li>
-<li><a href="#interfacing-r-and-posgresql-postgis">Interfacing R and PosgreSQL/PostGIS</a>
+<li><a href="#part-iv-interfacing-r-and-posgresql-postgis">PART IV: Interfacing R and PosgreSQL/PostGIS</a>
 <ul>
 <li><a href="#create-postgresql-database">Create PostgreSQL database</a></li>
 <li><a href="#send-spatial-data-to-your-newly-created-database-located-on-your-local-server">Send spatial data to your newly created database located on your local server</a></li>
@@ -344,7 +345,7 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
 <li><a href="#hillshade-and-terrain-map">Hillshade and Terrain map</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#plot-your-spatial-object-data-with-ggplot2">Plot your spatial object data with ggplot2</a>
+<li><a href="#part-v-plot-your-spatial-object-data-with-ggplot2">PART V: Plot your spatial object data with ggplot2</a>
 <ul>
 <li><a href="#adding-a-raster-to-a-ggplot">Adding a raster to a ggplot</a></li>
 <li><a href="#can-you-plot-the-deer-occurrence-extracted-from-gbif-on-a-uk-map">Can you plot the deer occurrence extracted from GBIF on a UK map?</a></li>
@@ -376,6 +377,8 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
           <div class="article-style" itemprop="articleBody">
             
 
+<h1 id="install-packages">Install packages</h1>
+
 <p>For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies</p>
 
 <pre><code class="language-r">if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;)
@@ -397,7 +400,7 @@ library(rgbif)
 
 <p>The data for this tutorial are available from <a href="needs link" target="_blank">here</a>.</p>
 
-<h1 id="what-is-a-spatial-object">What is a spatial object?</h1>
+<h1 id="part-i-what-is-a-spatial-object">PART I: What is a spatial object?</h1>
 
 <p>A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.</p>
 
@@ -467,7 +470,7 @@ text(x = -453585, y = 25000, &quot;EPSG:27700 - OSGB 1936 &quot;, pos = 4, cex =
 raster::drawExtent()
 </code></pre>
 
-<h1 id="building-and-working-with-spatial-objects-using-sf-in-r">Building and working with spatial objects using sf in R</h1>
+<h1 id="part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</h1>
 
 <p>This is a revolution, providing a modern, stronger and cleaner workflow to deal with spatial object in R, at least vector data. The &ldquo;sf&rdquo; is developed by some of the same people that provide us with &ldquo;sp&rdquo;, offering an ecosystem that open new opportunities to do GIS in R. The firs place to look for resource is the sf package website <a href="https://r-spatial.github.io/sf/index.html" target="_blank">https://r-spatial.github.io/sf/index.html</a>, this a first stop to learn how it work and develop new skills in R.</p>
 
@@ -576,7 +579,7 @@ plot(st_geometry(st_centroid(poly1)), col = &quot;black&quot;, pch = 19, add = T
 
 <p>If you like it tidy and the dplyr way? Since sf is essentally a data.frame with  a list of spatial attribute attached, it works well in the tidy univers. Have a look at this blog to get a first feel <a href="http://strimas.com/r/tidy-sf/" target="_blank">http://strimas.com/r/tidy-sf/</a>.</p>
 
-<h1 id="load-and-manipulate-spatial-objects">Load and manipulate spatial objects</h1>
+<h1 id="part-iii-load-and-manipulate-spatial-objects">PART III: Load and manipulate spatial objects</h1>
 
 <p>Spatial data are increasingly available from the Web, from species occurrence to natural and cultural features data, accessing spatial data is now relatively easy. For base layers, you can find many freely available data sets such as the ones provided by the Natural Earth [<a href="http://www.naturalearthdata.com" target="_blank">http://www.naturalearthdata.com</a>], the IUCN Protected Planet database [www.protectedplanet.net], the GADM project [<a href="https://gadm.org" target="_blank">https://gadm.org</a>], worldclim [<a href="http://worldclim.org/version2" target="_blank">http://worldclim.org/version2</a>] the CHELSA climate data sets [<a href="http://chelsa-climate.org" target="_blank">http://chelsa-climate.org</a>] or the European Environmental Agency [<a href="https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;c11=&amp;c5=all&amp;b_start=0" target="_blank">https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;c11=&amp;c5=all&amp;b_start=0</a>]</p>
 
@@ -701,7 +704,7 @@ Get some river data from
 <a href="http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view" target="_blank">http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view</a></p>
 </blockquote>
 
-<h1 id="interfacing-r-and-posgresql-postgis">Interfacing R and PosgreSQL/PostGIS</h1>
+<h1 id="part-iv-interfacing-r-and-posgresql-postgis">PART IV: Interfacing R and PosgreSQL/PostGIS</h1>
 
 <ol>
 <li>Install PostgreSQL, with the PostGIS extension</li>
@@ -779,7 +782,7 @@ plot(sf::st_transform(new_extract, 4326), add = TRUE)
 raster::plot(alt, col = terrain.colors(25, alpha = 0.5), add = TRUE)
 </code></pre>
 
-<h1 id="plot-your-spatial-object-data-with-ggplot2">Plot your spatial object data with ggplot2</h1>
+<h1 id="part-v-plot-your-spatial-object-data-with-ggplot2">PART V: Plot your spatial object data with ggplot2</h1>
 
 <pre><code class="language-r">library(ggplot2)
 library(ggspatial)

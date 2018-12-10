@@ -1027,6 +1027,8 @@ Take what you have learned about pipes and make a map for the five most well-sam
       <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>
 
+&lt;h1 id=&#34;install-packages&#34;&gt;Install packages&lt;/h1&gt;
+
 &lt;p&gt;For this &amp;ldquo;tutorial&amp;rdquo;, you will need some packages and their dependencies&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!requireNamespace(&amp;quot;raster&amp;quot;)) install.packages(&amp;quot;raster&amp;quot;)
@@ -1048,7 +1050,7 @@ library(rgbif)
 
 &lt;p&gt;The data for this tutorial are available from &lt;a href=&#34;needs link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;what-is-a-spatial-object&#34;&gt;What is a spatial object?&lt;/h1&gt;
+&lt;h1 id=&#34;part-i-what-is-a-spatial-object&#34;&gt;PART I: What is a spatial object?&lt;/h1&gt;
 
 &lt;p&gt;A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.&lt;/p&gt;
 
@@ -1118,7 +1120,7 @@ text(x = -453585, y = 25000, &amp;quot;EPSG:27700 - OSGB 1936 &amp;quot;, pos = 
 raster::drawExtent()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;building-and-working-with-spatial-objects-using-sf-in-r&#34;&gt;Building and working with spatial objects using sf in R&lt;/h1&gt;
+&lt;h1 id=&#34;part-ii-building-and-working-with-spatial-objects-using-sf-in-r&#34;&gt;PART II: Building and working with spatial objects using sf in R&lt;/h1&gt;
 
 &lt;p&gt;This is a revolution, providing a modern, stronger and cleaner workflow to deal with spatial object in R, at least vector data. The &amp;ldquo;sf&amp;rdquo; is developed by some of the same people that provide us with &amp;ldquo;sp&amp;rdquo;, offering an ecosystem that open new opportunities to do GIS in R. The firs place to look for resource is the sf package website &lt;a href=&#34;https://r-spatial.github.io/sf/index.html&#34; target=&#34;_blank&#34;&gt;https://r-spatial.github.io/sf/index.html&lt;/a&gt;, this a first stop to learn how it work and develop new skills in R.&lt;/p&gt;
 
@@ -1227,7 +1229,7 @@ plot(st_geometry(st_centroid(poly1)), col = &amp;quot;black&amp;quot;, pch = 19,
 
 &lt;p&gt;If you like it tidy and the dplyr way? Since sf is essentally a data.frame with  a list of spatial attribute attached, it works well in the tidy univers. Have a look at this blog to get a first feel &lt;a href=&#34;http://strimas.com/r/tidy-sf/&#34; target=&#34;_blank&#34;&gt;http://strimas.com/r/tidy-sf/&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;load-and-manipulate-spatial-objects&#34;&gt;Load and manipulate spatial objects&lt;/h1&gt;
+&lt;h1 id=&#34;part-iii-load-and-manipulate-spatial-objects&#34;&gt;PART III: Load and manipulate spatial objects&lt;/h1&gt;
 
 &lt;p&gt;Spatial data are increasingly available from the Web, from species occurrence to natural and cultural features data, accessing spatial data is now relatively easy. For base layers, you can find many freely available data sets such as the ones provided by the Natural Earth [&lt;a href=&#34;http://www.naturalearthdata.com&#34; target=&#34;_blank&#34;&gt;http://www.naturalearthdata.com&lt;/a&gt;], the IUCN Protected Planet database [www.protectedplanet.net], the GADM project [&lt;a href=&#34;https://gadm.org&#34; target=&#34;_blank&#34;&gt;https://gadm.org&lt;/a&gt;], worldclim [&lt;a href=&#34;http://worldclim.org/version2&#34; target=&#34;_blank&#34;&gt;http://worldclim.org/version2&lt;/a&gt;] the CHELSA climate data sets [&lt;a href=&#34;http://chelsa-climate.org&#34; target=&#34;_blank&#34;&gt;http://chelsa-climate.org&lt;/a&gt;] or the European Environmental Agency [&lt;a href=&#34;https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;amp;c11=&amp;amp;c5=all&amp;amp;b_start=0&#34; target=&#34;_blank&#34;&gt;https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;amp;c11=&amp;amp;c5=all&amp;amp;b_start=0&lt;/a&gt;]&lt;/p&gt;
 
@@ -1352,7 +1354,7 @@ Get some river data from
 &lt;a href=&#34;http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view&#34; target=&#34;_blank&#34;&gt;http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&#34;interfacing-r-and-posgresql-postgis&#34;&gt;Interfacing R and PosgreSQL/PostGIS&lt;/h1&gt;
+&lt;h1 id=&#34;part-iv-interfacing-r-and-posgresql-postgis&#34;&gt;PART IV: Interfacing R and PosgreSQL/PostGIS&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Install PostgreSQL, with the PostGIS extension&lt;/li&gt;
@@ -1430,7 +1432,7 @@ plot(sf::st_transform(new_extract, 4326), add = TRUE)
 raster::plot(alt, col = terrain.colors(25, alpha = 0.5), add = TRUE)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;plot-your-spatial-object-data-with-ggplot2&#34;&gt;Plot your spatial object data with ggplot2&lt;/h1&gt;
+&lt;h1 id=&#34;part-v-plot-your-spatial-object-data-with-ggplot2&#34;&gt;PART V: Plot your spatial object data with ggplot2&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(ggplot2)
 library(ggspatial)
