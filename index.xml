@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/</link>
+    <link>https://BES-QSIG.github.io/</link>
     <description>Recent content in BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
-      <link>/post/welcome-to-new-site/</link>
+      <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/welcome-to-new-site/</guid>
+      <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
 
 &lt;p&gt;Our aim as a group is to:&lt;/p&gt;
@@ -26,16 +26,16 @@
 &lt;li&gt;Provide a forum to advance quantitative ecology in its own right&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;https://BES-QSIG.github.io/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Advancing Your R</title>
-      <link>/courses/advancingr/</link>
+      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/courses/advancingr/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
       <description>
 
 &lt;h2 id=&#34;pre-course-instructions&#34;&gt;Pre-course Instructions&lt;/h2&gt;
@@ -95,10 +95,10 @@ install.packages(&amp;quot;RPostgreSQL&amp;quot;)
     
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>/courses/advancingr-tidyverse/</link>
+      <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/courses/advancingr-tidyverse/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
       <description>
 
 &lt;h1 id=&#34;part-i-create-a-reproducible-report-using-markdown&#34;&gt;PART I: Create a reproducible report using Markdown&lt;/h1&gt;
@@ -139,7 +139,7 @@ output: html_document
 
 &lt;p&gt;Now that we have our first piece of content, we can test the &lt;code&gt;.Rmd&lt;/code&gt; file by compiling it to &lt;code&gt;.html&lt;/code&gt;. To compile your &lt;code&gt;.Rmd&lt;/code&gt; file into a &lt;code&gt;.html&lt;/code&gt; document, you should press the &lt;code&gt;Knit&lt;/code&gt; button in the taskbar:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/Knit_HTML_Screenshot.jpg&#34; alt=&#34;Img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/Knit_HTML_Screenshot.jpg&#34; alt=&#34;Img&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Not only does a preview appear in the &lt;code&gt;Viewer&lt;/code&gt; window in RStudio, but it also saves a &lt;code&gt;.html&lt;/code&gt; file to the same folder where you saved your &lt;code&gt;.Rmd&lt;/code&gt; file.&lt;/p&gt;
 
@@ -220,7 +220,7 @@ plot(dataframe)
 
 &lt;p&gt;You can run an individual chunk of code at any time by placing your cursor inside the code chunk and selecting &lt;code&gt;Run -&amp;gt; Run Current Chunk&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/run_sel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/run_sel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;summary-of-code-chunk-instructions&#34;&gt;Summary of  code chunk instructions&lt;/h3&gt;
 
@@ -407,7 +407,7 @@ load(&amp;quot;LPDdata_Feb2016.RData&amp;quot;)
 head(LPDdata_Feb2016)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/wide.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/wide.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;At the moment, each row contains a population that has been monitored over time and towards the right of the data frame there are lots of columns with population estimates for each year. To make this data &amp;ldquo;tidy&amp;rdquo; (one column per variable) we can use &lt;code&gt;gather()&lt;/code&gt; to transform the data so there is a new column containing all the years for each population and an adjacent column containing all the population estimates for those years.&lt;/p&gt;
 
@@ -442,7 +442,7 @@ LPD_long$biome &amp;lt;- gsub(&amp;quot;/&amp;quot;, &amp;quot;&amp;quot;, LPD_l
 head(LPD_long)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/long.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/long.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that our dataset is &lt;em&gt;tidy&lt;/em&gt; we can get it ready for our analysis. We want to only use populations that have more than 5 years of data to make sure our analysis has enough data to capture population change. We should also scale the population data, because since the data come from many species, the units and magnitude of the data are very different - imagine tiny fish whose abundance is in the millions, and large carnivores whose abundance is much smaller. Scaling also normalises the data, as later on we will be using linear models assuming a normal distribution. To do all of this in one go, we can use pipes.&lt;/p&gt;
 
@@ -549,7 +549,7 @@ forest.panel &amp;lt;- grid.arrange(forest.hist, duration.forests, ncol = 2)
 ggsave(forest.panel, file = &amp;quot;forest_panel.png&amp;quot;, height = 5, width = 10)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/forest_panel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/forest_panel.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;We are now ready to model how each population has changed over time. There are 1785 populations, so with this one code chunk, we will run 1785 models and tidy up their outputs. You can read through the line-by-line comments to get a feel for what each line of code is doing.&lt;/p&gt;
 
@@ -604,7 +604,7 @@ forest.slopes &amp;lt;- LPD.forest %&amp;gt;%
 ggsave(density.slopes, filename = &amp;quot;slopes_duration.png&amp;quot;, height = 6, width = 6)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/slopes_duration.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/slopes_duration-2.png&#34; alt=&#34;Img&#34; style=&#34;width: 600px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;pipes&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -656,8 +656,8 @@ do(ggsave(ggplot(., aes(x = estimate)) +
 
 &lt;p&gt;If you go check out your folder now, you should see four histograms, one per taxa:
 &lt;center&gt;
-  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/folder.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
-  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/mamm.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
+  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/folder.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
+  &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/mamm.png&#34; alt=&#34;Img&#34; style=&#34;width: 500px;&#34;/&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Another way to make all those histograms in one go is by creating a function for it. In general, whenever you find yourself copying and pasting lots of code only to change the object name, you&amp;rsquo;re probably in a position to swap all the code with a function - you can then apply the function using the &lt;code&gt;purrr&lt;/code&gt; package.&lt;/p&gt;
@@ -792,7 +792,7 @@ In drawGrob(x) : reached elapsed time limit
                size = 2, colour = &amp;quot;darkgreen&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_map.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/deer_map.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;The map already looks fine, but we can customise it further to add more information. For example, we can add labels for the locations of some of the monitored populations and we can add plots of population change next to our map.&lt;/p&gt;
 
@@ -967,7 +967,7 @@ deer.panel &amp;lt;- grid.arrange(row1, row2, nrow = 2, heights = c(1.2, 0.8))
 ggsave(deer.panel, filename = &amp;quot;deer_panel2.png&amp;quot;, height = 10, width = 15)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/md_script.png/courses/advancingr/deer_panel2.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/deer_panel2-3.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;a-challenge-for-later-if-you-are-keen&#34;&gt;A challenge for later if you are keen&lt;/h3&gt;
 
@@ -1021,10 +1021,10 @@ Take what you have learned about pipes and make a map for the five most well-sam
     
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>/courses/advancingr-spatial/</link>
+      <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/courses/advancingr-spatial/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>
 
 &lt;h1 id=&#34;install-packages&#34;&gt;Install packages&lt;/h1&gt;
@@ -1571,10 +1571,10 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
     
     <item>
       <title>Advancing your R</title>
-      <link>/events/2018-12-3-advancing-your-r/</link>
+      <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/events/2018-12-3-advancing-your-r/</guid>
+      <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
       <description>
 
 &lt;p&gt;The British Ecological Society Quantitative Ecology Group are hosting a two-day R workshop which will cover reproducible data manipulation and visualisation workflows in R. Day One will be focussed on the tidyverse, while Day Two will move into working with spatial data.&lt;/p&gt;
@@ -1594,16 +1594,6 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;p&gt;The option is available to come to both days, or just one of the two. Lunch and refreshments will be provided.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.eventbrite.co.uk/e/advancing-your-r-tickets-49210051589&#34; target=&#34;_blank&#34;&gt;SOLD OUT&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
