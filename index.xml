@@ -527,7 +527,9 @@ LPD.forest &amp;lt;- filter(LPD_long2, biome == &amp;quot;Temperate broadleaf an
               colour = &amp;quot;darkred&amp;quot;, linetype = &amp;quot;dashed&amp;quot;, size = 1) +
    scale_fill_manual(values = c(&amp;quot;#66CD00&amp;quot;, &amp;quot;#53868B&amp;quot;)) +
    theme_LPD() +
-   labs(title = &amp;quot;a) Data distribution\n&amp;quot;) +
+   labs(title = &amp;quot;a) Data distribution\n&amp;quot;, x = &amp;quot;\nScaled population size&amp;quot;,
+        y = &amp;quot;Count\n&amp;quot;) +
+   # \n adds a blank line
    guides(fill = F)) # Hiding the legend - this will be a two plot panel
 # thus we don&#39;t need the same legend twice
 &lt;/code&gt;&lt;/pre&gt;
@@ -969,10 +971,13 @@ ggsave(deer.panel, filename = &amp;quot;deer_panel2.png&amp;quot;, height = 10, 
 
 &lt;p&gt;&lt;center&gt; &lt;img src=&#34;https://BES-QSIG.github.io/courses/advancingr/deer_panel2-3.png&#34; alt=&#34;Img&#34; style=&#34;width: 900px;&#34;/&gt; &lt;/center&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;a-challenge-for-later-if-you-are-keen&#34;&gt;A challenge for later if you are keen&lt;/h3&gt;
+&lt;h2 id=&#34;challenges&#34;&gt;Challenges&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;If that wasn&amp;rsquo;t challenging enough for you, we have a challenge for you to figure out on your own.
-Take what you have learned about pipes and make a map for the five most well-sampled populations in the LPD database (the ones with the most replicate populations). You get extra points for incorporating a handwritten function to make the map and for using purr to implement that function.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take what you have learned about pipes and make a map of the five most well-sampled populations in the LPD database (the ones with the most replicate populations) and colour code the points by the population trend (derived from the models we did) and the size by the duration of the time series. You can try incorporating a handwritten function to make the map and using purr to implement that function, or you can go straight into &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pick a country and species of your choice. Download the GBIF records for that species from your selected country (or you can do the world if you don&amp;rsquo;t mind waiting a few more minutes for the GBIF data to download). Plot where the species occurs. Then, add the locations of the Living Planet Database populations of the same species - do we have long-term records from the whole range of the species? Where are the gaps? You can have a go at combining the LPD and GBIF databases in a meaningful way - hint: look up the different joining functions from &lt;code&gt;dplyr&lt;/code&gt; - &lt;code&gt;left_join()&lt;/code&gt;, &lt;code&gt;inner_join()&lt;/code&gt;, etc.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use another projection for the map - the default is Mercator, but that&amp;rsquo;s not the best way to represent the world. Hint - you can still use &lt;code&gt;ggplot2&lt;/code&gt; - look up the &lt;code&gt;proj4&lt;/code&gt; package and how to combine it with &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;extra-resources&#34;&gt;Extra resources&lt;/h2&gt;
 

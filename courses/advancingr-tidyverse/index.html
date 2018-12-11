@@ -336,8 +336,8 @@
 <li><a href="#3-downloading-and-mapping-data-from-large-datasets">3. Downloading and mapping data from large datasets</a>
 <ul>
 <li><a href="#map-the-distribution-of-a-forest-vertebrate-species-and-the-location-of-monitored-populations">Map the distribution of a forest vertebrate species and the location of monitored populations</a></li>
-<li><a href="#a-challenge-for-later-if-you-are-keen">A challenge for later if you are keen</a></li>
 </ul></li>
+<li><a href="#challenges">Challenges</a></li>
 <li><a href="#extra-resources">Extra resources</a></li>
 </ul></li>
 </ul>
@@ -792,7 +792,9 @@ LPD.forest &lt;- filter(LPD_long2, biome == &quot;Temperate broadleaf and mixed 
               colour = &quot;darkred&quot;, linetype = &quot;dashed&quot;, size = 1) +
    scale_fill_manual(values = c(&quot;#66CD00&quot;, &quot;#53868B&quot;)) +
    theme_LPD() +
-   labs(title = &quot;a) Data distribution\n&quot;) +
+   labs(title = &quot;a) Data distribution\n&quot;, x = &quot;\nScaled population size&quot;,
+        y = &quot;Count\n&quot;) +
+   # \n adds a blank line
    guides(fill = F)) # Hiding the legend - this will be a two plot panel
 # thus we don't need the same legend twice
 </code></pre>
@@ -1234,10 +1236,13 @@ ggsave(deer.panel, filename = &quot;deer_panel2.png&quot;, height = 10, width = 
 
 <p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/deer_panel2-3.png" alt="Img" style="width: 900px;"/> </center></p>
 
-<h3 id="a-challenge-for-later-if-you-are-keen">A challenge for later if you are keen</h3>
+<h2 id="challenges">Challenges</h2>
 
-<p><strong>If that wasn&rsquo;t challenging enough for you, we have a challenge for you to figure out on your own.
-Take what you have learned about pipes and make a map for the five most well-sampled populations in the LPD database (the ones with the most replicate populations). You get extra points for incorporating a handwritten function to make the map and for using purr to implement that function.</strong></p>
+<p><strong>Take what you have learned about pipes and make a map of the five most well-sampled populations in the LPD database (the ones with the most replicate populations) and colour code the points by the population trend (derived from the models we did) and the size by the duration of the time series. You can try incorporating a handwritten function to make the map and using purr to implement that function, or you can go straight into <code>ggplot2</code>.</strong></p>
+
+<p><strong>Pick a country and species of your choice. Download the GBIF records for that species from your selected country (or you can do the world if you don&rsquo;t mind waiting a few more minutes for the GBIF data to download). Plot where the species occurs. Then, add the locations of the Living Planet Database populations of the same species - do we have long-term records from the whole range of the species? Where are the gaps? You can have a go at combining the LPD and GBIF databases in a meaningful way - hint: look up the different joining functions from <code>dplyr</code> - <code>left_join()</code>, <code>inner_join()</code>, etc.</strong></p>
+
+<p><strong>Use another projection for the map - the default is Mercator, but that&rsquo;s not the best way to represent the world. Hint - you can still use <code>ggplot2</code> - look up the <code>proj4</code> package and how to combine it with <code>ggplot2</code>.</strong></p>
 
 <h2 id="extra-resources">Extra resources</h2>
 
