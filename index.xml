@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/</link>
+    <link>/</link>
     <description>Recent content in BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
-      <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
+      <link>/post/welcome-to-new-site/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
+      <guid>/post/welcome-to-new-site/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
 
 &lt;p&gt;Our aim as a group is to:&lt;/p&gt;
@@ -26,16 +26,16 @@
 &lt;li&gt;Provide a forum to advance quantitative ecology in its own right&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;https://BES-QSIG.github.io/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please &lt;a href=&#34;/#contact&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Advancing Your R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
+      <link>/courses/advancingr/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
+      <guid>/courses/advancingr/</guid>
       <description>
 
 &lt;h2 id=&#34;pre-course-instructions&#34;&gt;Pre-course Instructions&lt;/h2&gt;
@@ -95,10 +95,10 @@ install.packages(&amp;quot;RPostgreSQL&amp;quot;)
     
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
+      <link>/courses/advancingr-tidyverse/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
+      <guid>/courses/advancingr-tidyverse/</guid>
       <description>
 
 &lt;h1 id=&#34;part-i-create-a-reproducible-report-using-markdown&#34;&gt;PART I: Create a reproducible report using Markdown&lt;/h1&gt;
@@ -1021,10 +1021,10 @@ Take what you have learned about pipes and make a map for the five most well-sam
     
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
+      <link>/courses/advancingr-spatial/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
+      <guid>/courses/advancingr-spatial/</guid>
       <description>
 
 &lt;h1 id=&#34;install-packages&#34;&gt;Install packages&lt;/h1&gt;
@@ -1571,10 +1571,10 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
     
     <item>
       <title>Advancing your R</title>
-      <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
+      <link>/events/2018-12-3-advancing-your-r/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
+      <guid>/events/2018-12-3-advancing-your-r/</guid>
       <description>
 
 &lt;p&gt;The British Ecological Society Quantitative Ecology Group are hosting a two-day R workshop which will cover reproducible data manipulation and visualisation workflows in R. Day One will be focussed on the tidyverse, while Day Two will move into working with spatial data.&lt;/p&gt;
@@ -1594,6 +1594,16 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;p&gt;The option is available to come to both days, or just one of the two. Lunch and refreshments will be provided.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.eventbrite.co.uk/e/advancing-your-r-tickets-49210051589&#34; target=&#34;_blank&#34;&gt;SOLD OUT&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
