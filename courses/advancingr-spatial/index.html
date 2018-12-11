@@ -15,9 +15,9 @@
   
     
   
-  <meta name="description" content="Install packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
+  <meta name="description" content="Part I: Preliminaries Required packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
 if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
-PART I: What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
+What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://BES-QSIG.github.io/courses/advancingr-spatial/">
@@ -98,9 +98,9 @@ PART I: What is a spatial object? A spatial object is an entity with coordinates
   <meta property="og:site_name" content="BES QUANTITATIVE ECOLOGY GROUP">
   <meta property="og:url" content="https://BES-QSIG.github.io/courses/advancingr-spatial/">
   <meta property="og:title" content="Day Two: Spatial data manipulation and visualisation in R | BES QUANTITATIVE ECOLOGY GROUP">
-  <meta property="og:description" content="Install packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
+  <meta property="og:description" content="Part I: Preliminaries Required packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
 if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
-PART I: What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
+What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
   
   
     
@@ -310,8 +310,11 @@ PART I: What is a spatial object? A spatial object is an entity with coordinates
 
       <nav id="TableOfContents">
 <ul>
-<li><a href="#install-packages">Install packages</a></li>
-<li><a href="#part-i-what-is-a-spatial-object">PART I: What is a spatial object?</a></li>
+<li><a href="#part-i-preliminaries">Part I: Preliminaries</a>
+<ul>
+<li><a href="#required-packages">Required packages</a></li>
+<li><a href="#what-is-a-spatial-object">What is a spatial object?</a></li>
+</ul></li>
 <li><a href="#part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</a>
 <ul>
 <li><a href="#modify-sf-sfc-objects">Modify sf - sfc objects</a>
@@ -377,7 +380,9 @@ PART I: What is a spatial object? A spatial object is an entity with coordinates
           <div class="article-style" itemprop="articleBody">
             
 
-<h1 id="install-packages">Install packages</h1>
+<h1 id="part-i-preliminaries">Part I: Preliminaries</h1>
+
+<h2 id="required-packages">Required packages</h2>
 
 <p>For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies</p>
 
@@ -400,7 +405,7 @@ library(rgbif)
 
 <p>The data for this tutorial are available from <a href="needs link" target="_blank">here</a>.</p>
 
-<h1 id="part-i-what-is-a-spatial-object">PART I: What is a spatial object?</h1>
+<h2 id="what-is-a-spatial-object">What is a spatial object?</h2>
 
 <p>A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.</p>
 

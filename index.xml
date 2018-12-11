@@ -1032,7 +1032,9 @@ ggsave(deer.panel, filename = &amp;quot;deer_panel2.png&amp;quot;, height = 10, 
       <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>
 
-&lt;h1 id=&#34;install-packages&#34;&gt;Install packages&lt;/h1&gt;
+&lt;h1 id=&#34;part-i-preliminaries&#34;&gt;Part I: Preliminaries&lt;/h1&gt;
+
+&lt;h2 id=&#34;required-packages&#34;&gt;Required packages&lt;/h2&gt;
 
 &lt;p&gt;For this &amp;ldquo;tutorial&amp;rdquo;, you will need some packages and their dependencies&lt;/p&gt;
 
@@ -1055,7 +1057,7 @@ library(rgbif)
 
 &lt;p&gt;The data for this tutorial are available from &lt;a href=&#34;needs link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;part-i-what-is-a-spatial-object&#34;&gt;PART I: What is a spatial object?&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-a-spatial-object&#34;&gt;What is a spatial object?&lt;/h2&gt;
 
 &lt;p&gt;A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.&lt;/p&gt;
 
