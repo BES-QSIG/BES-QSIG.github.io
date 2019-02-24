@@ -11,6 +11,26 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title></title>
+      <link>https://BES-QSIG.github.io/about/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/about/about/</guid>
+      <description>&lt;p&gt;There are few areas of modern ecology that do not rely heavily on quantitative methods! Ecological modelling and data management are rapidly expanding sub-disciplines of ecology, and so the group helps its members obtain advice, learn, apply good practice and collaborate.&lt;/p&gt;
+
+&lt;p&gt;We run regular training and scientific events, an event at the BES Annual Meeting and host a community-contributed set of &lt;a href=&#34;http://qedoc.wikidot.com&#34; target=&#34;_blank&#34;&gt;guides for quantitative methods&lt;/a&gt;  – feel free to share your input!&lt;/p&gt;
+
+&lt;p&gt;We aim to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support quantitative skills development for all ecologists&lt;/li&gt;
+&lt;li&gt;Improve dissemination of new quantitative methods to their users&lt;/li&gt;
+&lt;li&gt;Provide a forum to advance quantitative ecology in its own right&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
       <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
@@ -753,8 +773,8 @@ deer.locations &amp;lt;- occ_search(scientificName = &amp;quot;Cervus elaphus&am
                              hasCoordinate = TRUE, return = &amp;quot;data&amp;quot;) %&amp;gt;%
                   # Simplify occurrence data frame
                   dplyr::select(key, name, decimalLongitude,
-                        decimalLatitude, year,
-                individualCount, country)
+		                decimalLatitude, year,
+				individualCount, country)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Next we will extract the red deer population data - the raw time series and the slopes of population change from the two data frames.&lt;/p&gt;
@@ -808,25 +828,25 @@ print(deer.slopes$location.of.population)
 # Beautify site names
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Northern Yellowstone National Park&amp;quot;
-                         = &amp;quot;Yellowstone National Park&amp;quot;)
+					     = &amp;quot;Yellowstone National Park&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Mount Rainier National Park, USA&amp;quot;
-                         = &amp;quot;Mount Rainier National Park&amp;quot;)
+					     = &amp;quot;Mount Rainier National Park&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Bow Valley - eastern zone, Banff National Park, Alberta&amp;quot; =
-                         &amp;quot;Banff National Park, Alberta&amp;quot;)
+					     &amp;quot;Banff National Park, Alberta&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Bow Valley - western zone, Banff National Park, Alberta&amp;quot; =
-                         &amp;quot;Banff National Park, Alberta&amp;quot;)
+					     &amp;quot;Banff National Park, Alberta&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Bow Valley - central zone, Banff National Park, Alberta&amp;quot; =
-                         &amp;quot;Banff National Park, Alberta&amp;quot;)
+					     &amp;quot;Banff National Park, Alberta&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Study area within Bow Valley, Banff National Park, Alberta&amp;quot; =
-                         &amp;quot;Banff National Park, Alberta&amp;quot;)
+					     &amp;quot;Banff National Park, Alberta&amp;quot;)
 deer.slopes$location.of.population &amp;lt;- recode(deer.slopes$location.of.population,
                                              &amp;quot;Bow Valley watershed of Banff National Park, Alberta&amp;quot; =
-                         &amp;quot;Banff National Park, Alberta&amp;quot;)
+					     &amp;quot;Banff National Park, Alberta&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You can also use &lt;code&gt;ggplot2&lt;/code&gt; to add images to your graphs, so here we will add a deer icon.&lt;/p&gt;
@@ -1553,7 +1573,7 @@ ggplot() +
 deer_locations &amp;lt;- occ_search(scientificName = &amp;quot;Cervus elaphus&amp;quot;, limit = 5000,
                              hasCoordinate = TRUE, country = &amp;quot;GB&amp;quot;,
                              return = &amp;quot;data&amp;quot;) %&amp;gt;% dplyr::select(key, name, decimalLongitude,
-                                 decimalLatitude, year, individualCount, datasetKey, country)
+		                         decimalLatitude, year, individualCount, datasetKey, country)
 
 deer_locations_sf &amp;lt;- sf::st_as_sf(deer_locations, coords = c(&amp;quot;decimalLongitude&amp;quot;, &amp;quot;decimalLatitude&amp;quot;), crs = 4326)
 plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])

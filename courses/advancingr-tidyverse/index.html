@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.0">
-  <meta name="generator" content="Hugo 0.50" />
+  <meta name="generator" content="Hugo 0.54.0" />
   
 
   
@@ -146,9 +146,28 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#about">
+          <a class="nav-link" href="/#home">
             
             <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">
+            
+            <span>About</span>
             
           </a>
         </li>
@@ -232,6 +251,38 @@
             <span>Contact</span>
             
           </a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            
+            <span>about</span>
+            
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/about/qesig/">
+                
+                <span>QE-SIG</span>
+                
+              </a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/about/committee/">
+                
+                <span>Committee</span>
+                
+              </a>
+            </li>
+            
+          </ul>
         </li>
 
         
@@ -1018,8 +1069,8 @@ deer.locations &lt;- occ_search(scientificName = &quot;Cervus elaphus&quot;, lim
                              hasCoordinate = TRUE, return = &quot;data&quot;) %&gt;%
                   # Simplify occurrence data frame
                   dplyr::select(key, name, decimalLongitude,
-                        decimalLatitude, year,
-                individualCount, country)
+		                decimalLatitude, year,
+				individualCount, country)
 </code></pre>
 
 <p>Next we will extract the red deer population data - the raw time series and the slopes of population change from the two data frames.</p>
@@ -1073,25 +1124,25 @@ print(deer.slopes$location.of.population)
 # Beautify site names
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Northern Yellowstone National Park&quot;
-                         = &quot;Yellowstone National Park&quot;)
+					     = &quot;Yellowstone National Park&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Mount Rainier National Park, USA&quot;
-                         = &quot;Mount Rainier National Park&quot;)
+					     = &quot;Mount Rainier National Park&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Bow Valley - eastern zone, Banff National Park, Alberta&quot; =
-                         &quot;Banff National Park, Alberta&quot;)
+					     &quot;Banff National Park, Alberta&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Bow Valley - western zone, Banff National Park, Alberta&quot; =
-                         &quot;Banff National Park, Alberta&quot;)
+					     &quot;Banff National Park, Alberta&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Bow Valley - central zone, Banff National Park, Alberta&quot; =
-                         &quot;Banff National Park, Alberta&quot;)
+					     &quot;Banff National Park, Alberta&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Study area within Bow Valley, Banff National Park, Alberta&quot; =
-                         &quot;Banff National Park, Alberta&quot;)
+					     &quot;Banff National Park, Alberta&quot;)
 deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
                                              &quot;Bow Valley watershed of Banff National Park, Alberta&quot; =
-                         &quot;Banff National Park, Alberta&quot;)
+					     &quot;Banff National Park, Alberta&quot;)
 </code></pre>
 
 <p>You can also use <code>ggplot2</code> to add images to your graphs, so here we will add a deer icon.</p>
