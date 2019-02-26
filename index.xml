@@ -11,11 +11,25 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Quantitative Ecology Special Interest Group QE-SIG</title>
-      <link>https://BES-QSIG.github.io/about/</link>
+      <title>Commitee Members</title>
+      <link>https://BES-QSIG.github.io/about/committee/</link>
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/about/</guid>
+      <guid>https://BES-QSIG.github.io/about/committee/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Laura Graham&lt;/strong&gt; (Secretary)&lt;/p&gt;
+
+&lt;p&gt;Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;hhttps://www.researchgate.net/profile/Laura_Graham13&#34; target=&#34;_blank&#34;&gt;ResearchGate&lt;/a&gt; | &lt;a href=&#34;http://laurajanegraham.github.io/&#34; target=&#34;_blank&#34;&gt;Website&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantitative Ecology Special Interest Group QE-SIG</title>
+      <link>https://BES-QSIG.github.io/about/qesig/</link>
+      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/about/qesig/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
 
 &lt;p&gt;Our aim as a group is to:&lt;/p&gt;

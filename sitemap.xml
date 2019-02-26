@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>https://BES-QSIG.github.io/about/</loc>
+      <loc>https://BES-QSIG.github.io/about/committee/</loc>
+      <lastmod>2019-02-24T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/about/qesig/</loc>
       <lastmod>2019-02-24T00:00:00+00:00</lastmod>
     </url>
     
@@ -62,6 +70,15 @@
     
       <loc>https://BES-QSIG.github.io/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/about/</loc>
+      <lastmod>2019-02-24T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
