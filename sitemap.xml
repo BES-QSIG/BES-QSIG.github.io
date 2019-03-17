@@ -4,14 +4,6 @@
     
     <url>
     
-      <loc>https://BES-QSIG.github.io/about/committee/</loc>
-      <lastmod>2019-02-24T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://BES-QSIG.github.io/about/qesig/</loc>
       <lastmod>2019-02-24T00:00:00+00:00</lastmod>
     </url>
@@ -96,6 +88,13 @@
     
       <loc>https://BES-QSIG.github.io/categories/</loc>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/about/committee/</loc>
     </url>
     
   

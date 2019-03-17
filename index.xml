@@ -11,76 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Commitee Members</title>
-      <link>https://BES-QSIG.github.io/about/committee/</link>
-      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://BES-QSIG.github.io/about/committee/</guid>
-      <description>&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/LauraGraham.png&#34;/&gt;&lt;/td&gt;
-    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Laura Graham (Secretary)&lt;/b&gt;&lt;br&gt;
-      &lt;span class=&#34;member_affiliation&#34;&gt;University of Southampton&lt;/span&gt;&lt;/table&gt;
-      &lt;table&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Laura_Graham13&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://laurajanegraham.github.io/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/table&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Gergana Daskalova&lt;/strong&gt; (Training and Education Rep / Online Resources Coordinator)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;University of Edinburgh&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Gergana is a global change ecologist with a passion for biodiversity change, agro-ecology and quantitative syntheses. The overarching aim of her research is to determine the sources of the complex patterns of population and biodiversity change observed over time around the world. From forest cover change around the world to climate warming in the Arctic and more, she is investigating how and why Earth’s biota is changing across the Anthropocene.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/gndaskalova?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=i5lOn9sAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://gndaskalova.com&#34; target=&#34;_blank&#34;&gt;Website&lt;/a&gt; | &lt;i class=&#34;far fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:gndaskalova@gmail.com&#34; target=&#34;_blank&#34;&gt;Email&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dominic Bennett&lt;/strong&gt; (Online Resources Coordinator)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;University of Gothenburg&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Dom did a PhD in macroevolution at Imperial College London and the Zoological Society of London on the legitimacy of the term “living fossil”. He now works as an open-source developer in phylogenetics and biodiversity informatics as part of a postdoctoral position at the University of Gothenburg, Sweden.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/dominicjbennett?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=Yp8S-_QAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rick Stafford&lt;/strong&gt; (Ordinary Member)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Bournemouth University&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Rick is a Principal Academic in Computational Ecology at Bournemouth University. His research involves the application of statistical and computational techniques to a wide variety of systems, particularly the structure of marine communities. Rick is interested in identification of novel biomarkers, and how these can be linked to changes in community structure; and also in the development of models with simple and intuitive interfaces, which can be used in topics as diverse as policy, management or education.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/rick7575?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Liam Butler&lt;/strong&gt; (Training and Education Rep)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Newcastle University&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Liam is a biological modeller with special focus on vegetation distribution modelling. His research focuses on understanding how vegetation patterns change at multiple scales, using data ranging from 10 cm scale to field and landscape scale. The main aim is to understand patterns in individual plants, plant communities, and catchment landscapes, relating them to small-scale environmental conditions, field-scale grazing through to broad-scale catchment management. This will allow plant distributions to be predicted at fine spatial scales from relatively coarse resolution remote-sensed data.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/liambutler2405&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Liam_Butler4&#34; target=&#34;_blank&#34;&gt;ResearchGate&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Susan Jarvis&lt;/strong&gt; (Ordinary Member)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp;amp; Hydrology&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Susan is a quantitative ecologist at the Centre for Ecology and Hydrology in Lancaster. She is interested in understanding the processes behind species distributions, diversity and community composition and uses a range of methods including species distribution models and multivariate statistics. She is particularly interested in methods to combine multiple datasets (e.g. professional surveys and citizen science) to answer ecological questions. Susan’s background is in fungal ecology but she currently works with a broad range of study organisms from plants to bees.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/susanjarvis501?lang=en-gb&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=DuIhO1IAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Phil Bouchet&lt;/strong&gt; (Website Coordinator)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Phil is a quantitative marine ecologist with an active interest in the use of GIS and statistical methods to address pressing wildlife conservation problems in the ocean. Phil’s background is in marine mammal science, although his work encompasses a range of other species including sharks, pelagic fishes, turtles and seabirds. Phil’s interests lie in the estimation of animal abundance and distribution, using frequentist and Bayesian methods. He  is currently a Research Associate at the Centre for Research into Ecological &amp;amp; Environmental Modelling (CREEM) at the University of St Andrews, where he focuses on extrapolation in cetacean density models.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/pjbouchet&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=X5SMt_8AAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Phil_Bouchet&#34; target=&#34;_blank&#34;&gt;ResearchGate&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://pjbouchet.github.io/&#34; target=&#34;_blank&#34;&gt;Website&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tom August&lt;/strong&gt; (Social Media Rep)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp;amp; Hydrology&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Tom is a computational ecologist at the Centre for Ecology &amp;amp; Hydrology. Tom’s work focuses on the nexus between citizen science, technology, and data science. Tom works with statistical experts to develop methods for analysing species occurrence data and works to make these methods available to other academics and practitioners. Tom’s work spans a range of tools and technologies including; AI, computer vision, drones, mobile phone applications and web platforms.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/TomAugust85&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Quantitative Ecology Special Interest Group QE-SIG</title>
       <link>https://BES-QSIG.github.io/about/qesig/</link>
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
@@ -1691,6 +1621,76 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;p&gt;The option is available to come to both days, or just one of the two. Lunch and refreshments will be provided.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.eventbrite.co.uk/e/advancing-your-r-tickets-49210051589&#34; target=&#34;_blank&#34;&gt;SOLD OUT&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Commitee Members</title>
+      <link>https://BES-QSIG.github.io/about/committee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/about/committee/</guid>
+      <description>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/LauraGraham.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Laura Graham (Secretary)&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Southampton&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Laura_Graham13&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://laurajanegraham.github.io/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gergana Daskalova&lt;/strong&gt; (Training and Education Rep / Online Resources Coordinator)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;University of Edinburgh&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Gergana is a global change ecologist with a passion for biodiversity change, agro-ecology and quantitative syntheses. The overarching aim of her research is to determine the sources of the complex patterns of population and biodiversity change observed over time around the world. From forest cover change around the world to climate warming in the Arctic and more, she is investigating how and why Earth’s biota is changing across the Anthropocene.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/gndaskalova?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=i5lOn9sAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://gndaskalova.com&#34; target=&#34;_blank&#34;&gt;Website&lt;/a&gt; | &lt;i class=&#34;far fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:gndaskalova@gmail.com&#34; target=&#34;_blank&#34;&gt;Email&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dominic Bennett&lt;/strong&gt; (Online Resources Coordinator)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;University of Gothenburg&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Dom did a PhD in macroevolution at Imperial College London and the Zoological Society of London on the legitimacy of the term “living fossil”. He now works as an open-source developer in phylogenetics and biodiversity informatics as part of a postdoctoral position at the University of Gothenburg, Sweden.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/dominicjbennett?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=Yp8S-_QAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rick Stafford&lt;/strong&gt; (Ordinary Member)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;Bournemouth University&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Rick is a Principal Academic in Computational Ecology at Bournemouth University. His research involves the application of statistical and computational techniques to a wide variety of systems, particularly the structure of marine communities. Rick is interested in identification of novel biomarkers, and how these can be linked to changes in community structure; and also in the development of models with simple and intuitive interfaces, which can be used in topics as diverse as policy, management or education.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/rick7575?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Liam Butler&lt;/strong&gt; (Training and Education Rep)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;Newcastle University&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Liam is a biological modeller with special focus on vegetation distribution modelling. His research focuses on understanding how vegetation patterns change at multiple scales, using data ranging from 10 cm scale to field and landscape scale. The main aim is to understand patterns in individual plants, plant communities, and catchment landscapes, relating them to small-scale environmental conditions, field-scale grazing through to broad-scale catchment management. This will allow plant distributions to be predicted at fine spatial scales from relatively coarse resolution remote-sensed data.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/liambutler2405&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Liam_Butler4&#34; target=&#34;_blank&#34;&gt;ResearchGate&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Susan Jarvis&lt;/strong&gt; (Ordinary Member)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp;amp; Hydrology&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Susan is a quantitative ecologist at the Centre for Ecology and Hydrology in Lancaster. She is interested in understanding the processes behind species distributions, diversity and community composition and uses a range of methods including species distribution models and multivariate statistics. She is particularly interested in methods to combine multiple datasets (e.g. professional surveys and citizen science) to answer ecological questions. Susan’s background is in fungal ecology but she currently works with a broad range of study organisms from plants to bees.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/susanjarvis501?lang=en-gb&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=DuIhO1IAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Phil Bouchet&lt;/strong&gt; (Website Coordinator)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Phil is a quantitative marine ecologist with an active interest in the use of GIS and statistical methods to address pressing wildlife conservation problems in the ocean. Phil’s background is in marine mammal science, although his work encompasses a range of other species including sharks, pelagic fishes, turtles and seabirds. Phil’s interests lie in the estimation of animal abundance and distribution, using frequentist and Bayesian methods. He  is currently a Research Associate at the Centre for Research into Ecological &amp;amp; Environmental Modelling (CREEM) at the University of St Andrews, where he focuses on extrapolation in cetacean density models.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/pjbouchet&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=X5SMt_8AAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Phil_Bouchet&#34; target=&#34;_blank&#34;&gt;ResearchGate&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://pjbouchet.github.io/&#34; target=&#34;_blank&#34;&gt;Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tom August&lt;/strong&gt; (Social Media Rep)&lt;br&gt;
+&lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp;amp; Hydrology&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Tom is a computational ecologist at the Centre for Ecology &amp;amp; Hydrology. Tom’s work focuses on the nexus between citizen science, technology, and data science. Tom works with statistical experts to develop methods for analysing species occurrence data and works to make these methods available to other academics and practitioners. Tom’s work spans a range of tools and technologies including; AI, computer vision, drones, mobile phone applications and web platforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/TomAugust85&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
