@@ -1636,7 +1636,13 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
       &lt;b&gt;Laura Graham (Secretary)&lt;/b&gt;&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;University of Southampton&lt;/span&gt;&lt;/table&gt;
-      &lt;table&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt; | &lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Laura_Graham13&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt; | &lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://laurajanegraham.github.io/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Laura_Graham13&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://laurajanegraham.github.io/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
