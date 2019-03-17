@@ -2170,3 +2170,12 @@ a:hover, a:focus, a {
 
 h1 {
  margin-bottom: 1em;}
+ 
+.rightcol > ul{
+  padding-left: 0px;
+}
+
+li.member_web, li.list_separator{
+  display:inline;
+}
+
