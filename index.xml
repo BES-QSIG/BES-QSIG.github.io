@@ -1636,7 +1636,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/LauraGraham.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Laura Graham (Secretary)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Laura Graham&lt;/b&gt; (Secretary)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;University of Southampton&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
@@ -1659,7 +1659,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/GerganaDaskalova.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Gergana Daskalova (Training and Education Rep / Online Resources Coordinator)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Gergana Daskalova&lt;/b&gt; (Training and Education Rep)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;University of Edinburgh&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
@@ -1684,7 +1684,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/DominicBennett.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Dominic Bennett (Online Resources Coordinator)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Dominic Bennett&lt;/b&gt; (Online Resources Coordinator)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;University of Gothenburg&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
@@ -1712,7 +1712,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/LiamButler.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Liam Butler (Training and Education Rep)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Liam Butler&lt;/b&gt; (Training and Education Rep)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;Newcastle University&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
@@ -1733,7 +1733,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/SusanJarvis.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Susan Jarvis (Ordinary Member)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Susan Jarvis&lt;/b&gt; (Ordinary Member)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp; Hydrology&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
@@ -1752,7 +1752,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
   &lt;tr&gt;
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/PhilBouchet.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
-      &lt;b&gt;Phil Bouchet (Website Coordinator)&lt;/b&gt;&lt;br&gt;
+      &lt;b&gt;Phil Bouchet&lt;/b&gt; (Website Coordinator)&lt;br&gt;
       &lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
