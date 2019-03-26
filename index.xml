@@ -1699,12 +1699,30 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 
 &lt;p&gt;Dom did a PhD in macroevolution at Imperial College London and the Zoological Society of London on the legitimacy of the term “living fossil”. He now works as an open-source developer in phylogenetics and biodiversity informatics as part of a postdoctoral position at the University of Gothenburg, Sweden.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Rick Stafford&lt;/strong&gt; (Ordinary Member)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Bournemouth University&lt;/span&gt;&lt;/p&gt;
+&lt;!-- Rick Satfford --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/RickStafford.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Rick Stafford&lt;/b&gt; (Ordinary Member)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;Bournemouth University&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/rick7575?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+         &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=2sE_eh8AAAAJ&amp;hl=en&#34; target=&#34;_blank&#34;&gt; Scholar&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+        &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Richard_Stafford&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://www.rickstafford.com/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;p&gt;Rick is a Principal Academic in Computational Ecology at Bournemouth University. His research involves the application of statistical and computational techniques to a wide variety of systems, particularly the structure of marine communities. Rick is interested in identification of novel biomarkers, and how these can be linked to changes in community structure; and also in the development of models with simple and intuitive interfaces, which can be used in topics as diverse as policy, management or education.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/rick7575?lang=en&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 
 &lt;!-- Liam Butler --&gt;
 
@@ -1798,12 +1816,28 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 
 &lt;p&gt;Sarah is a bioacoustician specialising in vertebrate ecology, animal behaviour, and underwater soundscapes. Her research focuses primarily on marine megafauna, including cetaceans (whales, dolphins, porpoises), pinnipeds (seals, sea lions), birds, and fish. Sarah is a prize-winning science communicator and tertiary educator with a strong interest in both public engagement and citizen science.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Tom August&lt;/strong&gt; (Social Media Rep)&lt;br&gt;
-&lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp;amp; Hydrology&lt;/span&gt;&lt;/p&gt;
+&lt;!-- Tom August --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/TomAugust.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Tom August&lt;/b&gt; (Social Media Rep)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;Centre for Ecology &amp; Hydrology&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/TomAugust85&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+         &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.co.uk/citations?user=X1G0mv0AAAAJ&amp;hl=en&#34; target=&#34;_blank&#34;&gt; Scholar&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+        &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Tom_August/&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;p&gt;Tom is a computational ecologist at the Centre for Ecology &amp;amp; Hydrology. Tom’s work focuses on the nexus between citizen science, technology, and data science. Tom works with statistical experts to develop methods for analysing species occurrence data and works to make these methods available to other academics and practitioners. Tom’s work spans a range of tools and technologies including; AI, computer vision, drones, mobile phone applications and web platforms.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/TomAugust85&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
