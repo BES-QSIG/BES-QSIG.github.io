@@ -1863,6 +1863,29 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;/table&gt;
 
 &lt;p&gt;Tom is a computational ecologist at the Centre for Ecology &amp;amp; Hydrology. Tom’s work focuses on the nexus between citizen science, technology, and data science. Tom works with statistical experts to develop methods for analysing species occurrence data and works to make these methods available to other academics and practitioners. Tom’s work spans a range of tools and technologies including; AI, computer vision, drones, mobile phone applications and web platforms.&lt;/p&gt;
+
+&lt;!-- Simon Kapitza --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/SimonKapitza.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Simon Kapitza&lt;/b&gt; (Ordinary Member)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Melbourne&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/simonkapitza&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://github.com/kapitzas&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;far fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:simon.statecology@gmail.com&#34;&gt; Email&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Simon is a global change ecologist at the Quantitative &amp;amp; Applied Ecology Group in Melbourne. He is interested in developing methods for integrated assessments of biodiversity change to better forecast the fate of biodiversity under different future scenarios. His particular focus is on understanding the importance of socioeconomic drivers and capturing impacts of global transitions by coupling models across scientific disciplines.&lt;/p&gt;
 </description>
     </item>
     
