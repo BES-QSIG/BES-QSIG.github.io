@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://BES-QSIG.github.io/tags/spatial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
+      <link>https://BES-QSIG.github.io/events/2019-07-09-annualmeeting/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/events/2019-07-09-annualmeeting/</guid>
+      <description>Join us for the 2019 joint BES Quantitative and Movement Ecology special interest groups annual meeting in Sheffield!</description>
+    </item>
     
     <item>
       <title>Advancing your R</title>
@@ -18,8 +27,7 @@
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
-      <description>The British Ecological Society Quantitative Ecology Group are hosting a two-day R workshop which will cover reproducible data manipulation and visualisation workflows in R. Day One will be focussed on the tidyverse, while Day Two will move into working with spatial data.
-Day One: Data manipulation and visualisation in R using the tidyverse Workshop leader: Gergana Daskalova, University of Edinburgh, Coding Club The tidyverse collection of packages (tidyr, dplyr, ggplot2, broom and more) is a great tool for efficient data manipulation, visualisation and analysis.</description>
+      <description>Want to build on your R skills for more transparant and reproducible data analysis workflows? This is the course for you!</description>
     </item>
     
   </channel>

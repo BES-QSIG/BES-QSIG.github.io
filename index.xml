@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BES QUANTITATIVE ECOLOGY GROUP on BES QUANTITATIVE ECOLOGY GROUP</title>
@@ -7,8 +6,132 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
+      <link>https://BES-QSIG.github.io/events/2019-07-09-annualmeeting/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/events/2019-07-09-annualmeeting/</guid>
+      <description>
+
+&lt;p&gt;The BES Quantitative and Movement Ecology special interest groups will be holding their annual meetings back to back &lt;strong&gt;on 9th &amp;amp; 10th July 2019 in Sheffield&lt;/strong&gt;. This joint meeting will take advantage of shared strengths as well as shared challenges between the two groups, and foster links between them.&lt;/p&gt;
+
+&lt;p&gt;The meeting will be along the common theme of Analysing big datasets while answering big ecological questions and the challenges associated with it. We welcome talks, posters and will have discussions on general issues with computation; integrating different datasets; and propagating uncertainty in ecological analyses.&lt;/p&gt;
+
+&lt;p&gt;Attendees will have the opportunity to attend one, or both annual meetings. Note that it is cheaper to join the BES as a member and register for a BES member ticket, than to register for the non-BES member ticket.&lt;/p&gt;
+
+&lt;h2 id=&#34;quantitative-ecology-keynotes&#34;&gt;Quantitative Ecology keynotes&lt;/h2&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;JamesGrecian.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;http://www.jamesgrecian.com/&#34;&gt;James Grecian&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; James&#39; research focuses on understanding how marine predators interact with their environment, particularly the effect that human impacts such as offshore energy extraction, fisheries and climate change have on foraging behaviour and migration.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;RachelMcCrea.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;https://www.kent.ac.uk/mathematics-statistics-actuarial-science/people/1060/mccrea-rachel&#34;&gt;Rachel McCrea&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Kent&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; Rachel is an applied statistician working closely with ecologists as well as statisticians, developing new statistical methodology for the modelling of ecological data. She has worked extensively with capture-recapture data and is particularly interested in the potential of multi-state models. Her research has included the development of goodness-of-fit assessment and model selection strategies for complex data sets.  Modelling population dynamics, integrated population modelling and survey design are also current areas of interest.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;movement-ecology-keynotes&#34;&gt;Movement Ecology Keynotes&lt;/h2&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;SamanthaPatrick.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;https://samanthacpatrick.wixsite.com/home&#34;&gt;Samantha Patrick&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Liverpool&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; Samantha is a behavioural ecologist interested in individual differences in mating strategies. She focuses on reproductive tactics and foraging behaviour and considers how and why alternative strategies are maintained in the population. She has worked mainly on avian systems, from great tits to albatrosses, and examined the causes and consequence of individual variation.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;KarineHeerah.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;https://www.researchgate.net/profile/Karine_Heerah&#34;&gt;Karine Heerah&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;Aarhus University&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; Karine is a Marie Sklodowska Curie Fellow working in the lab of Prof. Peter Madsen at Aarhus University.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;TheoMichelot.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;http://theo-michelot.postgrad.shef.ac.uk/&#34;&gt;Théo Michelot&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; Théo is a newly appointed Research Fellow in the School of Mathematics and Statistics at the University of St Andrews. He specialises in analyses of animal movement.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;GrantHopcraft.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;
+    &lt;table&gt;&lt;b&gt;&lt;a href = &#34;https://www.gla.ac.uk/researchinstitutes/bahcm/staff/granthopcraft/&#34;&gt;Grant Hopcraft&lt;/a&gt;&lt;/b&gt;&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Glasgow&lt;/span&gt;&lt;/table&gt;
+      &lt;p&gt; Grant&#39;s research broadly investigates landscape-scale ecological processes that determine the distribution and abundance of animals. He focuses on African savannahs as model ecosystems to investigate how underlying biogeographical gradients, such as rainfall and soil fertility, influence animal nutrition and predation rates, and how these gradients structure community assemblages.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;talks-and-posters&#34;&gt;TALKS AND POSTERS&lt;/h2&gt;
+
+&lt;p&gt;We will have slots for talks and space for posters at the meeting!&lt;/p&gt;
+
+&lt;p&gt;Talks will be &lt;strong&gt;5 minutes&lt;/strong&gt; long. There may not be enough talk slots for everyone, so priority will be given to early career researchers. Please include a rough title when you register so we have an idea of the balance of topics (you can change it later). Students will also be given the option to put themselves forward for the student plenary talk (20 minutes). We highly recommend applying; it&amp;rsquo;s fun and a great thing to put on your CV.&lt;/p&gt;
+
+&lt;h2 id=&#34;accessibility&#34;&gt;ACCESSIBILITY&lt;/h2&gt;
+
+&lt;p&gt;All facilities, rooms and spaces in the conference venue are wheelchair-accessible and there are disabled parking spaces nearby. See &lt;a href=&#34;https://www.accessable.co.uk/venues/alfred-denny-building&#34; target=&#34;_blank&#34;&gt;https://www.accessable.co.uk/venues/alfred-denny-building&lt;/a&gt; for more information and please contact us if you have any questions.&lt;/p&gt;
+
+&lt;h2 id=&#34;families-and-childcare&#34;&gt;FAMILIES AND CHILDCARE&lt;/h2&gt;
+
+&lt;p&gt;If you plan to bring your baby or young child to the meeting, please get in touch with us to let us know what facilities you would require, for example, a room for nursing or créche facilities. We have not made any specific arrangements for families but we will be happy to help as much as we can.&lt;/p&gt;
+
+&lt;h2 id=&#34;accommodation&#34;&gt;ACCOMMODATION&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sheffield.ac.uk/accommodation/visitors&#34; target=&#34;_blank&#34;&gt;https://www.sheffield.ac.uk/accommodation/visitors&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter&#34;&gt;TWITTER&lt;/h2&gt;
+
+&lt;p&gt;#BESQuantMove2019&lt;/p&gt;
+
+&lt;h2 id=&#34;deadline&#34;&gt;DEADLINE&lt;/h2&gt;
+
+&lt;p&gt;The deadline for registration is &lt;strong&gt;Friday, 7th June 2019&lt;/strong&gt; (11:59 PM UK time). We will contact attendees after this to confirm talk slots.&lt;/p&gt;
+
+&lt;h2 id=&#34;register&#34;&gt;REGISTER&lt;/h2&gt;
+
+&lt;p&gt;You can register on our &lt;a href=&#34;https://www.eventbrite.co.uk/e/bes-quantitative-movement-ecology-2019-tickets-59447350626&#34; target=&#34;_blank&#34;&gt;EventBrite&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;h2 id=&#34;contact&#34;&gt;CONTACT&lt;/h2&gt;
+
+&lt;p&gt;Feel free to contact us on twitter &lt;a href=&#34;https://twitter.com/BES_QE_SIG&#34; target=&#34;_blank&#34;&gt;@bes_qe_sig&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BES_Move_SIG&#34; target=&#34;_blank&#34;&gt;@bes_move_sig&lt;/a&gt; or by emailing &lt;a href=&#34;mailto:quantitative@britishecologicalsociety.org&#34; target=&#34;_blank&#34;&gt;quantitative@britishecologicalsociety.org&lt;/a&gt; or &lt;a href=&#34;mailto:movement@britishecologicalsociety.org&#34; target=&#34;_blank&#34;&gt;movement@britishecologicalsociety.org&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Quantitative Ecology Special Interest Group QE-SIG</title>
