@@ -3,16 +3,8 @@
     
     <url>
     
-      <loc>https://BES-QSIG.github.io/events/quantmove2019/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://BES-QSIG.github.io/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -21,7 +13,7 @@
     <url>
     
       <loc>https://BES-QSIG.github.io/tags/conferences/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -30,7 +22,7 @@
     <url>
     
       <loc>https://BES-QSIG.github.io/events/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -38,9 +30,8 @@
     
     <url>
     
-      <loc>https://BES-QSIG.github.io/tags/r/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
-      <priority>0</priority>
+      <loc>https://BES-QSIG.github.io/events/imi-bes2019/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -48,7 +39,25 @@
     <url>
     
       <loc>https://BES-QSIG.github.io/tags/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/tags/biodiversity/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/tags/climate-change/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -57,7 +66,7 @@
     <url>
     
       <loc>https://BES-QSIG.github.io/tags/conference/</loc>
-      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -66,6 +75,41 @@
     <url>
     
       <loc>https://BES-QSIG.github.io/tags/event/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/tags/human-activities/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/tags/modelling/</loc>
+      <lastmod>2019-07-26T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/events/quantmove2019/</loc>
+      <lastmod>2019-05-22T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://BES-QSIG.github.io/tags/r/</loc>
       <lastmod>2019-05-22T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>

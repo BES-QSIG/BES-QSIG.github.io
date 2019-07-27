@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://BES-QSIG.github.io/events/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Interdisciplinary model integration thematic session at BES2019</title>
+      <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
+      <description>Register for our thematic session on &amp;lsquo;Interdisciplinary model integration to better understand biodiversity change&amp;rsquo; at #BES2019 in Belfast.</description>
+    </item>
     
     <item>
       <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
