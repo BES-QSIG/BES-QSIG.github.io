@@ -2,32 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://BES-QSIG.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open committee positions</title>
-      <link>https://BES-QSIG.github.io/post/open-committee-positions/</link>
+      <link>/post/open-committee-positions/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/post/open-committee-positions/</guid>
+      <guid>/post/open-committee-positions/</guid>
       <description>Deputy Secretary
-We are looking for a Quantitative Ecologist to step into the deputy secretary role and provide some continuity to the SIG leadership. The deputy secretary role involves - Supporting the secretary in the running of the SIG - helping with budgets, suggesting events etc. - Attending meetings at BES HQ twice a year (travel &amp;amp; accommodation covered) - Seek to expand the SIG and promote quantitative ecology within the BES</description>
+We are looking for a Quantitative Ecologist to step into the deputy secretary role and provide some continuity to the SIG leadership. The deputy secretary role involves:
+ Supporting the secretary in the running of the SIG - helping with budgets, suggesting events etc. Attending meetings at BES HQ twice a year (travel &amp;amp; accommodation covered) Seek to expand the SIG and promote quantitative ecology within the BES  Policy Rep</description>
     </item>
     
     <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
-      <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
+      <link>/post/welcome-to-new-site/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
+      <guid>/post/welcome-to-new-site/</guid>
       <description>We have migrated from our old Wordpress site in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.
 Our aim as a group is to:
  Support quantitative skills development for all ecologists Improve dissemination of new quantitative methods to their users Provide a forum to advance quantitative ecology in its own right  If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please contact us.</description>
