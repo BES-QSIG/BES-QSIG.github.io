@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/courses/</link>
+    <link>https://BES-QSIG.github.io/courses/</link>
     <description>Recent content in Courses on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advancing Your R</title>
-      <link>/courses/advancingr/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://BES-QSIG.github.io/courses/advancingr/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
       
-      <guid>/courses/advancingr/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
       <description>Pre-course Instructions Below see instructions on the software and R packages to install before you arrive. Note that you will receive the greatest benefit of the course if you have already installed the software and packages.
 You will need to have an up-to-date installation of R and RStudio.
 You will need to install PostgreSQL.
@@ -27,19 +27,19 @@ install.packages(&amp;quot;rmarkdown&amp;quot;) install.packages(&amp;quot;tidyv
     
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
-      <link>/courses/advancingr-tidyverse/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
       
-      <guid>/courses/advancingr-tidyverse/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
       <description>PART I: Create a reproducible report using Markdown 1. What is R Markdown? R Markdown allows you to create documents that serve as a neat record of your analysis. In the world of reproducible research, we want other researchers to easily understand what we did in our analysis. You might choose to create an R markdown document as an appendix to a paper or project assignment that you are doing, upload it to an online repository such as Github, or simply to keep as a personal record so you can quickly look back at your code and see what you did.</description>
     </item>
     
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
-      <link>/courses/advancingr-spatial/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
       
-      <guid>/courses/advancingr-spatial/</guid>
+      <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>Part I: Preliminaries Required packages For this &amp;ldquo;tutorial&amp;rdquo;, you will need some packages and their dependencies
 if(!requireNamespace(&amp;quot;raster&amp;quot;)) install.packages(&amp;quot;raster&amp;quot;) if(!requireNamespace(&amp;quot;sf&amp;quot;)) install.packages(&amp;quot;sf&amp;quot;) if(!requireNamespace(&amp;quot;ggplot2&amp;quot;)) install.packages(&amp;quot;ggplot2&amp;quot;) if(!requireNamespace(&amp;quot;ggspatial&amp;quot;)) install.packages(&amp;quot;ggspatial&amp;quot;) if(!requireNamespace(&amp;quot;rgdal&amp;quot;)) install.packages(&amp;quot;rgdal&amp;quot;) if(!requireNamespace(&amp;quot;RPostgreSQL&amp;quot;)) install.packages(&amp;quot;RPostgreSQL&amp;quot;) if(!requireNamespace(&amp;quot;rgbif&amp;quot;)) install.packages(&amp;quot;rgbif&amp;quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
 What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.</description>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spatial on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/tags/spatial/</link>
+    <link>https://BES-QSIG.github.io/tags/spatial/</link>
     <description>Recent content in spatial on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/spatial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/tags/spatial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
-      <link>/events/quantmove2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
+      <link>https://BES-QSIG.github.io/events/quantmove2019/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0200</pubDate>
       
-      <guid>/events/quantmove2019/</guid>
+      <guid>https://BES-QSIG.github.io/events/quantmove2019/</guid>
       <description>Join us for the 2019 joint BES Quantitative and Movement Ecology special interest groups annual meeting in Sheffield!</description>
     </item>
     
     <item>
       <title>Advancing your R</title>
-      <link>/events/2018-12-3-advancing-your-r/</link>
-      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0100</pubDate>
       
-      <guid>/events/2018-12-3-advancing-your-r/</guid>
+      <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
       <description>Want to build on your R skills for more transparant and reproducible data analysis workflows? This is the course for you!</description>
     </item>
     

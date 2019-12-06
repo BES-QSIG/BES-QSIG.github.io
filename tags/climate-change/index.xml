@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>climate change on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/tags/climate-change/</link>
+    <link>https://BES-QSIG.github.io/tags/climate-change/</link>
     <description>Recent content in climate change on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/climate-change/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/tags/climate-change/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Interdisciplinary model integration thematic session at BES2019</title>
-      <link>/events/imi-bes2019/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
+      <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
       
-      <guid>/events/imi-bes2019/</guid>
+      <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
       <description>Register for our thematic session on &amp;lsquo;Interdisciplinary model integration to better understand biodiversity change&amp;rsquo; at #BES2019 in Belfast.</description>
     </item>
     
