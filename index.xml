@@ -6,13 +6,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Quantitative Ecology Speed-Share-Your-Research</title>
       <link>https://BES-QSIG.github.io/events/bes2019_social/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/bes2019_social/</guid>
       <description>&lt;p&gt;Get to meet more quantitative ecologists and learn about the wide range of work done by members of our SIG. Then relax and enjoy food, drinks and live music for the rest of the evening in a local Belfast venue.&lt;/p&gt;
@@ -22,7 +22,7 @@
     <item>
       <title>Open committee positions</title>
       <link>https://BES-QSIG.github.io/post/open-committee-positions/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/post/open-committee-positions/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Deputy Secretary&lt;/strong&gt;&lt;/p&gt;
@@ -48,7 +48,7 @@
     <item>
       <title>Interdisciplinary model integration thematic session at BES2019</title>
       <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
       <description>&lt;p&gt;We are lucky to be joining a fantastic session line-up with our thematic session on &lt;strong&gt;Interdisciplinary model integration to better understand biodiversity change&lt;/strong&gt; at this year’s BES annual meeting in Belfast.&lt;/p&gt;
@@ -71,7 +71,7 @@
     <item>
       <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
       <link>https://BES-QSIG.github.io/events/quantmove2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/quantmove2019/</guid>
       <description>
@@ -197,7 +197,7 @@
     <item>
       <title>Quantitative Ecology Special Interest Group QE-SIG</title>
       <link>https://BES-QSIG.github.io/about/qesig/</link>
-      <pubDate>Sun, 24 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/about/qesig/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
@@ -217,7 +217,7 @@
     <item>
       <title>Welcome to the new Quantitative Ecology Site</title>
       <link>https://BES-QSIG.github.io/post/welcome-to-new-site/</link>
-      <pubDate>Tue, 27 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/post/welcome-to-new-site/</guid>
       <description>&lt;p&gt;We have migrated from our old &lt;a href=&#34;https://besquantitativeecology.wordpress.com/&#34; target=&#34;_blank&#34;&gt;Wordpress site&lt;/a&gt; in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.&lt;/p&gt;
@@ -237,7 +237,7 @@
     <item>
       <title>Advancing Your R</title>
       <link>https://BES-QSIG.github.io/courses/advancingr/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/courses/advancingr/</guid>
       <description>
@@ -300,7 +300,7 @@ install.packages(&amp;quot;RPostgreSQL&amp;quot;)
     <item>
       <title>Day One: Data manipulation and Visualisation using the tidyverse</title>
       <link>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/courses/advancingr-tidyverse/</guid>
       <description>
@@ -1231,7 +1231,7 @@ ggsave(deer.panel, filename = &amp;quot;deer_panel2.png&amp;quot;, height = 10, 
     <item>
       <title>Day Two: Spatial data manipulation and visualisation in R</title>
       <link>https://BES-QSIG.github.io/courses/advancingr-spatial/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>
@@ -1783,7 +1783,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
     <item>
       <title>Advancing your R</title>
       <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
-      <pubDate>Tue, 13 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
       <description>
@@ -1837,6 +1837,31 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 
 &lt;p&gt;Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.&lt;/p&gt;
 
+&lt;!-- Chris Sutherland --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/ChrisSutherland.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Chris Sutherland&lt;/b&gt; (Deputy Secretary)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of St Andrews&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/chrissuthy?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+             &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=PZhqA9UAAAAJ&amp;hl=en&#34; target=&#34;_blank&#34;&gt; Scholar&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Chris_Sutherland2&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.sutherlandecology.com/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Chris is primarily interested in spatial population ecology, with a specific focus on space use, dispersal, and demography. The overarching theme of his research, and the research of those in his group, is increasing the biological realism of modern eco-statistical models to best test spatial ecological theory.&lt;/p&gt;
+
 &lt;!-- Gergana Daskalova --&gt;
 
 &lt;table&gt;
@@ -1861,6 +1886,29 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;/table&gt;
 
 &lt;p&gt;Gergana is a global change ecologist with a passion for biodiversity change, agro-ecology and quantitative syntheses. The overarching aim of her research is to determine the sources of the complex patterns of population and biodiversity change observed over time around the world. From forest cover change around the world to climate warming in the Arctic and more, she is investigating how and why Earth’s biota is changing across the Anthropocene.&lt;/p&gt;
+
+&lt;!-- Fiona Burns --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/FionaBurns.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Fiona Burns&lt;/b&gt; (Policy Rep)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;Royal Society for the Protection of Birds&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/f_e_burns&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Fiona_Burns2&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.rspb.org.uk/our-work/conservation/centre-for-conservation-science/our-team/fiona-burns/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Fiona is a scientist in the Centre for Conservation Science at the RSPB. Her work aims to understand the status and trends of a broad range of species and habitats in the UK, and the underlying environmental variables which drive change in these, including conservation action. She works work with other NGOs, academics and statutory agencies to produce syntheses of these data for a range of audiences.&lt;/p&gt;
 
 &lt;!-- Dominic Bennett --&gt;
 
@@ -2070,6 +2118,33 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;/table&gt;
 
 &lt;p&gt;Simon is a global change ecologist at the Quantitative &amp;amp; Applied Ecology Group in Melbourne. He is interested in developing methods for integrated assessments of biodiversity change to better forecast the fate of biodiversity under different future scenarios. His particular focus is on understanding the importance of socioeconomic drivers and capturing impacts of global transitions by coupling models across scientific disciplines.&lt;/p&gt;
+
+&lt;!-- Jon Yearsley --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/JonYearsley.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Jon Yearsley&lt;/b&gt; (Ordinary Member)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University College Dublin&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/jonyearsley?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.ucd.ie/ecomodel&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=vdwNKNYAAAAJ&amp;hl=en&#34; target=&#34;_blank&#34;&gt; Scholar&lt;/a&gt;&lt;/li&gt;
+           &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Jon_Yearsley&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;far fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:Jon.Yearsley@ucd.ie&#34;&gt; Email&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Jon is a mathematical biologist with research interests that combine ecological theory with ecological data. His active research areas are in ecosystem resilience (primarily grasslands), phenology, analysis of biological records, and modelling of dispersal for genetic diversity and population spread.  Jon is also enthusiastic about teaching quantitative methods to life science students. A sample of teaching resources can be found on his website. His is secretary of the Irish Ecological Association (&lt;a href=&#34;https://www.irishecologicalassociation.org&#34; target=&#34;_blank&#34;&gt;https://www.irishecologicalassociation.org&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     

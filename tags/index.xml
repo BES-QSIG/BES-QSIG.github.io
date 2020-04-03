@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://BES-QSIG.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Conferences</title>
       <link>https://BES-QSIG.github.io/tags/conferences/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/conferences/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>R</title>
       <link>https://BES-QSIG.github.io/tags/r/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/r/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>conference</title>
       <link>https://BES-QSIG.github.io/tags/conference/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/conference/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>event</title>
       <link>https://BES-QSIG.github.io/tags/event/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/event/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>biodiversity</title>
       <link>https://BES-QSIG.github.io/tags/biodiversity/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/biodiversity/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>climate change</title>
       <link>https://BES-QSIG.github.io/tags/climate-change/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/climate-change/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>human activities</title>
       <link>https://BES-QSIG.github.io/tags/human-activities/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/human-activities/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>modelling</title>
       <link>https://BES-QSIG.github.io/tags/modelling/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/modelling/</guid>
       <description></description>
@@ -87,7 +87,7 @@
     <item>
       <title>movement</title>
       <link>https://BES-QSIG.github.io/tags/movement/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/movement/</guid>
       <description></description>
@@ -96,7 +96,7 @@
     <item>
       <title>spatial</title>
       <link>https://BES-QSIG.github.io/tags/spatial/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/spatial/</guid>
       <description></description>
@@ -105,7 +105,7 @@
     <item>
       <title>Courses</title>
       <link>https://BES-QSIG.github.io/tags/courses/</link>
-      <pubDate>Tue, 13 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/courses/</guid>
       <description></description>
@@ -114,7 +114,7 @@
     <item>
       <title>tidyverse</title>
       <link>https://BES-QSIG.github.io/tags/tidyverse/</link>
-      <pubDate>Tue, 13 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/tags/tidyverse/</guid>
       <description></description>

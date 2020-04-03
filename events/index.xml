@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://BES-QSIG.github.io/events/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Quantitative Ecology Speed-Share-Your-Research</title>
       <link>https://BES-QSIG.github.io/events/bes2019_social/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/bes2019_social/</guid>
       <description>Join us for the Quantitative Ecology SIG Speed-Share-Your-Research event at the BES 2019 Annual Meeting!</description>
@@ -24,7 +24,7 @@
     <item>
       <title>Interdisciplinary model integration thematic session at BES2019</title>
       <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
       <description>Register for our thematic session on &amp;lsquo;Interdisciplinary model integration to better understand biodiversity change&amp;rsquo; at #BES2019 in Belfast.</description>
@@ -33,7 +33,7 @@
     <item>
       <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
       <link>https://BES-QSIG.github.io/events/quantmove2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/quantmove2019/</guid>
       <description>Join us for the 2019 joint BES Quantitative and Movement Ecology special interest groups annual meeting in Sheffield!</description>
@@ -42,7 +42,7 @@
     <item>
       <title>Advancing your R</title>
       <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
-      <pubDate>Tue, 13 Nov 2018 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
       <description>Want to build on your R skills for more transparant and reproducible data analysis workflows? This is the course for you!</description>
