@@ -2199,6 +2199,31 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
 &lt;/table&gt;
 
 &lt;p&gt;Jon is a mathematical biologist with research interests that combine ecological theory with ecological data. His active research areas are in ecosystem resilience (primarily grasslands), phenology, analysis of biological records, and modelling of dispersal for genetic diversity and population spread.  Jon is also enthusiastic about teaching quantitative methods to life science students. A sample of teaching resources can be found on his website. His is secretary of the Irish Ecological Association (&lt;a href=&#34;https://www.irishecologicalassociation.org&#34; target=&#34;_blank&#34;&gt;https://www.irishecologicalassociation.org&lt;/a&gt;)&lt;/p&gt;
+
+&lt;!-- Shaun Keegan --&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/ShaunKeegan.png&#34;/&gt;&lt;/td&gt;
+    &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
+      &lt;b&gt;Shaun Keegan&lt;/b&gt; (Early Career Representative)&lt;br&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Glasgow&lt;/span&gt;&lt;/table&gt;
+      &lt;table&gt;
+        &lt;ul&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/DrShaunKeegan&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fas fa-globe-americas&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://keegan.science/&#34; target=&#34;_blank&#34;&gt; Website&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-google&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://scholar.google.com/citations?user=88-24B0AAAAJ&amp;hl=en&amp;oi=ao&#34; target=&#34;_blank&#34;&gt; Scholar&lt;/a&gt;&lt;/li&gt;
+           &lt;li class=&#34;list_separator&#34;&gt; | &lt;/li&gt;
+          &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-researchgate&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.researchgate.net/profile/Shaun_Keegan&#34; target=&#34;_blank&#34;&gt; ResearchGate&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Shaun is an epidemiologist and quantitative ecologist. His core research currently focuses on mathematically modelling antimicrobial resistance (AMR) emergence and transmission in Trypanosoma congolense, one of the causes of Nagana, a wasting disease of African cattle. He is interested in AMR in a broader sense, and keen to explore the utility of mathematical models to produce actionable suggestions for AMR stewardship.&lt;/p&gt;
 </description>
     </item>
     
