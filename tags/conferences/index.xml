@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/tags/conferences/</link>
+    <link>/tags/conferences/</link>
     <description>Recent content in Conferences on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://BES-QSIG.github.io/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Quantitative Ecology SIG Annual (Virtual) Meeting 2021</title>
-      <link>https://BES-QSIG.github.io/events/annualmeet_2021/</link>
+      <link>/events/annualmeet_2021/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/annualmeet_2021/</guid>
+      <guid>/events/annualmeet_2021/</guid>
       <description>Join the BES Quantitative Ecology SIG for their 4th Annual Meeting, and second virtual meeting!</description>
     </item>
     
     <item>
       <title>Quantitative Ecology Virtual Meeting 2020</title>
-      <link>https://BES-QSIG.github.io/events/annualmeet_2020/</link>
+      <link>/events/annualmeet_2020/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/annualmeet_2020/</guid>
+      <guid>/events/annualmeet_2020/</guid>
       <description>Join the BES Quantitative Ecology SIG for their 3rd Annual Meeting, and first virtual meeting!</description>
     </item>
     
     <item>
       <title>Quantitative Ecology Speed-Share-Your-Research</title>
-      <link>https://BES-QSIG.github.io/events/bes2019_social/</link>
+      <link>/events/bes2019_social/</link>
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/bes2019_social/</guid>
+      <guid>/events/bes2019_social/</guid>
       <description>Join us for the Quantitative Ecology SIG Speed-Share-Your-Research event at the BES 2019 Annual Meeting!</description>
     </item>
     
     <item>
       <title>Interdisciplinary model integration thematic session at BES2019</title>
-      <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
+      <link>/events/imi-bes2019/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
+      <guid>/events/imi-bes2019/</guid>
       <description>Register for our thematic session on &amp;lsquo;Interdisciplinary model integration to better understand biodiversity change&amp;rsquo; at #BES2019 in Belfast.</description>
     </item>
     
     <item>
       <title>2019 BES Quantitative &amp; Movement Ecology SIG Annual Meeting</title>
-      <link>https://BES-QSIG.github.io/events/quantmove2019/</link>
+      <link>/events/quantmove2019/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/events/quantmove2019/</guid>
+      <guid>/events/quantmove2019/</guid>
       <description>Join us for the 2019 joint BES Quantitative and Movement Ecology special interest groups annual meeting in Sheffield!</description>
     </item>
     

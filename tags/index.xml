@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>https://BES-QSIG.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://BES-QSIG.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Conferences</title>
-      <link>https://BES-QSIG.github.io/tags/conferences/</link>
+      <link>/tags/conferences/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/conferences/</guid>
+      <guid>/tags/conferences/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://BES-QSIG.github.io/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conference</title>
-      <link>https://BES-QSIG.github.io/tags/conference/</link>
+      <link>/tags/conference/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/conference/</guid>
+      <guid>/tags/conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>event</title>
-      <link>https://BES-QSIG.github.io/tags/event/</link>
+      <link>/tags/event/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/event/</guid>
+      <guid>/tags/event/</guid>
       <description></description>
     </item>
     
     <item>
       <title>biodiversity</title>
-      <link>https://BES-QSIG.github.io/tags/biodiversity/</link>
+      <link>/tags/biodiversity/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/biodiversity/</guid>
+      <guid>/tags/biodiversity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>climate change</title>
-      <link>https://BES-QSIG.github.io/tags/climate-change/</link>
+      <link>/tags/climate-change/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/climate-change/</guid>
+      <guid>/tags/climate-change/</guid>
       <description></description>
     </item>
     
     <item>
       <title>human activities</title>
-      <link>https://BES-QSIG.github.io/tags/human-activities/</link>
+      <link>/tags/human-activities/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/human-activities/</guid>
+      <guid>/tags/human-activities/</guid>
       <description></description>
     </item>
     
     <item>
       <title>modelling</title>
-      <link>https://BES-QSIG.github.io/tags/modelling/</link>
+      <link>/tags/modelling/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/modelling/</guid>
+      <guid>/tags/modelling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>movement</title>
-      <link>https://BES-QSIG.github.io/tags/movement/</link>
+      <link>/tags/movement/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/movement/</guid>
+      <guid>/tags/movement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spatial</title>
-      <link>https://BES-QSIG.github.io/tags/spatial/</link>
+      <link>/tags/spatial/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/spatial/</guid>
+      <guid>/tags/spatial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Courses</title>
-      <link>https://BES-QSIG.github.io/tags/courses/</link>
+      <link>/tags/courses/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/courses/</guid>
+      <guid>/tags/courses/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://BES-QSIG.github.io/tags/tidyverse/</link>
+      <link>/tags/tidyverse/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://BES-QSIG.github.io/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
