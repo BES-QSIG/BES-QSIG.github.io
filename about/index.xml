@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/about/</link>
+    <link>https://BES-QSIG.github.io/about/</link>
     <description>Recent content in Abouts on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Quantitative Ecology Special Interest Group QE-SIG</title>
-      <link>/about/qesig/</link>
+      <link>https://BES-QSIG.github.io/about/qesig/</link>
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/qesig/</guid>
+      <guid>https://BES-QSIG.github.io/about/qesig/</guid>
       <description>We have migrated from our old Wordpress site in order to keep everything in one place. Our Wordpress site will function as an archive, but new material will be updated here.
 Our aim as a group is to:
  Support quantitative skills development for all ecologists Improve dissemination of new quantitative methods to their users Provide a forum to advance quantitative ecology in its own right  If you have ideas for events, workshops or courses that you would like to see us organise (or would like to organise yourself with our support), please contact us.</description>
@@ -25,10 +25,10 @@ Our aim as a group is to:
     
     <item>
       <title>Commitee Members</title>
-      <link>/about/committee/</link>
+      <link>https://BES-QSIG.github.io/about/committee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/committee/</guid>
+      <guid>https://BES-QSIG.github.io/about/committee/</guid>
       <description>Laura Graham (Secretary)
 University of Birmingham    Twitter |   ResearchGate |   Website      Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.</description>
     </item>

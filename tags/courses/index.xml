@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on BES QUANTITATIVE ECOLOGY GROUP</title>
-    <link>/tags/courses/</link>
+    <link>https://BES-QSIG.github.io/tags/courses/</link>
     <description>Recent content in Courses on BES QUANTITATIVE ECOLOGY GROUP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://BES-QSIG.github.io/tags/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advancing your R</title>
-      <link>/events/2018-12-3-advancing-your-r/</link>
+      <link>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/events/2018-12-3-advancing-your-r/</guid>
+      <guid>https://BES-QSIG.github.io/events/2018-12-3-advancing-your-r/</guid>
       <description>Want to build on your R skills for more transparant and reproducible data analysis workflows? This is the course for you!</description>
     </item>
     
