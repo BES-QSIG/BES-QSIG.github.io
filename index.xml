@@ -6,8 +6,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quantitative Ecology SIG Annual (Virtual) Meeting 2021</title>
+      <link>https://BES-QSIG.github.io/events/annualmeet_2021/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://BES-QSIG.github.io/events/annualmeet_2021/</guid>
+      <description>&lt;h2 class=&#34;subtitle&#34;&gt;Programme&lt;/h2&gt;
+
+&lt;p&gt;This year’s meeting will take place across three days, with themes of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Integrating models and data in ecology&lt;/li&gt;
+&lt;li&gt;Bringing together mathematicians and quantitative ecologists&lt;/li&gt;
+&lt;li&gt;Interdisciplinary quantitative ecology&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To accommodate time zone differences, the conference will take place at different times each day as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tuesday 31st August: 8am – 11am BST (GMT +1)&lt;/li&gt;
+&lt;li&gt;Wednesday 1st September: 5pm – 8pm BST
+*Thursday 2nd September: 11am – 2pm BST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, we will have two keynote speakers on each day, at least one of whom is an ECR, there will be short talks, networking and a virtual poster session.&lt;/p&gt;
+
+&lt;h2 class=&#34;subtitle&#34;&gt;Keynote speakers&lt;/h2&gt;
+
+&lt;p&gt;Confirmed keynote speakers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.ufz.de/index.php?en=45284&#34; target=&#34;_blank&#34;&gt;Diana Bowler&lt;/a&gt;&lt;/strong&gt;, German Centre for Integrative Biodiversity Research (iDiv)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.gla.ac.uk/researchinstitutes/bahcm/staff/richardreeve/#biography&#34; target=&#34;_blank&#34;&gt;Richard Reeve&lt;/a&gt;&lt;/strong&gt;, University of Glasgow&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://natashaellison.co.uk/&#34; target=&#34;_blank&#34;&gt;Natasha Ellison&lt;/a&gt;&lt;/strong&gt;, University of Sheffield&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 class=&#34;subtitle&#34;&gt;Talks and posters&lt;/h2&gt;
+
+&lt;p&gt;We invite contributed talks which will be 5 minutes in length. These can either be presented live or pre-recorded. Please submit your title when registering for the meeting, and choose which day/time slot you would prefer. If you would like to present a poster, please submit your title when registering for the meeting, and choose which day/time slot you would prefer.&lt;/p&gt;
+
+&lt;p&gt;Talk and poster title deadline is &lt;strong&gt;23:59 BST (GMT+1) 13 August 2021&lt;/strong&gt;. We will contact attendees after this to confirm talk slots.&lt;/p&gt;
+
+&lt;h2 class=&#34;subtitle&#34;&gt;Registration&lt;/h2&gt;
+
+&lt;p&gt;Registration deadline is &lt;strong&gt;23:59 BST, 16 August 2021&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Register &lt;a href=&#34;https://www.eventbrite.co.uk/e/quantitative-sig-annual-meeting-2021-tickets-163389130287&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Quantitative Ecology Virtual Meeting 2020</title>
@@ -1875,7 +1925,7 @@ plot(deer_locations_sf[, &amp;quot;datasetKey&amp;quot;])
     &lt;td class=&#34;leftcol&#34;&gt;&lt;img src=&#34;https://bes-qsig.github.io/img/LauraGraham.png&#34;/&gt;&lt;/td&gt;
     &lt;td class=&#34;rightcol&#34;&gt;&lt;table&gt;
       &lt;b&gt;Laura Graham&lt;/b&gt; (Secretary)&lt;br&gt;
-      &lt;span class=&#34;member_affiliation&#34;&gt;University of Southampton&lt;/span&gt;&lt;/table&gt;
+      &lt;span class=&#34;member_affiliation&#34;&gt;University of Birmingham&lt;/span&gt;&lt;/table&gt;
       &lt;table&gt;
         &lt;ul&gt;
           &lt;li class=&#34;member_web&#34;&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt; &lt;/i&gt; &lt;a href=&#34;https://twitter.com/laurajanegraham?lang=en&#34; target=&#34;_blank&#34;&gt; Twitter&lt;/a&gt;&lt;/li&gt;
