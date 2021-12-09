@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on BES QUANTITATIVE ECOLOGY GROUP</title>
@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021</copyright>
-    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://BES-QSIG.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://BES-QSIG.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Quantitative Ecology Special Interest Group QE-SIG</title>
       <link>https://BES-QSIG.github.io/about/qesig/</link>
@@ -25,8 +29,8 @@ Our aim as a group is to:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://BES-QSIG.github.io/about/committee/</guid>
-      <description>Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.
-Chris is primarily interested in spatial population ecology, with a specific focus on space use, dispersal, and demography.</description>
+      <description>Laura Graham (Secretary)
+University of Birmingham    Twitter |   ResearchGate |   Website      Laura is a spatial/computational ecologist who is interested in what impacts environmental changes have on species’ distributions and how we can use this information in landscape and conservation planning to reduce detrimental effects. In a previous career, Laura was a mathematician and database developer, and applies skills learned there to answer ecological questions.</description>
     </item>
     
   </channel>

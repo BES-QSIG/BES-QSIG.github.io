@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.0">
-  <meta name="generator" content="Hugo 0.90.0" />
+  <meta name="generator" content="Hugo 0.55.3" />
   
 
   
@@ -339,37 +339,42 @@
       
 
       <nav id="TableOfContents">
-  <ul>
-    <li><a href="#1-what-is-r-markdown">1. What is R Markdown?</a></li>
-    <li><a href="#2-download-r-markdown">2. Download R Markdown</a></li>
-    <li><a href="#3-the-different-parts-of-an-r-markdown-file">3. The different parts of an R Markdown file</a>
-      <ul>
-        <li><a href="#the-yaml-header">The YAML Header</a></li>
-        <li><a href="#code-chunks">Code Chunks</a></li>
-        <li><a href="#summary-of--code-chunk-instructions">Summary of  code chunk instructions</a></li>
-      </ul>
-    </li>
-    <li><a href="#4-inserting-figures">4. Inserting Figures</a></li>
-    <li><a href="#5-inserting-tables">5. Inserting Tables</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#learning-objectives">Learning Objectives</a></li>
-    <li><a href="#1-intro-to-the-tidyverse">1. Intro to the <code>tidyverse</code></a>
-      <ul>
-        <li><a href="#how-to-analyse-population-change-of-forest-vertebrates">How to analyse population change of forest vertebrates</a></li>
-        <li><a href="#load-population-trend-data">Load population trend data</a></li>
-      </ul>
-    </li>
-    <li><a href="#2-using-pipes-to-make-figures-with-large-datasets">2. Using pipes to make figures with large datasets</a></li>
-    <li><a href="#3-downloading-and-mapping-data-from-large-datasets">3. Downloading and mapping data from large datasets</a>
-      <ul>
-        <li><a href="#map-the-distribution-of-a-forest-vertebrate-species-and-the-location-of-monitored-populations">Map the distribution of a forest vertebrate species and the location of monitored populations</a></li>
-      </ul>
-    </li>
-    <li><a href="#challenges">Challenges</a></li>
-    <li><a href="#extra-resources">Extra resources</a></li>
-  </ul>
+<ul>
+<li><a href="#part-i-create-a-reproducible-report-using-markdown">PART I: Create a reproducible report using Markdown</a>
+<ul>
+<li><a href="#1-what-is-r-markdown">1. What is R Markdown?</a></li>
+<li><a href="#2-download-r-markdown">2. Download R Markdown</a></li>
+<li><a href="#3-the-different-parts-of-an-r-markdown-file">3. The different parts of an R Markdown file</a>
+<ul>
+<li><a href="#the-yaml-header">The YAML Header</a></li>
+<li><a href="#code-chunks">Code Chunks</a>
+<ul>
+<li><a href="#the-setup-chunk">The setup chunk</a></li>
+<li><a href="#the-rest-of-the-code-chunks">The rest of the code chunks</a></li>
+<li><a href="#hiding-code-chunks">Hiding code chunks</a></li>
+</ul></li>
+<li><a href="#summary-of-code-chunk-instructions">Summary of  code chunk instructions</a></li>
+</ul></li>
+<li><a href="#4-inserting-figures">4. Inserting Figures</a></li>
+<li><a href="#5-inserting-tables">5. Inserting Tables</a></li>
+</ul></li>
+<li><a href="#part-ii-analyse-and-visualise-data-using-the-tidyverse">PART II: Analyse and visualise data using the <code>tidyverse</code></a>
+<ul>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#1-intro-to-the-tidyverse">1. Intro to the <code>tidyverse</code></a>
+<ul>
+<li><a href="#how-to-analyse-population-change-of-forest-vertebrates">How to analyse population change of forest vertebrates</a></li>
+<li><a href="#load-population-trend-data">Load population trend data</a></li>
+</ul></li>
+<li><a href="#2-using-pipes-to-make-figures-with-large-datasets">2. Using pipes to make figures with large datasets</a></li>
+<li><a href="#3-downloading-and-mapping-data-from-large-datasets">3. Downloading and mapping data from large datasets</a>
+<ul>
+<li><a href="#map-the-distribution-of-a-forest-vertebrate-species-and-the-location-of-monitored-populations">Map the distribution of a forest vertebrate species and the location of monitored populations</a></li>
+</ul></li>
+<li><a href="#challenges">Challenges</a></li>
+<li><a href="#extra-resources">Extra resources</a></li>
+</ul></li>
+</ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -393,103 +398,248 @@
           
           <hr>
           <div class="article-style" itemprop="articleBody">
-            <h1 id="part-i-create-a-reproducible-report-using-markdown">PART I: Create a reproducible report using Markdown</h1>
+            
+
+<h1 id="part-i-create-a-reproducible-report-using-markdown">PART I: Create a reproducible report using Markdown</h1>
+
 <h2 id="1-what-is-r-markdown">1. What is R Markdown?</h2>
+
 <p>R Markdown allows you to create documents that serve as a neat record of your analysis. In the world of reproducible research, we want other researchers to easily understand what we did in our analysis. You might choose to create an R markdown document as an appendix to a paper or project assignment that you are doing, upload it to an online repository such as Github, or simply to keep as a personal record so you can quickly look back at your code and see what you did. R Markdown presents your code alongside its output (graphs, tables, etc.) with conventional text to explain it, a bit like a notebook. Your report can also be what you base your future methods and results sections in your manuscripts, thesis chapters, etc.</p>
-<p>R Markdown uses <!-- raw HTML omitted -->markdown syntax<!-- raw HTML omitted -->. Markdown is a very simple &lsquo;markup&rsquo; language which provides methods for creating documents with headers, images, links etc. from plain text files, while keeping the original plain text file easy to read. You can convert Markdown documents to other file types like <code>.html</code> or <code>.pdf</code>.</p>
-<!-- raw HTML omitted -->
+
+<p>R Markdown uses <a href="http://www.markdowntutorial.com" target="_blank">markdown syntax</a>. Markdown is a very simple &lsquo;markup&rsquo; language which provides methods for creating documents with headers, images, links etc. from plain text files, while keeping the original plain text file easy to read. You can convert Markdown documents to other file types like <code>.html</code> or <code>.pdf</code>.</p>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/md_script.png" alt="Img" style="width: 900px;"/> </center></p>
+
 <h2 id="2-download-r-markdown">2. Download R Markdown</h2>
-<p>To get R Markdown working in RStudio, the first thing you need is the <code>rmarkdown</code> package, which you can get from <!-- raw HTML omitted -->CRAN<!-- raw HTML omitted --> by running the following commands in R or RStudio:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rmarkdown&#34;</span>)
-<span style="color:#a6e22e">library</span>(rmarkdown)
-</code></pre></div><h2 id="3-the-different-parts-of-an-r-markdown-file">3. The different parts of an R Markdown file</h2>
+
+<p>To get R Markdown working in RStudio, the first thing you need is the <code>rmarkdown</code> package, which you can get from <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html" target="_blank">CRAN</a> by running the following commands in R or RStudio:</p>
+
+<pre><code class="language-r">install.packages(&quot;rmarkdown&quot;)
+library(rmarkdown)
+</code></pre>
+
+<h2 id="3-the-different-parts-of-an-r-markdown-file">3. The different parts of an R Markdown file</h2>
+
 <h3 id="the-yaml-header">The YAML Header</h3>
-<p>At the top of any R Markdown script is a <code>YAML</code> header section enclosed by <code>---</code>. By default this includes a title, author, date and the file type you want to output to. Many other options are available for different functions and formatting, see <!-- raw HTML omitted -->here for <code>.html</code> options<!-- raw HTML omitted --> and <!-- raw HTML omitted -->here for <code>.pdf</code> options<!-- raw HTML omitted -->. Rules in the header section will alter the whole document.</p>
+
+<p>At the top of any R Markdown script is a <code>YAML</code> header section enclosed by <code>---</code>. By default this includes a title, author, date and the file type you want to output to. Many other options are available for different functions and formatting, see <a href="http://rmarkdown.rstudio.com/html_document_format.html" target="_blank">here for <code>.html</code> options</a> and <a href="http://rmarkdown.rstudio.com/pdf_document_format.html" target="_blank">here for <code>.pdf</code> options</a>. Rules in the header section will alter the whole document.</p>
+
 <p>Add your own details at the top of your<code>.Rmd</code> script, e.g.:</p>
-<pre tabindex="0"><code>---
+
+<pre><code>---
 title: &quot;The tidyverse in action - population change in forests&quot;
 author: Gergana Daskalova
 date: 22/Oct/2016
 output: html_document
 ---
-</code></pre><p>By default, the <code>title</code>, <code>author</code>, <code>date</code> and <code>output</code> format are printed at the top of your <code>.html</code> document.</p>
+</code></pre>
+
+<p>By default, the <code>title</code>, <code>author</code>, <code>date</code> and <code>output</code> format are printed at the top of your <code>.html</code> document.</p>
+
 <p>Now that we have our first piece of content, we can test the <code>.Rmd</code> file by compiling it to <code>.html</code>. To compile your <code>.Rmd</code> file into a <code>.html</code> document, you should press the <code>Knit</code> button in the taskbar:</p>
-<!-- raw HTML omitted -->
+
+<p><img src="https://BES-QSIG.github.io/courses/advancingr/Knit_HTML_Screenshot.jpg" alt="Img"></p>
+
 <p>Not only does a preview appear in the <code>Viewer</code> window in RStudio, but it also saves a <code>.html</code> file to the same folder where you saved your <code>.Rmd</code> file.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+<p><a name="insert"></a></p>
+
 <h3 id="code-chunks">Code Chunks</h3>
+
 <p><strong>Have a read through the text below to learn a bit more about how Markdown works and then you can start compiling the rest of your <code>.Md</code> file.</strong></p>
+
 <h4 id="the-setup-chunk">The setup chunk</h4>
+
 <p><strong>This code chunk appears in <code>.Md</code> files in R by default, it won&rsquo;t appear in your html or pdf document, it just sets up the document.</strong></p>
-<pre tabindex="0"><code>```{r setup, include = FALSE}
+
+<pre><code>```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-</code></pre><h4 id="the-rest-of-the-code-chunks">The rest of the code chunks</h4>
+</code></pre>
+
+<h4 id="the-rest-of-the-code-chunks">The rest of the code chunks</h4>
+
 <p>This is where you can add your own code, accompanying explanation and any outputs. Code that is included in your <code>.Rmd</code> document should be enclosed by three backwards apostrophes <code>```</code> (grave accents!). These are known as code chunks and look like this (no need to copy this, just an example):</p>
-<pre tabindex="0"><code>```{r}
+
+<pre><code>```{r}
 norm &lt;- rnorm(100, mean = 0, sd = 1)
 ```
-</code></pre><p>Inside the curly brackets is a space where you can assign rules for that code chunk. The code chunk above says that the code is R code.</p>
+</code></pre>
+
+<p>Inside the curly brackets is a space where you can assign rules for that code chunk. The code chunk above says that the code is R code.</p>
+
 <p>It&rsquo;s important to remember when you are creating an R Markdown file that if you want to run code that refers to an object, for example:</p>
-<pre tabindex="0"><code>```{r}
+
+<pre><code>```{r}
 plot(dataframe)
 ```
-</code></pre><p>You have to include the code that defines what <code>dataframe</code> is, just like in a normal R script. For example:</p>
-<pre tabindex="0"><code>```{r}
+</code></pre>
+
+<p>You have to include the code that defines what <code>dataframe</code> is, just like in a normal R script. For example:</p>
+
+<pre><code>```{r}
 A &lt;- c(&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;)
 B &lt;- c(5, 10, 15, 20)
 dataframe &lt;- data.frame(A, B)
 plot(dataframe)
 ```
-</code></pre><p>Or if you are loading a dataframe from a <code>.csv</code> file, you must include the code in the <code>.Rmd</code>:</p>
-<pre tabindex="0"><code>```{r}
+</code></pre>
+
+<p>Or if you are loading a dataframe from a <code>.csv</code> file, you must include the code in the <code>.Rmd</code>:</p>
+
+<pre><code>```{r}
 dataframe &lt;- read.csv(&quot;~/Desktop/Code/dataframe.csv&quot;)
 ```
-</code></pre><p>Similarly, if you are using any packages in your analysis, you have to load them in the <code>.Rmd</code> file using <code>library()</code> like in a normal R script.</p>
-<pre tabindex="0"><code>```{r}
+</code></pre>
+
+<p>Similarly, if you are using any packages in your analysis, you have to load them in the <code>.Rmd</code> file using <code>library()</code> like in a normal R script.</p>
+
+<pre><code>```{r}
 library(dplyr)
 ```
-</code></pre><h4 id="hiding-code-chunks">Hiding code chunks</h4>
+</code></pre>
+
+<h4 id="hiding-code-chunks">Hiding code chunks</h4>
+
 <p>If you don&rsquo;t want the code of a particular code chunk to appear in the final document, but still want to show the output (e.g. a plot), then you can include <code>echo = FALSE</code> in the code chunk instructions.</p>
-<pre tabindex="0"><code>```{r, echo = FALSE}
+
+<pre><code>```{r, echo = FALSE}
 A &lt;- c(&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;)
 B &lt;- c(5, 10, 15, 20)
 dataframe &lt;- data.frame(A, B)
 plot(dataframe)
 ```
-</code></pre><p>Sometimes, you might want to create an object, but not include both the code and its output in the final <code>.html</code> file. To do this you can use, <code>include = FALSE</code>. Be aware though, when making reproducible research it&rsquo;s often not a good idea to completely hide some part of your analysis:</p>
+</code></pre>
+
+<p>Sometimes, you might want to create an object, but not include both the code and its output in the final <code>.html</code> file. To do this you can use, <code>include = FALSE</code>. Be aware though, when making reproducible research it&rsquo;s often not a good idea to completely hide some part of your analysis:</p>
+
 <p><strong>REMEMBER: R Markdown doesn&rsquo;t pay attention to anything you have loaded in other R scripts, you have to load all objects and packages in the R Markdown script.</strong></p>
+
 <p><strong>Now you can start copying across the code from your tidyverse script and insert it into a code chunk in your <code>.Rmd</code> document. Better not to do it all at once, you can start with the first parts of the tidyverse script and gradually add on more after you&rsquo;ve seen what the <code>.Rmd</code> output looks like.</strong></p>
+
 <p>You can run an individual chunk of code at any time by placing your cursor inside the code chunk and selecting <code>Run -&gt; Run Current Chunk</code>:</p>
-<!-- raw HTML omitted -->
-<h3 id="summary-of--code-chunk-instructions">Summary of  code chunk instructions</h3>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<p><img src="https://BES-QSIG.github.io/courses/advancingr/run_sel.png" alt="Img" style="width: 900px;"/></p>
+
+<h3 id="summary-of-code-chunk-instructions">Summary of  code chunk instructions</h3>
+
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Rule</b></th>
+    <th class="tg-yw4l"><b>Example</b><br>(default)</th>
+    <th class="tg-yw4l"><b>Function</b></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">eval</td>
+    <td class="tg-yw4l">eval=TRUE</td>
+    <td class="tg-yw4l">Is the code run and the results included in the output?</td>
+  </tr>
+    <tr>
+    <td class="tg-yw4l">include</td>
+    <td class="tg-yw4l">include=TRUE</td>
+    <td class="tg-yw4l">Are the code and the results included in the output?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">echo</td>
+    <td class="tg-yw4l">echo=TRUE</td>
+    <td class="tg-yw4l">Is the code displayed alongside the results?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">warning</td>
+    <td class="tg-yw4l">warning=TRUE</td>
+    <td class="tg-yw4l">Are warning messages displayed?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">error</td>
+    <td class="tg-yw4l">error=FALSE</td>
+    <td class="tg-yw4l">Are error messages displayed?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">message</td>
+    <td class="tg-yw4l">message=TRUE</td>
+    <td class="tg-yw4l">Are messages displayed?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">tidy</td>
+    <td class="tg-yw4l">tidy=FALSE</td>
+    <td class="tg-yw4l">Is the code reformatted to make it look “tidy”?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">results</td>
+    <td class="tg-yw4l">results=&ldquo;markup&rdquo;</td>
+    <td class="tg-yw4l"><b> How are results treated? </b> <br> &ldquo;hide&rdquo; = no results <br>&ldquo;asis&rdquo; = results without formatting <br>&ldquo;hold&rdquo; = results only compiled at end of chunk (use if many commands act on one object)</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">cache</td>
+    <td class="tg-yw4l">cache=FALSE</td>
+    <td class="tg-yw4l">Are the results cached for future renders?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">comment</td>
+    <td class="tg-yw4l">comment=&ldquo;##&rdquo;</td>
+    <td class="tg-yw4l">What character are comments prefaced with?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">fig.width, fig.height</td>
+    <td class="tg-yw4l">fig.width=7</td>
+    <td class="tg-yw4l">What width/height (in inches) are the plots?</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">fig.align</td>
+    <td class="tg-yw4l">fig.align=&ldquo;left&rdquo;</td>
+    <td class="tg-yw4l">&ldquo;left&rdquo; &ldquo;right&rdquo; &ldquo;center&rdquo;</td>
+  </tr>
+</table></p>
+
 <h2 id="4-inserting-figures">4. Inserting Figures</h2>
+
 <p>By default, RMarkdown will place graphs by maximising their height, while keeping them within the margins of the page and maintaining aspect ratio. If you have a particularly tall figure, this can mean a really huge graph. To manually set the figure dimensions, you can insert an instruction into the curly braces:</p>
-<pre tabindex="0"><code>```{r, fig.width = 2.5, fig.height = 7.5}
+
+<pre><code>```{r, fig.width = 2.5, fig.height = 7.5}
 ggplot(df, aes(x = x, y = y) + geom_point()
 ```
-</code></pre><h2 id="5-inserting-tables">5. Inserting Tables</h2>
+</code></pre>
+
+<h2 id="5-inserting-tables">5. Inserting Tables</h2>
+
 <p>R Markdown can print the contents of a data frame easily by enclosing the name of the data frame in a code chunk:</p>
-<pre tabindex="0"><code>```{r}
+
+<pre><code>```{r}
 dataframe
 ```
-</code></pre><p>This can look a bit messy, especially with data frames with a lot of columns. You can also use a table formatting function, e.g. <code>kable()</code> from the <code>knitr</code> package. The first argument tells kable to make a table out of the object <code>dataframe</code> and that numbers should have two significant figures. Remember to load the <code>knitr</code> package in your <code>.Rmd</code> file, if you are using the <code>kable()</code> function.</p>
-<pre tabindex="0"><code>```{r}
+</code></pre>
+
+<p>This can look a bit messy, especially with data frames with a lot of columns. You can also use a table formatting function, e.g. <code>kable()</code> from the <code>knitr</code> package. The first argument tells kable to make a table out of the object <code>dataframe</code> and that numbers should have two significant figures. Remember to load the <code>knitr</code> package in your <code>.Rmd</code> file, if you are using the <code>kable()</code> function.</p>
+
+<pre><code>```{r}
 kable(dataframe, digits = 2)
 ```
-</code></pre><p>If you want a bit more control over the content of your table you can use <code>pander()</code> from the <code>pander</code> package. Imagine I want the 3rd column to appear in italics:</p>
-<pre tabindex="0"><code>```{r}
+</code></pre>
+
+<p>If you want a bit more control over the content of your table you can use <code>pander()</code> from the <code>pander</code> package. Imagine I want the 3rd column to appear in italics:</p>
+
+<pre><code>```{r}
 emphasize.italics.cols(3)  # Make the 3rd column italics
 pander(richness_abund)  # Create the table
 ```
-</code></pre><p><strong>Now that you have started your <code>Markdown</code> document, you can use that when completing the next part of the tutorial, i.e., inserting the code that follows into code chunks and then generating a report at the end of this tutorial.</strong></p>
+</code></pre>
+
+<p><strong>Now that you have started your <code>Markdown</code> document, you can use that when completing the next part of the tutorial, i.e., inserting the code that follows into code chunks and then generating a report at the end of this tutorial.</strong></p>
+
 <h1 id="part-ii-analyse-and-visualise-data-using-the-tidyverse">PART II: Analyse and visualise data using the <code>tidyverse</code></h1>
+
 <h2 id="learning-objectives">Learning Objectives</h2>
+
 <h2 id="1-intro-to-the-tidyverse">1. Intro to the <code>tidyverse</code></h2>
+
 <h3 id="how-to-analyse-population-change-of-forest-vertebrates">How to analyse population change of forest vertebrates</h3>
+
 <ol>
 <li>How to write a custom <code>ggplot2</code> function</li>
 <li>How to use <code>gather()</code> and <code>spread()</code> from the <code>tidyr</code> package</li>
@@ -501,505 +651,675 @@ pander(richness_abund)  # Create the table
 <li>How to use the <code>tidy()</code> function from the <code>broom</code> package to summarise model results</li>
 <li>How to use the <code>select()</code> function from <code>dplyr</code></li>
 </ol>
-<p><!-- raw HTML omitted -->In this tutorial, we will focus on how to efficiently format, manipulate and visualise large datasets. We will use the <code>tidyr</code> and <code>dplyr</code> packages to clean up data frames and calculate new variables. We will use the <code>broom</code> and <code>purr</code> packages to make the modelling of thousands of population trends more efficient. We will use the <code>ggplot2</code> package to make graphs, maps of occurrence records, and to visualise ppulation trends and then we will arrange all of our graphs together using the <code>gridExtra</code> package.<!-- raw HTML omitted --></p>
-<p>We will be working with population data from the <!-- raw HTML omitted -->Living Planet Database<!-- raw HTML omitted --> and red deer occurrence data from the <!-- raw HTML omitted -->Global Biodiversity Information Facility<!-- raw HTML omitted -->, both of which are publicly available datasets.</p>
+
+<p><b>In this tutorial, we will focus on how to efficiently format, manipulate and visualise large datasets. We will use the <code>tidyr</code> and <code>dplyr</code> packages to clean up data frames and calculate new variables. We will use the <code>broom</code> and <code>purr</code> packages to make the modelling of thousands of population trends more efficient. We will use the <code>ggplot2</code> package to make graphs, maps of occurrence records, and to visualise ppulation trends and then we will arrange all of our graphs together using the <code>gridExtra</code> package.</b></p>
+
+<p>We will be working with population data from the <a href="http://www.livingplanetindex.org/home/index" target="_blank">Living Planet Database</a> and red deer occurrence data from the <a href="http://www.gbif.org/" target="_blank">Global Biodiversity Information Facility</a>, both of which are publicly available datasets.</p>
+
 <p><strong>First, we will model population change for vertebrate forest species to see whether greater population change is found for longer duration studies.</strong></p>
+
 <p><strong>Because we have created a version-controlled <code>R</code> project using the repository for the workshop, we are already in the right working directory, i.e. the folder that contains all the data and other files, thus there is no need for us to set a working directory at the start of the script, unless we explicitly want to change it for some reason.</strong></p>
+
 <p>Here are the packages we need. Note that not all <code>tidyverse</code> packages load automatically with <code>library(tidyverse)</code> -  only the core ones do, so you need to load <code>broom</code> separately. If you don&rsquo;t have some of the packages installed, you can install them using <code>ìnstall.packages(&quot;package-name&quot;)</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Packages ----</span>
-<span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># Hadley Wickham&#39;s tidyverse - the theme of this tutorial</span>
-<span style="color:#a6e22e">library</span>(broom)  <span style="color:#75715e"># To summarise model outputs</span>
-<span style="color:#a6e22e">library</span>(ggExtra)  <span style="color:#75715e"># To make pretty graphs - addon package to ggplot2</span>
-<span style="color:#a6e22e">library</span>(maps)  <span style="color:#75715e"># To make pretty maps - warning: maps masks map from purr!</span>
-<span style="color:#a6e22e">library</span>(RColorBrewer)  <span style="color:#75715e"># To make pretty colours</span>
-<span style="color:#a6e22e">library</span>(gridExtra)  <span style="color:#75715e"># To arrange multi-plot panels</span>
-</code></pre></div><p>If you&rsquo;ve ever tried to perfect your <code>ggplot2</code> graphs, you might have noticed that the lines starting with <code>theme()</code> quickly pile up: you adjust the font size of the axes and the labels, the position of the title, the background colour of the plot, you remove the grid lines in the background, etc. And then you have to do the same for the next plot, which really increases the amount of code you use. Here is a simple solution: create a customised theme that combines all the <code>theme()</code> elements you want and apply it to your graphs to make things easier and increase consistency. You can include as many elements in your theme as you want, as long as they don&rsquo;t contradict one another and then when you apply your theme to a graph, only the relevant elements will be considered - e.g. for our graphs we won&rsquo;t need to use <code>legend.position</code>, but it&rsquo;s fine to keep it in the theme in case any future graphs we apply it to do have the need for legends.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Setting a custom ggplot2 function ---</span>
-<span style="color:#75715e"># *** Functional Programming ***</span>
-<span style="color:#75715e"># This function makes a pretty ggplot theme</span>
-<span style="color:#75715e"># This function takes no arguments!</span>
-theme_LPD <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(){
-  <span style="color:#a6e22e">theme_bw</span>()<span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>, vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>),
-          axis.text.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>),
-          axis.title.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>, face <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;plain&#34;</span>),
-          axis.title.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>, face <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;plain&#34;</span>),
-          panel.grid.major.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-          panel.grid.minor.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-          panel.grid.minor.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-          panel.grid.major.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-          plot.margin <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.5</span>), units <span style="color:#f92672">=</span> , <span style="color:#e6db74">&#34;cm&#34;</span>),
-          plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>),
-          legend.text <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>, face <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;italic&#34;</span>),
-          legend.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-          legend.position <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.8</span>))
+
+<pre><code class="language-r"># Packages ----
+library(tidyverse)  # Hadley Wickham's tidyverse - the theme of this tutorial
+library(broom)  # To summarise model outputs
+library(ggExtra)  # To make pretty graphs - addon package to ggplot2
+library(maps)  # To make pretty maps - warning: maps masks map from purr!
+library(RColorBrewer)  # To make pretty colours
+library(gridExtra)  # To arrange multi-plot panels
+</code></pre>
+
+<p>If you&rsquo;ve ever tried to perfect your <code>ggplot2</code> graphs, you might have noticed that the lines starting with <code>theme()</code> quickly pile up: you adjust the font size of the axes and the labels, the position of the title, the background colour of the plot, you remove the grid lines in the background, etc. And then you have to do the same for the next plot, which really increases the amount of code you use. Here is a simple solution: create a customised theme that combines all the <code>theme()</code> elements you want and apply it to your graphs to make things easier and increase consistency. You can include as many elements in your theme as you want, as long as they don&rsquo;t contradict one another and then when you apply your theme to a graph, only the relevant elements will be considered - e.g. for our graphs we won&rsquo;t need to use <code>legend.position</code>, but it&rsquo;s fine to keep it in the theme in case any future graphs we apply it to do have the need for legends.</p>
+
+<pre><code class="language-r"># Setting a custom ggplot2 function ---
+# *** Functional Programming ***
+# This function makes a pretty ggplot theme
+# This function takes no arguments!
+theme_LPD &lt;- function(){
+  theme_bw()+
+    theme(axis.text.x = element_text(size = 12, vjust = 1, hjust = 1),
+          axis.text.y = element_text(size = 12),
+          axis.title.x = element_text(size = 14, face = &quot;plain&quot;),
+          axis.title.y = element_text(size = 14, face = &quot;plain&quot;),
+          panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank(),
+          panel.grid.minor.y = element_blank(),
+          panel.grid.major.y = element_blank(),
+          plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), units = , &quot;cm&quot;),
+          plot.title = element_text(size = 20, vjust = 1, hjust = 0.5),
+          legend.text = element_text(size = 12, face = &quot;italic&quot;),
+          legend.title = element_blank(),
+          legend.position = c(0.5, 0.8))
 }
-</code></pre></div><h3 id="load-population-trend-data">Load population trend data</h3>
+</code></pre>
+
+<h3 id="load-population-trend-data">Load population trend data</h3>
+
 <p><strong>The data are in a <code>.RData</code> format, as those are quicker to use, since <code>.Rdata</code> files are more compressed. Of course, a drawback is that <code>.RData</code> files can only be used within R, whereas <code>.csv</code> files are more transferable.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Load data ----</span>
-<span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;LPDdata_Feb2016.RData&#34;</span>)
 
-<span style="color:#75715e"># Inspect data ----</span>
-<span style="color:#a6e22e">head</span>(LPDdata_Feb2016)
-</code></pre></div><!-- raw HTML omitted -->
+<pre><code class="language-r"># Load data ----
+load(&quot;LPDdata_Feb2016.RData&quot;)
+
+# Inspect data ----
+head(LPDdata_Feb2016)
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/wide.png" alt="Img" style="width: 600px;"/> </center></p>
+
 <p>At the moment, each row contains a population that has been monitored over time and towards the right of the data frame there are lots of columns with population estimates for each year. To make this data &ldquo;tidy&rdquo; (one column per variable) we can use <code>gather()</code> to transform the data so there is a new column containing all the years for each population and an adjacent column containing all the population estimates for those years.</p>
+
 <p>This takes our original dataset <code>LPIdata_Feb2016</code> and creates a new column called <code>year</code>, fills it with column names from columns <code>26:70</code> and then uses the data from these columns to make another column called <code>pop</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Format data for analysis ----</span>
 
-<span style="color:#75715e"># Transform from wide to long format usign gather (opposite is spread)</span>
-<span style="color:#75715e"># *** gather() function from the dplyr package in the tidyverse ***</span>
-LPD_long <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gather</span>(data <span style="color:#f92672">=</span> LPDdata_Feb2016, key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;year&#34;</span>, value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pop&#34;</span>, select <span style="color:#f92672">=</span> <span style="color:#ae81ff">26</span><span style="color:#f92672">:</span><span style="color:#ae81ff">70</span>)
-</code></pre></div><p>Because column names are coded in as characters, when we turned the column names (<code>1970</code>, <code>1971</code>, <code>1972</code>, etc.) into rows, R automatically put an <code>X</code> in front of the numbers to force them to remain characters. We don&rsquo;t want that, so to turn <code>year</code> into a numeric variable, use the <code>parse_number()</code> function from the <code>readr</code> package. We can also make all the column names lowercase and remove some of the funky characters in the country column - strange characters mess up things in general, e.g. when you want to save files, push them to GitHub, etc.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Get rid of the X in front of years</span>
-<span style="color:#75715e"># *** parse_number() from the readr package in the tidyverse ***</span>
-LPD_long<span style="color:#f92672">$</span>year <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">parse_number</span>(LPD_long<span style="color:#f92672">$</span>year)
+<pre><code class="language-r"># Format data for analysis ----
 
-<span style="color:#75715e"># Rename variable names for consistency</span>
-<span style="color:#a6e22e">names</span>(LPD_long)
-<span style="color:#a6e22e">names</span>(LPD_long) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tolower</span>(<span style="color:#a6e22e">names</span>(LPD_long))
-<span style="color:#a6e22e">names</span>(LPD_long)
+# Transform from wide to long format usign gather (opposite is spread)
+# *** gather() function from the dplyr package in the tidyverse ***
+LPD_long &lt;- gather(data = LPDdata_Feb2016, key = &quot;year&quot;, value = &quot;pop&quot;, select = 26:70)
+</code></pre>
 
-<span style="color:#75715e"># Create new column with genus and species together</span>
-LPD_long<span style="color:#f92672">$</span>species.name <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(LPD_long<span style="color:#f92672">$</span>genus, LPD_long<span style="color:#f92672">$</span>species, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span>)
+<p>Because column names are coded in as characters, when we turned the column names (<code>1970</code>, <code>1971</code>, <code>1972</code>, etc.) into rows, R automatically put an <code>X</code> in front of the numbers to force them to remain characters. We don&rsquo;t want that, so to turn <code>year</code> into a numeric variable, use the <code>parse_number()</code> function from the <code>readr</code> package. We can also make all the column names lowercase and remove some of the funky characters in the country column - strange characters mess up things in general, e.g. when you want to save files, push them to GitHub, etc.</p>
 
-<span style="color:#75715e"># Get rid of strange characters like &#34; / &#34;</span>
-LPD_long<span style="color:#f92672">$</span>country.list <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gsub</span>(<span style="color:#e6db74">&#34;,&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, LPD_long<span style="color:#f92672">$</span>country.list, fixed <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-LPD_long<span style="color:#f92672">$</span>biome <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gsub</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, LPD_long<span style="color:#f92672">$</span>biome, fixed <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<pre><code class="language-r"># Get rid of the X in front of years
+# *** parse_number() from the readr package in the tidyverse ***
+LPD_long$year &lt;- parse_number(LPD_long$year)
 
-<span style="color:#75715e"># Examine the tidy data frame</span>
-<span style="color:#a6e22e">head</span>(LPD_long)
-</code></pre></div><!-- raw HTML omitted -->
+# Rename variable names for consistency
+names(LPD_long)
+names(LPD_long) &lt;- tolower(names(LPD_long))
+names(LPD_long)
+
+# Create new column with genus and species together
+LPD_long$species.name &lt;- paste(LPD_long$genus, LPD_long$species, sep = &quot; &quot;)
+
+# Get rid of strange characters like &quot; / &quot;
+LPD_long$country.list &lt;- gsub(&quot;,&quot;, &quot;&quot;, LPD_long$country.list, fixed = TRUE)
+LPD_long$biome &lt;- gsub(&quot;/&quot;, &quot;&quot;, LPD_long$biome, fixed = TRUE)
+
+# Examine the tidy data frame
+head(LPD_long)
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/long.png" alt="Img" style="width: 600px;"/> </center></p>
+
 <p>Now that our dataset is <em>tidy</em> we can get it ready for our analysis. We want to only use populations that have more than 5 years of data to make sure our analysis has enough data to capture population change. We should also scale the population data, because since the data come from many species, the units and magnitude of the data are very different - imagine tiny fish whose abundance is in the millions, and large carnivores whose abundance is much smaller. Scaling also normalises the data, as later on we will be using linear models assuming a normal distribution. To do all of this in one go, we can use pipes.</p>
+
 <p><strong>Pipes (<code>%&gt;%</code>) are a way of streamlining data manipulation - imagine all of your data coming in one end of the pipe, while they are in there, they are manipulated, summarised, etc., then the output (e.g. your new data frame or summary statistics) comes out the other end of the pipe. At each step of the pipe processing, the pipe is using the ouput of the previous step.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Data manipulation ----</span>
 
-<span style="color:#75715e"># *** piping from from dplyr</span>
-LPD_long2 <span style="color:#f92672">&lt;-</span> LPD_long <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Remove duplicate rows</span>
-  <span style="color:#75715e"># *** distinct() function from dplyr</span>
-  <span style="color:#a6e22e">distinct</span>(LPD_long) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># remove NAs in the population column</span>
-  <span style="color:#75715e"># *** filter() function from dplyr</span>
-  <span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">is.finite</span>(pop)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Group rows so that each group is one population</span>
-  <span style="color:#75715e"># *** group_by() function from dplyr</span>
-  <span style="color:#a6e22e">group_by</span>(id) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Make some calculations</span>
-  <span style="color:#75715e"># *** mutate() function from dplyr</span>
-  <span style="color:#a6e22e">mutate</span>(maxyear <span style="color:#f92672">=</span> <span style="color:#a6e22e">max</span>(year), minyear <span style="color:#f92672">=</span> <span style="color:#a6e22e">min</span>(year),
-         <span style="color:#75715e"># Calculate duration</span>
-         duration <span style="color:#f92672">=</span> maxyear <span style="color:#f92672">-</span> minyear,
-         <span style="color:#75715e"># Scale population trend data</span>
-         scalepop <span style="color:#f92672">=</span> (pop <span style="color:#f92672">-</span> <span style="color:#a6e22e">min</span>(pop))<span style="color:#f92672">/</span>(<span style="color:#a6e22e">max</span>(pop) <span style="color:#f92672">-</span> <span style="color:#a6e22e">min</span>(pop))) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Keep populations with &gt;5 years worth of data and calculate length of monitoring</span>
-  <span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">is.finite</span>(scalepop),
-         <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(year)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Remove any groupings you&#39;ve greated in the pipe</span>
-  <span style="color:#a6e22e">ungroup</span>()
-</code></pre></div><p>Now we can explore our data a bit. Let&rsquo;s create a few basic summary statistics for each biome and store them in a new data frame:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Calculate summary statistics for each biome</span>
-LPD_biome_sum <span style="color:#f92672">&lt;-</span> LPD_long2 <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Group by biome</span>
-  <span style="color:#a6e22e">group_by</span>(biome) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Create columns, number of populations</span>
-  <span style="color:#75715e">#  *** summarise()/summarize() function from dplyr in the tidyverse ***</span>
-  <span style="color:#a6e22e">summarise</span>(populations <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>(),
-            <span style="color:#75715e"># Calculate the mean study length</span>
-            mean_study_length_years <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(duration),
-            <span style="color:#75715e"># Model sampling method</span>
-            dominant_sampling_method <span style="color:#f92672">=</span> <span style="color:#a6e22e">names</span>(<span style="color:#a6e22e">which.max</span>(<span style="color:#a6e22e">table</span>(sampling.method))),
-            <span style="color:#75715e"># Model unit type</span>
-            dominant_units <span style="color:#f92672">=</span> <span style="color:#a6e22e">names</span>(<span style="color:#a6e22e">which.max</span>(<span style="color:#a6e22e">table</span>(units)))) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Remove any groupings you&#39;ve greated in the pipe</span>
-  <span style="color:#a6e22e">ungroup</span>()
+<pre><code class="language-r"># Data manipulation ----
 
-<span style="color:#75715e"># Take a look at some of the records</span>
-<span style="color:#a6e22e">head</span>(LPD_biome_sum)
-</code></pre></div><p>Next we will explore how populations from two of these biomes, temperate coniferous and temperate broadleaf forests, have changed over the monitoring duration. We will make the <code>biome</code> variable a factor (before it is just a character variable), so that later on we can make graphs based on the two categories (coniferous and broadleaf forests). We&rsquo;ll use the <code>filter()</code> function from <code>dplyr</code> to subset the data to just the forest species.</p>
-<pre tabindex="0"><code># Subset to just temperate forest species -----
+# *** piping from from dplyr
+LPD_long2 &lt;- LPD_long %&gt;%
+  # Remove duplicate rows
+  # *** distinct() function from dplyr
+  distinct(LPD_long) %&gt;%
+  # remove NAs in the population column
+  # *** filter() function from dplyr
+  filter(is.finite(pop)) %&gt;%
+  # Group rows so that each group is one population
+  # *** group_by() function from dplyr
+  group_by(id) %&gt;%
+  # Make some calculations
+  # *** mutate() function from dplyr
+  mutate(maxyear = max(year), minyear = min(year),
+         # Calculate duration
+         duration = maxyear - minyear,
+         # Scale population trend data
+         scalepop = (pop - min(pop))/(max(pop) - min(pop))) %&gt;%
+  # Keep populations with &gt;5 years worth of data and calculate length of monitoring
+  filter(is.finite(scalepop),
+         length(unique(year)) &gt; 5) %&gt;%
+  # Remove any groupings you've greated in the pipe
+  ungroup()
+</code></pre>
+
+<p>Now we can explore our data a bit. Let&rsquo;s create a few basic summary statistics for each biome and store them in a new data frame:</p>
+
+<pre><code class="language-r"># Calculate summary statistics for each biome
+LPD_biome_sum &lt;- LPD_long2 %&gt;%
+  # Group by biome
+  group_by(biome) %&gt;%
+  # Create columns, number of populations
+  #  *** summarise()/summarize() function from dplyr in the tidyverse ***
+  summarise(populations = n(),
+            # Calculate the mean study length
+            mean_study_length_years = mean(duration),
+            # Model sampling method
+            dominant_sampling_method = names(which.max(table(sampling.method))),
+            # Model unit type
+            dominant_units = names(which.max(table(units)))) %&gt;%
+  # Remove any groupings you've greated in the pipe
+  ungroup()
+
+# Take a look at some of the records
+head(LPD_biome_sum)
+</code></pre>
+
+<p>Next we will explore how populations from two of these biomes, temperate coniferous and temperate broadleaf forests, have changed over the monitoring duration. We will make the <code>biome</code> variable a factor (before it is just a character variable), so that later on we can make graphs based on the two categories (coniferous and broadleaf forests). We&rsquo;ll use the <code>filter()</code> function from <code>dplyr</code> to subset the data to just the forest species.</p>
+
+<pre><code># Subset to just temperate forest species -----
   # Notice the difference between | and &amp; when filtering
   # | is an &quot;or&quot; whereas &amp; is &quot;and&quot;, i.e. both conditions have to be met
   # at the same time
 LPD_long2$biome &lt;- as.factor(LPD_long2$biome)
 LPD.forest &lt;- filter(LPD_long2, biome == &quot;Temperate broadleaf and mixed forests&quot; |
                                       biome == &quot;Temperate coniferous forests&quot;)
-</code></pre><p>Before running models, it&rsquo;s a good idea to visualise our data to explore what kind of distribution we are working with.</p>
+</code></pre>
+
+<p>Before running models, it&rsquo;s a good idea to visualise our data to explore what kind of distribution we are working with.</p>
+
 <p>The <code>gg</code> in <code>ggplot2</code> stands for grammar of graphics. Writing the code for your graph is like constructing a sentence made up of different parts that logically follow from one another. In a data visualisation context, the different elements of the code represent layers - first you make an empty plot, then you add a layer with your data points, then your measure of uncertainty, the axis labels and so on.</p>
-<p><!-- raw HTML omitted --> When using <code>ggplot2</code>, you usually start your code with <code>ggplot(your_data, aes(x = independent_variable, y = dependent_variable))</code>, then you add the type of plot you want to make using <code>+ geom_boxplot()</code>, <code>+ geom_histogram()</code>, etc. <code>aes</code> stands for aesthetics, hinting to the fact that using <code>ggplot2</code> you can make aesthetically pleasing graphs - there are many <code>ggplot2</code> functions to help you clearly communicate your results, and we will now go through some of them.<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->When we want to change the colour, shape or fill of a variable based on another variable, e.g. colour-code by species, we include <code>colour = species</code> inside the <code>aes()</code> function. When we want to set a specific colour, shape or fill, e.g. <code>colour = &quot;black&quot;</code>, we put that outside of the <code>aes()</code> function.<!-- raw HTML omitted --></p>
+
+<p><b> When using <code>ggplot2</code>, you usually start your code with <code>ggplot(your_data, aes(x = independent_variable, y = dependent_variable))</code>, then you add the type of plot you want to make using <code>+ geom_boxplot()</code>, <code>+ geom_histogram()</code>, etc. <code>aes</code> stands for aesthetics, hinting to the fact that using <code>ggplot2</code> you can make aesthetically pleasing graphs - there are many <code>ggplot2</code> functions to help you clearly communicate your results, and we will now go through some of them.</b></p>
+
+<p><b>When we want to change the colour, shape or fill of a variable based on another variable, e.g. colour-code by species, we include <code>colour = species</code> inside the <code>aes()</code> function. When we want to set a specific colour, shape or fill, e.g. <code>colour = &quot;black&quot;</code>, we put that outside of the <code>aes()</code> function.</b></p>
+
 <p>We will see our custom theme <code>theme_LPD()</code> in action as well!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Data visualisation ----</span>
-<span style="color:#75715e"># Data distribution - a histogram</span>
-(forest.hist <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(LPD.forest, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> scalepop)) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">geom_histogram</span>(<span style="color:#a6e22e">aes</span>(fill <span style="color:#f92672">=</span> biome),
-                  position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grey40&#34;</span>) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">geom_vline</span>(<span style="color:#a6e22e">aes</span>(xintercept <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(scalepop)),  <span style="color:#75715e"># Adding a line for mean abundance</span>
-              colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkred&#34;</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dashed&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">scale_fill_manual</span>(values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#66CD00&#34;</span>, <span style="color:#e6db74">&#34;#53868B&#34;</span>)) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a) Data distribution\n&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\nScaled population size&#34;</span>,
-        y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Count\n&#34;</span>) <span style="color:#f92672">+</span>
-   <span style="color:#75715e"># \n adds a blank line</span>
-   <span style="color:#a6e22e">guides</span>(fill <span style="color:#f92672">=</span> F)) <span style="color:#75715e"># Hiding the legend - this will be a two plot panel</span>
-<span style="color:#75715e"># thus we don&#39;t need the same legend twice</span>
-</code></pre></div><p>Next up we can explore for how long populations have been monitored in the two biomes using a density histogram.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Density histogram of duration of studies in the two biomes</span>
-(duration.forests <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(LPD.forest, <span style="color:#a6e22e">aes</span>(duration, colour <span style="color:#f92672">=</span> biome)) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">stat_density</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;line&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">scale_colour_manual</span>(values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#66CD00&#34;</span>, <span style="color:#e6db74">&#34;#53868B&#34;</span>)) <span style="color:#f92672">+</span>
-   <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\nYears&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Density\n&#34;</span>, title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b) Monitoring duration\n&#34;</span>))
-</code></pre></div><p>We&rsquo;ll use the <code>grid.arrange</code> function from the <code>gridExtra</code> package to combine the two plots in a panel. You can specify the number of columns using <code>ncol =</code> and the number of rows using <code>nrow =</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Arrange in a panel and save</span>
-forest.panel <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">grid.arrange</span>(forest.hist, duration.forests, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
-<span style="color:#a6e22e">ggsave</span>(forest.panel, file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;forest_panel.png&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
-</code></pre></div><!-- raw HTML omitted -->
+
+<pre><code class="language-r"># Data visualisation ----
+# Data distribution - a histogram
+(forest.hist &lt;- ggplot(LPD.forest, aes(x = scalepop)) +
+   geom_histogram(aes(fill = biome),
+                  position = &quot;identity&quot;, colour = &quot;grey40&quot;) +
+   geom_vline(aes(xintercept = mean(scalepop)),  # Adding a line for mean abundance
+              colour = &quot;darkred&quot;, linetype = &quot;dashed&quot;, size = 1) +
+   scale_fill_manual(values = c(&quot;#66CD00&quot;, &quot;#53868B&quot;)) +
+   theme_LPD() +
+   labs(title = &quot;a) Data distribution\n&quot;, x = &quot;\nScaled population size&quot;,
+        y = &quot;Count\n&quot;) +
+   # \n adds a blank line
+   guides(fill = F)) # Hiding the legend - this will be a two plot panel
+# thus we don't need the same legend twice
+</code></pre>
+
+<p>Next up we can explore for how long populations have been monitored in the two biomes using a density histogram.</p>
+
+<pre><code class="language-r"># Density histogram of duration of studies in the two biomes
+(duration.forests &lt;- ggplot(LPD.forest, aes(duration, colour = biome)) +
+   stat_density(geom = &quot;line&quot;, size = 2, position = &quot;identity&quot;) +
+   theme_LPD() +
+   scale_colour_manual(values = c(&quot;#66CD00&quot;, &quot;#53868B&quot;)) +
+   labs(x = &quot;\nYears&quot;, y = &quot;Density\n&quot;, title = &quot;b) Monitoring duration\n&quot;))
+</code></pre>
+
+<p>We&rsquo;ll use the <code>grid.arrange</code> function from the <code>gridExtra</code> package to combine the two plots in a panel. You can specify the number of columns using <code>ncol =</code> and the number of rows using <code>nrow =</code>.</p>
+
+<pre><code class="language-r"># Arrange in a panel and save
+forest.panel &lt;- grid.arrange(forest.hist, duration.forests, ncol = 2)
+ggsave(forest.panel, file = &quot;forest_panel.png&quot;, height = 5, width = 10)
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/forest_panel.png" alt="Img" style="width: 900px;"/> </center></p>
+
 <p>We are now ready to model how each population has changed over time. There are 1785 populations, so with this one code chunk, we will run 1785 models and tidy up their outputs. You can read through the line-by-line comments to get a feel for what each line of code is doing.</p>
+
 <p><strong>One specific thing to note is that when you add the <code>lm()</code> function in a pipe, you have to add <code>data = .</code>, which means use the outcome of the previous step in the pipe for the model.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Calculate population change for each forest population</span>
-<span style="color:#75715e"># 1785 models in one go!</span>
-<span style="color:#75715e"># Using a pipe</span>
-forest.slopes <span style="color:#f92672">&lt;-</span> LPD.forest <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Group by the key variables that we want to interate over</span>
-  <span style="color:#a6e22e">group_by</span>(decimal.latitude, decimal.longitude, class, species.name, id, duration, location.of.population) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Create a linear model for each group</span>
-  <span style="color:#a6e22e">do</span>(mod <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(scalepop <span style="color:#f92672">~</span> year, data <span style="color:#f92672">=</span> .)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Extract model coefficients using tidy() from the</span>
-  <span style="color:#75715e"># *** tidy() function from the broom package ***</span>
-  <span style="color:#a6e22e">tidy</span>(mod) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Filter out slopes and remove intercept values</span>
-  <span style="color:#a6e22e">filter</span>(term <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;year&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Get rid of the column term as we don&#39;t need it any more</span>
-  <span style="color:#75715e">#  *** select() function from dplyr in the tidyverse ***</span>
-  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span>term) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e"># Remove any groupings you&#39;ve greated in the pipe</span>
-  <span style="color:#a6e22e">ungroup</span>()
-</code></pre></div><p>We are ungrouping at the end of our pipe just because otherwise the object remains grouped and later on that might cause problems, if we forget about it.</p>
+
+<pre><code class="language-r"># Calculate population change for each forest population
+# 1785 models in one go!
+# Using a pipe
+forest.slopes &lt;- LPD.forest %&gt;%
+  # Group by the key variables that we want to interate over
+  group_by(decimal.latitude, decimal.longitude, class, species.name, id, duration, location.of.population) %&gt;%
+  # Create a linear model for each group
+  do(mod = lm(scalepop ~ year, data = .)) %&gt;%
+  # Extract model coefficients using tidy() from the
+  # *** tidy() function from the broom package ***
+  tidy(mod) %&gt;%
+  # Filter out slopes and remove intercept values
+  filter(term == &quot;year&quot;) %&gt;%
+  # Get rid of the column term as we don't need it any more
+  #  *** select() function from dplyr in the tidyverse ***
+  dplyr::select(-term) %&gt;%
+  # Remove any groupings you've greated in the pipe
+  ungroup()
+</code></pre>
+
+<p>We are ungrouping at the end of our pipe just because otherwise the object remains grouped and later on that might cause problems, if we forget about it.</p>
+
 <p><strong>Now we can visualise the outputs of all our models and see how they vary based on study duration. We will add density histograms along the margins of the graph which makes for a more informative graph using the <code>ggMarginal()</code> function from the <code>ggExtra</code> package. Note that <code>ggExtra</code> is also an addin in <code>RStudio</code>, so for future reference, if you select some <code>ggplot2</code> code, then click on <code>Addins/ggplot2 Marginal plots</code> (the menu is in the middle top part of the screen), you can customise marginal histograms and the code gets automatically generated.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Visualising model outputs ----</span>
 
-<span style="color:#75715e"># Plotting slope estimates and standard errors for all populations and adding histograms along the margins</span>
-(all.slopes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(forest.slopes, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> duration, y <span style="color:#f92672">=</span> estimate)) <span style="color:#f92672">+</span>
-         <span style="color:#a6e22e">geom_pointrange</span>(<span style="color:#a6e22e">aes</span>(ymin <span style="color:#f92672">=</span> estimate <span style="color:#f92672">-</span> std.error,
-                             ymax <span style="color:#f92672">=</span> estimate <span style="color:#f92672">+</span> std.error),
-                         alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>) <span style="color:#f92672">+</span>
-         <span style="color:#a6e22e">geom_hline</span>(yintercept <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dashed&#34;</span>) <span style="color:#f92672">+</span>
-         <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-         <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Population change\n&#34;</span>) <span style="color:#f92672">+</span>
-         <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;\nDuration (years)&#34;</span>))
+<pre><code class="language-r"># Visualising model outputs ----
 
-(density.slopes <span style="color:#f92672">&lt;-</span> ggExtra<span style="color:#f92672">::</span><span style="color:#a6e22e">ggMarginal</span>(
-  p <span style="color:#f92672">=</span> all.slopes,
-  type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;density&#39;</span>,
-  margins <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;both&#39;</span>,
-  size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>,
-  col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;gray40&#39;</span>,
-  fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;gray&#39;</span>
+# Plotting slope estimates and standard errors for all populations and adding histograms along the margins
+(all.slopes &lt;- ggplot(forest.slopes, aes(x = duration, y = estimate)) +
+         geom_pointrange(aes(ymin = estimate - std.error,
+                             ymax = estimate + std.error),
+                         alpha = 0.3, size = 0.3) +
+         geom_hline(yintercept = 0, linetype = &quot;dashed&quot;) +
+         theme_LPD() +
+         ylab(&quot;Population change\n&quot;) +
+         xlab(&quot;\nDuration (years)&quot;))
+
+(density.slopes &lt;- ggExtra::ggMarginal(
+  p = all.slopes,
+  type = 'density',
+  margins = 'both',
+  size = 5,
+  col = 'gray40',
+  fill = 'gray'
 ))
 
-<span style="color:#75715e"># Save the plot</span>
-<span style="color:#a6e22e">ggsave</span>(density.slopes, filename <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;slopes_duration.png&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>)
-</code></pre></div><!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+# Save the plot
+ggsave(density.slopes, filename = &quot;slopes_duration.png&quot;, height = 6, width = 6)
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/slopes_duration-2.png" alt="Img" style="width: 600px;"/> </center></p>
+
+<p><a name="pipes"></a></p>
+
 <h2 id="2-using-pipes-to-make-figures-with-large-datasets">2. Using pipes to make figures with large datasets</h2>
+
 <p>How to print plots of population change for multiple taxa</p>
-<ol start="10">
+
+<ol>
 <li>How to set up file paths and folders in R</li>
 <li>How to use a pipe to plot many plots by taxa</li>
 <li>How to use the purrr package and functional programming</li>
 </ol>
+
 <p><strong>In the next part of the tutorial, we will focus on automating iterative actions, for example when we want to create the same type of graph for different subsets of our data. In our case, we will make histograms of the population change experienced by different vertebrate taxa in forests. When making multiple graphs at once, we have to specify the folder where they will be saved first:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># PART 2: Using pipes to make figures with large datasets ----</span>
 
-<span style="color:#75715e"># Make histograms of slope estimates for each taxa -----</span>
-<span style="color:#75715e"># Set up new folder for figures</span>
-<span style="color:#75715e"># Set path to relevant path on your computer/in your repository</span>
-path1 <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;Taxa_Forest_LPD/&#34;</span>
-<span style="color:#75715e"># Create new folder</span>
-<span style="color:#a6e22e">dir.create</span>(path1)
-</code></pre></div><p>There isn&rsquo;t a right answer here, there are different ways to achieve the same result and you can decide which one works best for your workflow. First we will use <code>dplyr</code> and pipes <code>%&gt;%</code>. Since we want one graph per taxa, we are going to group by the <code>class</code> variable. You can add functions that are not part of the <code>dplyr</code> package to pipes using <code>do</code> - in our case, we are saying that we want <code>R</code> to do our requested action (making and saving the histograms) for each taxa.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># First we will do this using dplyr and a pipe</span>
+<pre><code class="language-r"># PART 2: Using pipes to make figures with large datasets ----
 
-forest.slopes <span style="color:#f92672">%&gt;%</span>
-<span style="color:#75715e"># Select the relevant data</span>
-dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(id, class, species.name, estimate) <span style="color:#f92672">%&gt;%</span>
-<span style="color:#75715e"># Group by taxa</span>
-<span style="color:#a6e22e">group_by</span>(class) <span style="color:#f92672">%&gt;%</span>
-<span style="color:#75715e"># Save all plots in new folder</span>
-<span style="color:#a6e22e">do</span>(<span style="color:#a6e22e">ggsave</span>(<span style="color:#a6e22e">ggplot</span>(., <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> estimate)) <span style="color:#f92672">+</span>
-            <span style="color:#75715e"># Add histograms</span>
-            <span style="color:#a6e22e">geom_histogram</span>(colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.02</span>) <span style="color:#f92672">+</span>
-            <span style="color:#75715e"># Use custom theme</span>
-            <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-            <span style="color:#75715e"># Add axis lables</span>
-            <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Rate of population change (slopes)&#34;</span>),
-            <span style="color:#75715e"># Set up file names to print to</span>
-            filename <span style="color:#f92672">=</span> <span style="color:#a6e22e">gsub</span>(<span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#a6e22e">paste0</span>(path1, <span style="color:#a6e22e">unique</span>(<span style="color:#a6e22e">as.character</span>(.$class)),
-                                          <span style="color:#e6db74">&#34;.pdf&#34;</span>)), device <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pdf&#34;</span>))
-</code></pre></div><p>A warning message pops up: <code>Error: Results 1, 2, 3, 4 must be data frames, not NULL</code> - you can ignore this, it&rsquo;s because the <code>do()</code> function expects a data frame as an output, but in our case we are making graphs, not data frames.</p>
-<p>If you go check out your folder now, you should see four histograms, one per taxa:</p>
-<!-- raw HTML omitted -->
+# Make histograms of slope estimates for each taxa -----
+# Set up new folder for figures
+# Set path to relevant path on your computer/in your repository
+path1 &lt;- &quot;Taxa_Forest_LPD/&quot;
+# Create new folder
+dir.create(path1)
+</code></pre>
+
+<p>There isn&rsquo;t a right answer here, there are different ways to achieve the same result and you can decide which one works best for your workflow. First we will use <code>dplyr</code> and pipes <code>%&gt;%</code>. Since we want one graph per taxa, we are going to group by the <code>class</code> variable. You can add functions that are not part of the <code>dplyr</code> package to pipes using <code>do</code> - in our case, we are saying that we want <code>R</code> to do our requested action (making and saving the histograms) for each taxa.</p>
+
+<pre><code class="language-r"># First we will do this using dplyr and a pipe
+
+forest.slopes %&gt;%
+# Select the relevant data
+dplyr::select(id, class, species.name, estimate) %&gt;%
+# Group by taxa
+group_by(class) %&gt;%
+# Save all plots in new folder
+do(ggsave(ggplot(., aes(x = estimate)) +
+            # Add histograms
+            geom_histogram(colour = &quot;darkgreen&quot;, fill = &quot;darkgreen&quot;, binwidth = 0.02) +
+            # Use custom theme
+            theme_LPD() +
+            # Add axis lables
+            xlab(&quot;Rate of population change (slopes)&quot;),
+            # Set up file names to print to
+            filename = gsub(&quot;&quot;, &quot;&quot;, paste0(path1, unique(as.character(.$class)),
+                                          &quot;.pdf&quot;)), device = &quot;pdf&quot;))
+</code></pre>
+
+<p>A warning message pops up: <code>Error: Results 1, 2, 3, 4 must be data frames, not NULL</code> - you can ignore this, it&rsquo;s because the <code>do()</code> function expects a data frame as an output, but in our case we are making graphs, not data frames.</p>
+
+<p>If you go check out your folder now, you should see four histograms, one per taxa:
+<center>
+  <img src="https://BES-QSIG.github.io/courses/advancingr/folder.png" alt="Img" style="width: 500px;"/>
+  <img src="https://BES-QSIG.github.io/courses/advancingr/mamm.png" alt="Img" style="width: 500px;"/>
+</center></p>
+
 <p>Another way to make all those histograms in one go is by creating a function for it. In general, whenever you find yourself copying and pasting lots of code only to change the object name, you&rsquo;re probably in a position to swap all the code with a function - you can then apply the function using the <code>purrr</code> package.</p>
-<p>But what is <code>purrr</code>? <strong>It is a way to &ldquo;map&rdquo; or &ldquo;apply&rdquo; functions to data. Note that there are functions from other packages also called <code>map()</code>, which is why we are specifying we want the <code>map()</code> function from the <code>purrr</code> package. Here we will first format the data <code>taxa.slopes</code> and then we will map it to the mean fuction:</strong></p>
-<p>We have to change the format of the data, in our case we will split the data using <code>spread()</code> from the <code>tidyr</code> package.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Here we select the relevant data</span>
-<span style="color:#75715e"># Let&#39;s get rid of the other levels of &#39;class&#39;</span>
-forest.slopes<span style="color:#f92672">$</span>class <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.character</span>(forest.slopes<span style="color:#f92672">$</span>class)
-<span style="color:#75715e"># Selecting the relevant data and splitting it into a list</span>
-taxa.slopes <span style="color:#f92672">&lt;-</span> forest.slopes <span style="color:#f92672">%&gt;%</span>
-  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(id, class, estimate) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">spread</span>(class, estimate) <span style="color:#f92672">%&gt;%</span>
-  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span>id)
-</code></pre></div><p>We can apply the <code>mean</code> function using <code>purrr::map()</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">taxa.mean <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">map</span>(taxa.slopes, <span style="color:#f92672">~</span><span style="color:#a6e22e">mean</span>(., na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
-<span style="color:#75715e"># This plots the mean population change per taxa</span>
-taxa.mean
-</code></pre></div><p>Now we can write our own function to make histograms and use the <code>purrr</code> package to apply it to each taxa.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">### Intro to the purrr package ----</span>
 
-<span style="color:#75715e"># First let&#39;s write a function to make the plots</span>
-<span style="color:#75715e"># *** Functional Programming ***</span>
-<span style="color:#75715e"># This function takes one argument x, the data vector that we want to make a histogram</span>
-plot.hist <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(x) {
-  <span style="color:#a6e22e">ggplot</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_histogram</span>(<span style="color:#a6e22e">aes</span>(x), colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.02</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Rate of population change (slopes)&#34;</span>)
+<p>But what is <code>purrr</code>? <strong>It is a way to &ldquo;map&rdquo; or &ldquo;apply&rdquo; functions to data. Note that there are functions from other packages also called <code>map()</code>, which is why we are specifying we want the <code>map()</code> function from the <code>purrr</code> package. Here we will first format the data <code>taxa.slopes</code> and then we will map it to the mean fuction:</strong></p>
+
+<p>We have to change the format of the data, in our case we will split the data using <code>spread()</code> from the <code>tidyr</code> package.</p>
+
+<pre><code class="language-r"># Here we select the relevant data
+# Let's get rid of the other levels of 'class'
+forest.slopes$class &lt;- as.character(forest.slopes$class)
+# Selecting the relevant data and splitting it into a list
+taxa.slopes &lt;- forest.slopes %&gt;%
+  dplyr::select(id, class, estimate) %&gt;%
+  spread(class, estimate) %&gt;%
+  dplyr::select(-id)
+</code></pre>
+
+<p>We can apply the <code>mean</code> function using <code>purrr::map()</code>:</p>
+
+<pre><code class="language-r">taxa.mean &lt;- purrr::map(taxa.slopes, ~mean(., na.rm = TRUE))
+# This plots the mean population change per taxa
+taxa.mean
+</code></pre>
+
+<p>Now we can write our own function to make histograms and use the <code>purrr</code> package to apply it to each taxa.</p>
+
+<pre><code class="language-r">### Intro to the purrr package ----
+
+# First let's write a function to make the plots
+# *** Functional Programming ***
+# This function takes one argument x, the data vector that we want to make a histogram
+plot.hist &lt;- function(x) {
+  ggplot() +
+  geom_histogram(aes(x), colour = &quot;darkgreen&quot;, fill = &quot;darkgreen&quot;, binwidth = 0.02) +
+  theme_LPD() +
+  xlab(&quot;Rate of population change (slopes)&quot;)
 }
-</code></pre></div><p><strong>Now we can use purr to &ldquo;map&rdquo; our figure making function. The first input is your data that you want to iterate over and the second input is the function.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">taxa.plots <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">map</span>(taxa.slopes, <span style="color:#f92672">~</span><span style="color:#a6e22e">plot.hist</span>(.))
-<span style="color:#75715e"># We need to make a new folder to put these figures in</span>
-path2 <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;Taxa_Forest_LPD_purrr/&#34;</span>
-<span style="color:#a6e22e">dir.create</span>(path2)
-</code></pre></div><p><strong>First we learned about <code>map()</code> when there is one dataset, but there are other <code>purrr</code> functions,too.
+</code></pre>
+
+<p><strong>Now we can use purr to &ldquo;map&rdquo; our figure making function. The first input is your data that you want to iterate over and the second input is the function.</strong></p>
+
+<pre><code class="language-r">taxa.plots &lt;- purrr::map(taxa.slopes, ~plot.hist(.))
+# We need to make a new folder to put these figures in
+path2 &lt;- &quot;Taxa_Forest_LPD_purrr/&quot;
+dir.create(path2)
+</code></pre>
+
+<p><strong>First we learned about <code>map()</code> when there is one dataset, but there are other <code>purrr</code> functions,too.
 <code>walk2()</code> takes two arguments and returns nothing. In our case we just want to print the graphs, so we don&rsquo;t need anything returned. The first argument is our file path, the second is our data and ggsave is our function.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># *** walk2() function in purrr from the tidyverse ***</span>
-<span style="color:#a6e22e">walk2</span>(<span style="color:#a6e22e">paste0</span>(path2, <span style="color:#a6e22e">names</span>(taxa.slopes), <span style="color:#e6db74">&#34;.pdf&#34;</span>), taxa.plots, ggsave)
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+<pre><code class="language-r"># *** walk2() function in purrr from the tidyverse ***
+walk2(paste0(path2, names(taxa.slopes), &quot;.pdf&quot;), taxa.plots, ggsave)
+</code></pre>
+
+<p><a name="mapping"></a></p>
+
 <h2 id="3-downloading-and-mapping-data-from-large-datasets">3. Downloading and mapping data from large datasets</h2>
+
 <h3 id="map-the-distribution-of-a-forest-vertebrate-species-and-the-location-of-monitored-populations">Map the distribution of a forest vertebrate species and the location of monitored populations</h3>
-<ol start="13">
+
+<ol>
 <li>How to download GBIF records</li>
 <li>How to map occurence data and populations</li>
 <li>How to make a custom function for plotting figures</li>
 </ol>
-<p><strong>In this part of the tutorial, we will focus on one particular species, red deer (<em>Cervus elaphus</em>), where it has been recorded around the world, and where it&rsquo;s populations are being monitored. We will use occurrence data from the <!-- raw HTML omitted -->Global Biodiversity Information Facility<!-- raw HTML omitted --> which we will download in <code>R</code> using the <code>rgbif</code> package.</strong></p>
-<p>Occurrence data can be messy and when you are working with thousands of records, not all of them might be valid records. If you are keen to find out how to test the validity of geographic coordinates using the <code>CoordinateCleaner</code> package, check out our tutorial <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">### PART 3: Downloading and mapping data from large datasets ----</span>
-<span style="color:#75715e">#### How to map distributions and monitoring locations for one or more taxa</span>
 
-<span style="color:#75715e"># Packages ----</span>
-<span style="color:#a6e22e">library</span>(rgbif)  <span style="color:#75715e"># To extract GBIF data</span>
-<span style="color:#75715e"># library(CoordinateCleaner)  # To clean coordinates if you want to explore that later</span>
-<span style="color:#a6e22e">library</span>(gridExtra)  <span style="color:#75715e"># To make pretty graphs</span>
-<span style="color:#a6e22e">library</span>(ggrepel)  <span style="color:#75715e"># To add labels with rounded edges</span>
-<span style="color:#a6e22e">library</span>(png)  <span style="color:#75715e"># To add icons</span>
-<span style="color:#a6e22e">library</span>(mapdata)  <span style="color:#75715e"># To plot maps</span>
-<span style="color:#a6e22e">library</span>(ggthemes)  <span style="color:#75715e"># To make maps extra pretty</span>
-</code></pre></div><p>We are limiting the number of records to 5000 for the sake of time - in the future you can ask for more records as well, there&rsquo;s just a bit of waiting involved. The records come with a lot of metadata. For our purposes, we will select just the columns we need. Similar to how before we had to specify that we want the <code>map()</code> function from the <code>purrr</code> package, there are often other <code>select()</code> functions, so we are saying that we want the one from <code>dplyr</code> using <code>dplyr::select()</code>. Otherwise, the <code>select()</code> function might not work because of a conflict with another <code>select()</code> function from a different package, e.g. the <code>raster</code> packge.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Download species occurrence records from the Global Biodiversity Information Facility</span>
-<span style="color:#75715e"># *** rgbif package and the occ_search() function ***</span>
-<span style="color:#75715e"># You can increase the limit to get more records - 5000 takes a couple of minutes</span>
-deer.locations <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">occ_search</span>(scientificName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cervus elaphus&#34;</span>, limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>,
-                             hasCoordinate <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, return <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;data&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-                  <span style="color:#75715e"># Simplify occurrence data frame</span>
-                  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(key, name, decimalLongitude,
+<p><strong>In this part of the tutorial, we will focus on one particular species, red deer (<em>Cervus elaphus</em>), where it has been recorded around the world, and where it&rsquo;s populations are being monitored. We will use occurrence data from the <a href="http://www.gbif.org/" target="_blank">Global Biodiversity Information Facility</a> which we will download in <code>R</code> using the <code>rgbif</code> package.</strong></p>
+
+<p>Occurrence data can be messy and when you are working with thousands of records, not all of them might be valid records. If you are keen to find out how to test the validity of geographic coordinates using the <code>CoordinateCleaner</code> package, check out our tutorial <a href="https://ourcodingclub.github.io/2018/01/06/occurrence.html" target = "_blank">here</a>.</p>
+
+<pre><code class="language-r">### PART 3: Downloading and mapping data from large datasets ----
+#### How to map distributions and monitoring locations for one or more taxa
+
+# Packages ----
+library(rgbif)  # To extract GBIF data
+# library(CoordinateCleaner)  # To clean coordinates if you want to explore that later
+library(gridExtra)  # To make pretty graphs
+library(ggrepel)  # To add labels with rounded edges
+library(png)  # To add icons
+library(mapdata)  # To plot maps
+library(ggthemes)  # To make maps extra pretty
+</code></pre>
+
+<p>We are limiting the number of records to 5000 for the sake of time - in the future you can ask for more records as well, there&rsquo;s just a bit of waiting involved. The records come with a lot of metadata. For our purposes, we will select just the columns we need. Similar to how before we had to specify that we want the <code>map()</code> function from the <code>purrr</code> package, there are often other <code>select()</code> functions, so we are saying that we want the one from <code>dplyr</code> using <code>dplyr::select()</code>. Otherwise, the <code>select()</code> function might not work because of a conflict with another <code>select()</code> function from a different package, e.g. the <code>raster</code> packge.</p>
+
+<pre><code class="language-r"># Download species occurrence records from the Global Biodiversity Information Facility
+# *** rgbif package and the occ_search() function ***
+# You can increase the limit to get more records - 5000 takes a couple of minutes
+deer.locations &lt;- occ_search(scientificName = &quot;Cervus elaphus&quot;, limit = 5000,
+                             hasCoordinate = TRUE, return = &quot;data&quot;) %&gt;%
+                  # Simplify occurrence data frame
+                  dplyr::select(key, name, decimalLongitude,
 		                decimalLatitude, year,
 				individualCount, country)
-</code></pre></div><p>Next we will extract the red deer population data - the raw time series and the slopes of population change from the two data frames.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Data formatting &amp; manipulation ----</span>
+</code></pre>
 
-<span style="color:#75715e"># Filter out population data for chosen species - red deer</span>
-deer.data <span style="color:#f92672">&lt;-</span> LPD_long2 <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">filter</span>(species.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Cervus elaphus&#34;</span>) <span style="color:#f92672">%&gt;%</span>
-  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(id, species.name, location.of.population, year, pop)
+<p>Next we will extract the red deer population data - the raw time series and the slopes of population change from the two data frames.</p>
 
-<span style="color:#75715e"># Filter out population estimates for chosen species - red deer</span>
-deer.slopes <span style="color:#f92672">&lt;-</span> forest.slopes <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">filter</span>(species.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Cervus elaphus&#34;</span>)
-</code></pre></div><p><strong>In addition to making histograms, scatterplots and such, you can use <code>ggplot2</code> to make maps as well - the maps come from the <code>mapdata</code> package we loaded earlier. In this map, we want to visualise information from two separate data frames - where the species occurs (<code>deer.locations</code>, the GBIF data) and where it is monitored (<code>deer.slopes</code>, the Living Planet Database data). We can combine this information in the same <code>ggplot2</code> code chunk using the <code>geom_point()</code> function twice - the first time it will plot the occurrences since that the data frame associated with the plot in the very first line, and the second time we&rsquo;ve told the function to specifically use the <code>deer.slopes</code> object using <code>data = deer.slopes</code>.</strong></p>
+<pre><code class="language-r"># Data formatting &amp; manipulation ----
+
+# Filter out population data for chosen species - red deer
+deer.data &lt;- LPD_long2 %&gt;%
+  filter(species.name == &quot;Cervus elaphus&quot;) %&gt;%
+  dplyr::select(id, species.name, location.of.population, year, pop)
+
+# Filter out population estimates for chosen species - red deer
+deer.slopes &lt;- forest.slopes %&gt;%
+  filter(species.name == &quot;Cervus elaphus&quot;)
+</code></pre>
+
+<p><strong>In addition to making histograms, scatterplots and such, you can use <code>ggplot2</code> to make maps as well - the maps come from the <code>mapdata</code> package we loaded earlier. In this map, we want to visualise information from two separate data frames - where the species occurs (<code>deer.locations</code>, the GBIF data) and where it is monitored (<code>deer.slopes</code>, the Living Planet Database data). We can combine this information in the same <code>ggplot2</code> code chunk using the <code>geom_point()</code> function twice - the first time it will plot the occurrences since that the data frame associated with the plot in the very first line, and the second time we&rsquo;ve told the function to specifically use the <code>deer.slopes</code> object using <code>data = deer.slopes</code>.</strong></p>
+
 <p>As you start making your maps, you may get this warning message:</p>
-<pre tabindex="0"><code>Warning message:
+
+<pre><code>Warning message:
 In drawGrob(x) : reached elapsed time limit
-</code></pre><p>We are working with thousands of records, so depending on your computer, making the map might take a while. This message doesn&rsquo;t mean something is wrong, just lets you know that generating the map took a bit longer than what <code>RStudio</code> expected.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Make an occurrence map and include the locations of the populations part of the Living Planet Database</span>
-(deer.map.LPD <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(deer.locations, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimalLongitude, y <span style="color:#f92672">=</span> decimalLatitude)) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Add map data</span>
-    <span style="color:#a6e22e">borders</span>(<span style="color:#e6db74">&#34;world&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray80&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray80&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Use custom map theme from ggthemes package</span>
-    <span style="color:#a6e22e">theme_map</span>() <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Add the points from the population change data</span>
-    <span style="color:#a6e22e">geom_point</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Specify where the data come from when plotting from more than one data frame using data = &#34;&#34;</span>
-    <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> deer.slopes, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimal.longitude, y <span style="color:#f92672">=</span> decimal.latitude),
-               size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>))
-</code></pre></div><!-- raw HTML omitted -->
+</code></pre>
+
+<p>We are working with thousands of records, so depending on your computer, making the map might take a while. This message doesn&rsquo;t mean something is wrong, just lets you know that generating the map took a bit longer than what <code>RStudio</code> expected.</p>
+
+<pre><code class="language-r"># Make an occurrence map and include the locations of the populations part of the Living Planet Database
+(deer.map.LPD &lt;- ggplot(deer.locations, aes(x = decimalLongitude, y = decimalLatitude)) +
+    # Add map data
+    borders(&quot;world&quot;, colour = &quot;gray80&quot;, fill = &quot;gray80&quot;, size = 0.3) +
+    # Use custom map theme from ggthemes package
+    theme_map() +
+    # Add the points from the population change data
+    geom_point(alpha = 0.3, size = 2, colour = &quot;aquamarine3&quot;) +
+    # Specify where the data come from when plotting from more than one data frame using data = &quot;&quot;
+    geom_point(data = deer.slopes, aes(x = decimal.longitude, y = decimal.latitude),
+               size = 2, colour = &quot;darkgreen&quot;))
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/deer_map.png" alt="Img" style="width: 900px;"/> </center></p>
+
 <p>The map already looks fine, but we can customise it further to add more information. For example, we can add labels for the locations of some of the monitored populations and we can add plots of population change next to our map.</p>
+
 <p>First we will rename some of the populations, just so that our labels are not crazy long, using the <code>recode()</code> function from the <code>dplyr</code> package.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Customising map to make it more beautiful ----</span>
 
-<span style="color:#75715e"># Check site names</span>
-<span style="color:#a6e22e">print</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population)
+<pre><code class="language-r"># Customising map to make it more beautiful ----
 
-<span style="color:#75715e"># Beautify site names</span>
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Northern Yellowstone National Park&#34;</span>
-					     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Yellowstone National Park&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Mount Rainier National Park, USA&#34;</span>
-					     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mount Rainier National Park&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Bow Valley - eastern zone, Banff National Park, Alberta&#34;</span> <span style="color:#f92672">=</span>
-					     <span style="color:#e6db74">&#34;Banff National Park, Alberta&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Bow Valley - western zone, Banff National Park, Alberta&#34;</span> <span style="color:#f92672">=</span>
-					     <span style="color:#e6db74">&#34;Banff National Park, Alberta&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Bow Valley - central zone, Banff National Park, Alberta&#34;</span> <span style="color:#f92672">=</span>
-					     <span style="color:#e6db74">&#34;Banff National Park, Alberta&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Study area within Bow Valley, Banff National Park, Alberta&#34;</span> <span style="color:#f92672">=</span>
-					     <span style="color:#e6db74">&#34;Banff National Park, Alberta&#34;</span>)
-deer.slopes<span style="color:#f92672">$</span>location.of.population <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">recode</span>(deer.slopes<span style="color:#f92672">$</span>location.of.population,
-                                             <span style="color:#e6db74">&#34;Bow Valley watershed of Banff National Park, Alberta&#34;</span> <span style="color:#f92672">=</span>
-					     <span style="color:#e6db74">&#34;Banff National Park, Alberta&#34;</span>)
-</code></pre></div><p>You can also use <code>ggplot2</code> to add images to your graphs, so here we will add a deer icon.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Load packages for adding images</span>
-packs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;png&#34;</span>,<span style="color:#e6db74">&#34;grid&#34;</span>)
-<span style="color:#a6e22e">lapply</span>(packs, require, character.only <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+# Check site names
+print(deer.slopes$location.of.population)
 
-<span style="color:#75715e"># Load red deer icon</span>
-icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">readPNG</span>(<span style="color:#e6db74">&#34;reddeer.png&#34;</span>)
-icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rasterGrob</span>(icon, interpolate <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-</code></pre></div><p>We can update our map by adding labels and our icon - this looks like a gigantic chunk of code, but we&rsquo;ve added line by line comments so that you can see what&rsquo;s happening at each step. The <code>ggrepel</code> package adds labels whilst also aiming to avoid overlap and as a bonus, the labels have rounded edges.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Update map</span>
-<span style="color:#75715e"># Note - this takes a while depending on your computer</span>
-(deer.map.final <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(deer.locations, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimalLongitude, y <span style="color:#f92672">=</span> decimalLatitude)) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># For more localized maps use &#34;worldHires&#34; instead of &#34;world&#34;</span>
-    <span style="color:#a6e22e">borders</span>(<span style="color:#e6db74">&#34;world&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray80&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray80&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>) <span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">theme_map</span>() <span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">geom_point</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># We are specifying the data frame for the labels - one site has three monitored populations</span>
-    <span style="color:#75715e"># but we only want to label it once so we are subsetting using data = deer.slopes[c(2, 4, 5, 9),]</span>
-    <span style="color:#75715e"># to get only the first rows number 2, 4, 5 and 9</span>
-    <span style="color:#a6e22e">geom_label_repel</span>(data <span style="color:#f92672">=</span> deer.slopes<span style="color:#a6e22e">[c</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">9</span>),], <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimal.longitude, y <span style="color:#f92672">=</span> decimal.latitude,
-                                                     label <span style="color:#f92672">=</span> location.of.population),
-                     box.padding <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, nudge_x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
-                     <span style="color:#75715e"># We are specifying the size of the labels and nudging the points so that they</span>
-                     <span style="color:#75715e"># don&#39;t hide data points, along the x axis we are nudging by one</span>
-                     min.segment.length <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, inherit.aes <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># We can recreate the shape of a dropped pin by overlaying a circle and a triangle</span>
-    <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> deer.slopes, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimal.longitude, y <span style="color:#f92672">=</span> decimal.latitude <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.6</span>),
-               size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>) <span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> deer.slopes, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> decimal.longitude, y <span style="color:#f92672">=</span> decimal.latitude <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.3</span>),
-               size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkgreen&#34;</span>, shape <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Adding the icon using the coordinates on the x and y axis</span>
-    <span style="color:#a6e22e">annotation_custom</span>(icon, xmin <span style="color:#f92672">=</span> <span style="color:#ae81ff">-210</span>, xmax <span style="color:#f92672">=</span> <span style="color:#ae81ff">-100</span>, ymin <span style="color:#f92672">=</span> <span style="color:#ae81ff">-60</span> , ymax <span style="color:#f92672">=</span> <span style="color:#ae81ff">-30</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Adding a title</span>
-    <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a. Red Deer GBIF occurrences&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>))
-</code></pre></div><p>Let&rsquo;s add some additional plots to our figure, for example how many occurrences there are for each year.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Visualise the number of occurrence records through time ----</span>
-<span style="color:#75715e"># This plot is more impressive if you have downloaded more records</span>
-<span style="color:#75715e"># as GBIF downloads the most recent records first</span>
-yearly.obs <span style="color:#f92672">&lt;-</span> deer.locations <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(year) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">tally</span>() <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">is.na</span>(year) <span style="color:#f92672">==</span> <span style="color:#66d9ef">FALSE</span>)
+# Beautify site names
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Northern Yellowstone National Park&quot;
+					     = &quot;Yellowstone National Park&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Mount Rainier National Park, USA&quot;
+					     = &quot;Mount Rainier National Park&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Bow Valley - eastern zone, Banff National Park, Alberta&quot; =
+					     &quot;Banff National Park, Alberta&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Bow Valley - western zone, Banff National Park, Alberta&quot; =
+					     &quot;Banff National Park, Alberta&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Bow Valley - central zone, Banff National Park, Alberta&quot; =
+					     &quot;Banff National Park, Alberta&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Study area within Bow Valley, Banff National Park, Alberta&quot; =
+					     &quot;Banff National Park, Alberta&quot;)
+deer.slopes$location.of.population &lt;- recode(deer.slopes$location.of.population,
+                                             &quot;Bow Valley watershed of Banff National Park, Alberta&quot; =
+					     &quot;Banff National Park, Alberta&quot;)
+</code></pre>
 
-(occurrences <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggplot</span>(yearly.obs, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> year, y <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">geom_smooth</span>(colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;loess&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
-    <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of occurrences\n&#34;</span>,
-         title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b. GBIF occurrences\n&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>) <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># Use our customised theme, saves many lines of code!</span>
-    <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-    <span style="color:#75715e"># if you want to change things about your theme, you need to include the changes after adding the theme</span>
-    <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>), axis.title.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)))
-</code></pre></div><p>We can add plots that show the population trends for those populations we&rsquo;ve labelled. Given that we will be doing the same thing for multiple objects (the same type of plot for each population), we can practice functional programming and using <code>purrr</code> again here. The function looks very similar to a normal <code>ggplot2</code> code chunk, except we&rsquo;ve wrapped it up in a function and we are not using any specific objects, just <code>x</code>, <code>y</code> and <code>z</code> as the three arguments the function needs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Visualise population trends ----</span>
-<span style="color:#75715e"># Visualising the population trends of four deer populations</span>
+<p>You can also use <code>ggplot2</code> to add images to your graphs, so here we will add a deer icon.</p>
 
-<span style="color:#75715e"># Let&#39;s practice functional programming here</span>
-<span style="color:#75715e"># *** Functional Programming ***</span>
-<span style="color:#75715e"># Let&#39;s make a function to make the population trend plots</span>
-<span style="color:#75715e"># First we need to decide what values the function needs to take</span>
-<span style="color:#75715e"># x - The population data</span>
-<span style="color:#75715e"># y - the slope value</span>
-<span style="color:#75715e"># z - the location of the monitoring</span>
-<span style="color:#75715e"># This function needs to take three arguments</span>
+<pre><code class="language-r"># Load packages for adding images
+packs &lt;- c(&quot;png&quot;,&quot;grid&quot;)
+lapply(packs, require, character.only = TRUE)
 
-<span style="color:#75715e"># Let&#39;s make the ggplot function</span>
-pop.graph <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(x, y, z) {
-  <span style="color:#75715e"># Make a ggplot graph with the &#39;x&#39;</span>
-  <span style="color:#a6e22e">ggplot</span>(x, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> year, y <span style="color:#f92672">=</span> pop)) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Shape 21 chooses a point with a black outline filled with aquamarine</span>
-  <span style="color:#a6e22e">geom_point</span>(shape <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Adds a linear model fit, alpha controls the transparency of the confidence intervals</span>
-  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aquamarine3&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span>) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Add the monitoring location &#39;y&#39; into the plot</span>
-  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Individuals\n&#34;</span>, title <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;c. &#34;</span>, y, <span style="color:#e6db74">&#34;\n&#34;</span>), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Set the y limit to the maximum population for each &#39;x&#39;</span>
-  <span style="color:#a6e22e">ylim</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">max</span>(x<span style="color:#f92672">$</span>pop)) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Set the x limit to the range of years of data</span>
-  <span style="color:#a6e22e">xlim</span>(<span style="color:#ae81ff">1970</span>, <span style="color:#ae81ff">2010</span>) <span style="color:#f92672">+</span>
-  <span style="color:#75715e"># Add the slope &#39;y&#39; into the plot</span>
-  <span style="color:#a6e22e">annotate</span>(<span style="color:#e6db74">&#34;text&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1972</span>, y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>,  hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">-2</span>, label <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;Slope =&#34;</span>, z), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_LPD</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>), axis.title.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>))
+# Load red deer icon
+icon &lt;- readPNG(&quot;reddeer.png&quot;)
+icon &lt;- rasterGrob(icon, interpolate = TRUE)
+</code></pre>
+
+<p>We can update our map by adding labels and our icon - this looks like a gigantic chunk of code, but we&rsquo;ve added line by line comments so that you can see what&rsquo;s happening at each step. The <code>ggrepel</code> package adds labels whilst also aiming to avoid overlap and as a bonus, the labels have rounded edges.</p>
+
+<pre><code class="language-r"># Update map
+# Note - this takes a while depending on your computer
+(deer.map.final &lt;- ggplot(deer.locations, aes(x = decimalLongitude, y = decimalLatitude)) +
+    # For more localized maps use &quot;worldHires&quot; instead of &quot;world&quot;
+    borders(&quot;world&quot;, colour = &quot;gray80&quot;, fill = &quot;gray80&quot;, size = 0.3) +
+    theme_map() +
+    geom_point(alpha = 0.3, size = 2, colour = &quot;aquamarine3&quot;) +
+    # We are specifying the data frame for the labels - one site has three monitored populations
+    # but we only want to label it once so we are subsetting using data = deer.slopes[c(2, 4, 5, 9),]
+    # to get only the first rows number 2, 4, 5 and 9
+    geom_label_repel(data = deer.slopes[c(2, 4, 5, 9),], aes(x = decimal.longitude, y = decimal.latitude,
+                                                     label = location.of.population),
+                     box.padding = 1, size = 5, nudge_x = 1,
+                     # We are specifying the size of the labels and nudging the points so that they
+                     # don't hide data points, along the x axis we are nudging by one
+                     min.segment.length = 0, inherit.aes = FALSE) +
+    # We can recreate the shape of a dropped pin by overlaying a circle and a triangle
+    geom_point(data = deer.slopes, aes(x = decimal.longitude, y = decimal.latitude + 0.6),
+               size = 4, colour = &quot;darkgreen&quot;) +
+    geom_point(data = deer.slopes, aes(x = decimal.longitude, y = decimal.latitude - 0.3),
+               size = 3, fill = &quot;darkgreen&quot;, colour = &quot;darkgreen&quot;, shape = 25) +
+    # Adding the icon using the coordinates on the x and y axis
+    annotation_custom(icon, xmin = -210, xmax = -100, ymin = -60 , ymax = -30) +
+    # Adding a title
+    labs(title = &quot;a. Red Deer GBIF occurrences&quot;, size = 12))
+</code></pre>
+
+<p>Let&rsquo;s add some additional plots to our figure, for example how many occurrences there are for each year.</p>
+
+<pre><code class="language-r"># Visualise the number of occurrence records through time ----
+# This plot is more impressive if you have downloaded more records
+# as GBIF downloads the most recent records first
+yearly.obs &lt;- deer.locations %&gt;% group_by(year) %&gt;% tally() %&gt;% ungroup() %&gt;% filter(is.na(year) == FALSE)
+
+(occurrences &lt;- ggplot(yearly.obs, aes(x = year, y = n)) +
+    geom_smooth(colour = &quot;aquamarine3&quot;, method = 'loess', size = 1) +
+    labs(x = NULL, y = &quot;Number of occurrences\n&quot;,
+         title = &quot;b. GBIF occurrences\n&quot;, size = 12) +
+    # Use our customised theme, saves many lines of code!
+    theme_LPD() +
+    # if you want to change things about your theme, you need to include the changes after adding the theme
+    theme(plot.title = element_text(size = 12), axis.title.y = element_text(size = 10)))
+</code></pre>
+
+<p>We can add plots that show the population trends for those populations we&rsquo;ve labelled. Given that we will be doing the same thing for multiple objects (the same type of plot for each population), we can practice functional programming and using <code>purrr</code> again here. The function looks very similar to a normal <code>ggplot2</code> code chunk, except we&rsquo;ve wrapped it up in a function and we are not using any specific objects, just <code>x</code>, <code>y</code> and <code>z</code> as the three arguments the function needs.</p>
+
+<pre><code class="language-r"># Visualise population trends ----
+# Visualising the population trends of four deer populations
+
+# Let's practice functional programming here
+# *** Functional Programming ***
+# Let's make a function to make the population trend plots
+# First we need to decide what values the function needs to take
+# x - The population data
+# y - the slope value
+# z - the location of the monitoring
+# This function needs to take three arguments
+
+# Let's make the ggplot function
+pop.graph &lt;- function(x, y, z) {
+  # Make a ggplot graph with the 'x'
+  ggplot(x, aes(x = year, y = pop)) +
+  # Shape 21 chooses a point with a black outline filled with aquamarine
+  geom_point(shape = 21, fill = &quot;aquamarine3&quot;, size = 2) +
+  # Adds a linear model fit, alpha controls the transparency of the confidence intervals
+  geom_smooth(method = &quot;lm&quot;, colour = &quot;aquamarine3&quot;, fill = &quot;aquamarine3&quot;, alpha = 0.4) +
+  # Add the monitoring location 'y' into the plot
+  labs(x = &quot;&quot;, y = &quot;Individuals\n&quot;, title = paste(&quot;c. &quot;, y, &quot;\n&quot;), size = 7) +
+  # Set the y limit to the maximum population for each 'x'
+  ylim(0, max(x$pop)) +
+  # Set the x limit to the range of years of data
+  xlim(1970, 2010) +
+  # Add the slope 'y' into the plot
+  annotate(&quot;text&quot;, x = 1972, y = 0,  hjust = 0, vjust = -2, label = paste(&quot;Slope =&quot;, z), size = 3) +
+  theme_LPD() +
+  theme(plot.title = element_text(size=12), axis.title.y = element_text(size=10))
 }
-</code></pre></div><p>We will focus on four populations in the USA, Switzerland and Canada. We will make three objects for each population, which represent the three arguments the function takes - the population data, the slope value and the location of the population. Then we will run our function <code>pop.graph()</code> using those objects.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Find all unique ids for red deer populations</span>
-<span style="color:#a6e22e">unique</span>(deer.slopes<span style="color:#f92672">$</span>id)
+</code></pre>
 
-<span style="color:#75715e"># Create an object each of the unique populations</span>
-<span style="color:#75715e"># Deer population 1 - Northern Yellowstone National Park</span>
-deer1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">filter</span>(deer.data, id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;6395&#34;</span>)
-slope_deer1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(deer.slopes<span style="color:#f92672">$</span>estimate[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;6395&#34;</span>],<span style="color:#ae81ff">2</span>)
-location_deer1 <span style="color:#f92672">&lt;-</span> deer.slopes<span style="color:#f92672">$</span>location.of.population[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;6395&#34;</span>]
-yellowstone <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pop.graph</span>(deer1, location_deer1, slope_deer1)
+<p>We will focus on four populations in the USA, Switzerland and Canada. We will make three objects for each population, which represent the three arguments the function takes - the population data, the slope value and the location of the population. Then we will run our function <code>pop.graph()</code> using those objects.</p>
 
-<span style="color:#75715e"># Deer population 2 - Mount Rainier National Park, USA</span>
-deer2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">filter</span>(deer.data, id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;3425&#34;</span>)
-slope_deer2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(deer.slopes<span style="color:#f92672">$</span>estimate[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;3425&#34;</span>],<span style="color:#ae81ff">2</span>)
-location_deer2 <span style="color:#f92672">&lt;-</span> deer.slopes<span style="color:#f92672">$</span>location.of.population[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;3425&#34;</span>]
-rainier <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pop.graph</span>(deer2, location_deer2, slope_deer2)
+<pre><code class="language-r"># Find all unique ids for red deer populations
+unique(deer.slopes$id)
 
-<span style="color:#75715e"># Deer population 3 - Switzerland</span>
-deer3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">filter</span>(deer.data, id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;11170&#34;</span>)
-slope_deer3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(deer.slopes<span style="color:#f92672">$</span>estimate[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;11170&#34;</span>],<span style="color:#ae81ff">2</span>)
-location_deer3 <span style="color:#f92672">&lt;-</span> deer.slopes<span style="color:#f92672">$</span>location.of.population[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;11170&#34;</span>]
-switzerland <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pop.graph</span>(deer3, location_deer3, slope_deer3)
+# Create an object each of the unique populations
+# Deer population 1 - Northern Yellowstone National Park
+deer1 &lt;- filter(deer.data, id == &quot;6395&quot;)
+slope_deer1 &lt;- round(deer.slopes$estimate[deer.slopes$id == &quot;6395&quot;],2)
+location_deer1 &lt;- deer.slopes$location.of.population[deer.slopes$id == &quot;6395&quot;]
+yellowstone &lt;- pop.graph(deer1, location_deer1, slope_deer1)
 
-<span style="color:#75715e"># Deer population 4 - Banff National Park, Alberta (there are more populations here)</span>
-deer4 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">filter</span>(deer.data, id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;4383&#34;</span>)
-slope_deer4 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(deer.slopes<span style="color:#f92672">$</span>estimate[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;4383&#34;</span>],<span style="color:#ae81ff">2</span>)
-location_deer4 <span style="color:#f92672">&lt;-</span> deer.slopes<span style="color:#f92672">$</span>location.of.population[deer.slopes<span style="color:#f92672">$</span>id <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;4383&#34;</span>]
-banff <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pop.graph</span>(deer4, location_deer4, slope_deer4)
-</code></pre></div><p>We are now ready to combine all of our graphs into one panel. When using <code>grid.arrange()</code>, you can add an additional argument <code>widths = c()</code> or <code>heights = c()</code>, which controls the ratios between the different plots. By default, <code>grid.arrange()</code> will give equal space to each graph, but sometimes you might want one graph to be wider than others, like here we want the map to have more space.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Create panel of all graphs</span>
-<span style="color:#75715e"># Makes a panel of the map and occurrence plot and specifies the ratio</span>
-<span style="color:#75715e"># i.e., we want the map to be wider than the other plots</span>
-<span style="color:#75715e"># suppressWarnings() suppresses warnings in the ggplot call here</span>
-row1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">suppressWarnings</span>(<span style="color:#a6e22e">grid.arrange</span>(deer.map.final, occurrences, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, widths <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1.96</span>, <span style="color:#ae81ff">1.04</span>)))
-<span style="color:#75715e"># Makes a panel of the four population plots</span>
-row2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">grid.arrange</span>(yellowstone, rainier, switzerland, banff, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, widths <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
+# Deer population 2 - Mount Rainier National Park, USA
+deer2 &lt;- filter(deer.data, id == &quot;3425&quot;)
+slope_deer2 &lt;- round(deer.slopes$estimate[deer.slopes$id == &quot;3425&quot;],2)
+location_deer2 &lt;- deer.slopes$location.of.population[deer.slopes$id == &quot;3425&quot;]
+rainier &lt;- pop.graph(deer2, location_deer2, slope_deer2)
 
-<span style="color:#75715e"># Makes a panel of all the population plots and sets the ratio</span>
-<span style="color:#75715e"># Stich all of your plots together</span>
-deer.panel <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">grid.arrange</span>(row1, row2, nrow <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, heights <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1.2</span>, <span style="color:#ae81ff">0.8</span>))
+# Deer population 3 - Switzerland
+deer3 &lt;- filter(deer.data, id == &quot;11170&quot;)
+slope_deer3 &lt;- round(deer.slopes$estimate[deer.slopes$id == &quot;11170&quot;],2)
+location_deer3 &lt;- deer.slopes$location.of.population[deer.slopes$id == &quot;11170&quot;]
+switzerland &lt;- pop.graph(deer3, location_deer3, slope_deer3)
 
-<span style="color:#a6e22e">ggsave</span>(deer.panel, filename <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;deer_panel2.png&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>)
-</code></pre></div><!-- raw HTML omitted -->
+# Deer population 4 - Banff National Park, Alberta (there are more populations here)
+deer4 &lt;- filter(deer.data, id == &quot;4383&quot;)
+slope_deer4 &lt;- round(deer.slopes$estimate[deer.slopes$id == &quot;4383&quot;],2)
+location_deer4 &lt;- deer.slopes$location.of.population[deer.slopes$id == &quot;4383&quot;]
+banff &lt;- pop.graph(deer4, location_deer4, slope_deer4)
+</code></pre>
+
+<p>We are now ready to combine all of our graphs into one panel. When using <code>grid.arrange()</code>, you can add an additional argument <code>widths = c()</code> or <code>heights = c()</code>, which controls the ratios between the different plots. By default, <code>grid.arrange()</code> will give equal space to each graph, but sometimes you might want one graph to be wider than others, like here we want the map to have more space.</p>
+
+<pre><code class="language-r"># Create panel of all graphs
+# Makes a panel of the map and occurrence plot and specifies the ratio
+# i.e., we want the map to be wider than the other plots
+# suppressWarnings() suppresses warnings in the ggplot call here
+row1 &lt;- suppressWarnings(grid.arrange(deer.map.final, occurrences, ncol = 2, widths = c(1.96, 1.04)))
+# Makes a panel of the four population plots
+row2 &lt;- grid.arrange(yellowstone, rainier, switzerland, banff, ncol = 4, widths = c(1, 1, 1, 1))
+
+# Makes a panel of all the population plots and sets the ratio
+# Stich all of your plots together
+deer.panel &lt;- grid.arrange(row1, row2, nrow = 2, heights = c(1.2, 0.8))
+
+ggsave(deer.panel, filename = &quot;deer_panel2.png&quot;, height = 10, width = 15)
+</code></pre>
+
+<p><center> <img src="https://BES-QSIG.github.io/courses/advancingr/deer_panel2-3.png" alt="Img" style="width: 900px;"/> </center></p>
+
 <h2 id="challenges">Challenges</h2>
+
 <p><strong>Take what you have learned about pipes and make a map of the five most well-sampled populations in the LPD database (the ones with the most replicate populations) and colour code the points by the population trend (derived from the models we did) and the size by the duration of the time series. You can try incorporating a handwritten function to make the map and using purr to implement that function, or you can go straight into <code>ggplot2</code>.</strong></p>
+
 <p><strong>Pick a country and species of your choice. Download the GBIF records for that species from your selected country (or you can do the world if you don&rsquo;t mind waiting a few more minutes for the GBIF data to download). Plot where the species occurs. Then, add the locations of the Living Planet Database populations of the same species - do we have long-term records from the whole range of the species? Where are the gaps? You can have a go at combining the LPD and GBIF databases in a meaningful way - hint: look up the different joining functions from <code>dplyr</code> - <code>left_join()</code>, <code>inner_join()</code>, etc.</strong></p>
+
 <p><strong>Use another projection for the map - the default is Mercator, but that&rsquo;s not the best way to represent the world. Hint - you can still use <code>ggplot2</code> - look up the <code>proj4</code> package and how to combine it with <code>ggplot2</code>.</strong></p>
+
 <h2 id="extra-resources">Extra resources</h2>
-<p>You can find more info on <code>pander</code> <!-- raw HTML omitted --> here<!-- raw HTML omitted -->.</p>
+
+<p>You can find more info on <code>pander</code> <a href="https://cran.r-project.org/web/packages/pander/pander.pdf" target="_blank"> here</a>.</p>
+
 <p>To learn more about the power of pipes check out:
-<!-- raw HTML omitted --> the tidyverse website<!-- raw HTML omitted --> and <!-- raw HTML omitted --> the R for Data Science book<!-- raw HTML omitted -->.</p>
-<p>To learn more about <code>purrr</code> check out the <!-- raw HTML omitted -->tidyverse website<!-- raw HTML omitted --> and the <!-- raw HTML omitted --> R for Data Science book<!-- raw HTML omitted -->.</p>
-<p>For more information on functional programming see the <!-- raw HTML omitted -->R for Data Science book chapter here<!-- raw HTML omitted -->.</p>
-<p>To learn more about the <code>tidyverse</code> in general, check out Charlotte Wickham&rsquo;s slides <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<a href = "http://dplyr.tidyverse.org/" target ="_blank"> the tidyverse website</a> and <a href="http://r4ds.had.co.nz/pipes.html" target="_blank"> the R for Data Science book</a>.</p>
+
+<p>To learn more about <code>purrr</code> check out the <a href="http://purrr.tidyverse.org/reference/map2.html" target="_blank">tidyverse website</a> and the <a href="http://r4ds.had.co.nz/iteration.html" target="_blank"> R for Data Science book</a>.</p>
+
+<p>For more information on functional programming see the <a href="http://r4ds.had.co.nz/functions.html" target="_blank">R for Data Science book chapter here</a>.</p>
+
+<p>To learn more about the <code>tidyverse</code> in general, check out Charlotte Wickham&rsquo;s slides <a href="https://github.com/cwickham/data-science-in-tidyverse/tree/master/slides" target="_blank">here</a>.</p>
+
+<hr>
+
+<hr>
+
+<p><br>
+<h3>&nbsp; Subscribe to the coding club mailing list:</h3>
+<div class="container">
+    <div class="block">
+        <!-- subscribe form start -->
+        <div class="form-group">
+            <form action="https://getsimpleform.com/messages?form_api_token=de1ba2f2f947822946fb6e835437ec78" method="post">
+            <div class="form-group">
+                <input type='text' class="form-control" name='Email' placeholder="Email" required/>
+            </div>
+            <div>
+                            <button class="btn btn-default" type='submit'>Subscribe</button>
+                        </div>
+                    </form>
+        </div>
+    </div>
+</div></p>
+
+<ul class="social-icons">
+    <li>
+        <h3>
+            <a href="https://twitter.com/our_codingclub" target="_blank">&nbsp;Follow our coding adventures on Twitter! <i class="fa fa-twitter"></i></a>
+        </h3>
+    </li>
+</ul>
 
           </div>
 
@@ -1017,7 +1337,7 @@ deer.panel <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">
   
 
   <p class="powered-by">
-    © 2021 &middot; 
+    &copy; 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on BES QUANTITATIVE ECOLOGY GROUP</title>
@@ -7,11 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021</copyright>
-    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://BES-QSIG.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://BES-QSIG.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title></title>
       <link>https://BES-QSIG.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/about/</guid>
       <description>There are few areas of modern ecology that do not rely heavily on quantitative methods! Ecological modelling and data management are rapidly expanding sub-disciplines of ecology, and so the group helps its members obtain advice, learn, apply good practice and collaborate.
@@ -21,7 +25,7 @@ We run regular training and scientific events, an event at the BES Annual Meetin
     <item>
       <title>Events</title>
       <link>https://BES-QSIG.github.io/home/events/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/events/</guid>
       <description></description>
@@ -30,7 +34,7 @@ We run regular training and scientific events, an event at the BES Annual Meetin
     <item>
       <title>Recent Posts</title>
       <link>https://BES-QSIG.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/posts/</guid>
       <description></description>
@@ -39,7 +43,7 @@ We run regular training and scientific events, an event at the BES Annual Meetin
     <item>
       <title>Tags</title>
       <link>https://BES-QSIG.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/tags/</guid>
       <description></description>
@@ -48,7 +52,7 @@ We run regular training and scientific events, an event at the BES Annual Meetin
     <item>
       <title>Search</title>
       <link>https://BES-QSIG.github.io/home/search/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/search/</guid>
       <description></description>
@@ -57,10 +61,10 @@ We run regular training and scientific events, an event at the BES Annual Meetin
     <item>
       <title>Contact</title>
       <link>https://BES-QSIG.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/home/contact/</guid>
-      <description>Subscribe to our mailing list </description>
+      <description>Subscribe to our mailing list</description>
     </item>
     
   </channel>

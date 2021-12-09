@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>modelling on BES QUANTITATIVE ECOLOGY GROUP</title>
@@ -7,11 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021</copyright>
-    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://BES-QSIG.github.io/tags/modelling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://BES-QSIG.github.io/tags/modelling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Interdisciplinary model integration thematic session at BES2019</title>
       <link>https://BES-QSIG.github.io/events/imi-bes2019/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0100</pubDate>
       
       <guid>https://BES-QSIG.github.io/events/imi-bes2019/</guid>
       <description>Register for our thematic session on &amp;lsquo;Interdisciplinary model integration to better understand biodiversity change&amp;rsquo; at #BES2019 in Belfast.</description>
