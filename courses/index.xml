@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on BES QUANTITATIVE ECOLOGY GROUP</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021</copyright>
-    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://BES-QSIG.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://BES-QSIG.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advancing Your R</title>
       <link>https://BES-QSIG.github.io/courses/advancingr/</link>
@@ -22,7 +18,7 @@
 You will need to have an up-to-date installation of R and RStudio.
 You will need to install PostgreSQL.
 You will also need to install some R packages using the below code:
-install.packages(&amp;quot;rmarkdown&amp;quot;) install.packages(&amp;quot;tidyverse&amp;quot;) install.</description>
+install.packages(&amp;quot;rmarkdown&amp;quot;) install.packages(&amp;quot;tidyverse&amp;quot;) install.packages(&amp;quot;broom&amp;quot;) install.</description>
     </item>
     
     <item>
@@ -41,7 +37,7 @@ install.packages(&amp;quot;rmarkdown&amp;quot;) install.packages(&amp;quot;tidyv
       
       <guid>https://BES-QSIG.github.io/courses/advancingr-spatial/</guid>
       <description>Part I: Preliminaries Required packages For this &amp;ldquo;tutorial&amp;rdquo;, you will need some packages and their dependencies
-if(!requireNamespace(&amp;quot;raster&amp;quot;)) install.packages(&amp;quot;raster&amp;quot;) if(!requireNamespace(&amp;quot;sf&amp;quot;)) install.packages(&amp;quot;sf&amp;quot;) if(!requireNamespace(&amp;quot;ggplot2&amp;quot;)) install.packages(&amp;quot;ggplot2&amp;quot;) if(!requireNamespace(&amp;quot;ggspatial&amp;quot;)) install.packages(&amp;quot;ggspatial&amp;quot;) if(!requireNamespace(&amp;quot;rgdal&amp;quot;)) install.packages(&amp;quot;rgdal&amp;quot;) if(!requireNamespace(&amp;quot;RPostgreSQL&amp;quot;)) install.packages(&amp;quot;RPostgreSQL&amp;quot;) if(!requireNamespace(&amp;quot;rgbif&amp;quot;)) install.packages(&amp;quot;rgbif&amp;quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
+if(!requireNamespace(&amp;#34;raster&amp;#34;)) install.packages(&amp;#34;raster&amp;#34;) if(!requireNamespace(&amp;#34;sf&amp;#34;)) install.packages(&amp;#34;sf&amp;#34;) if(!requireNamespace(&amp;#34;ggplot2&amp;#34;)) install.packages(&amp;#34;ggplot2&amp;#34;) if(!requireNamespace(&amp;#34;ggspatial&amp;#34;)) install.packages(&amp;#34;ggspatial&amp;#34;) if(!requireNamespace(&amp;#34;rgdal&amp;#34;)) install.packages(&amp;#34;rgdal&amp;#34;) if(!requireNamespace(&amp;#34;RPostgreSQL&amp;#34;)) install.packages(&amp;#34;RPostgreSQL&amp;#34;) if(!requireNamespace(&amp;#34;rgbif&amp;#34;)) install.packages(&amp;#34;rgbif&amp;#34;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif) The data for this tutorial are available from [here](needs link).
 What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.</description>
     </item>
     

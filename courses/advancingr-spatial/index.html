@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.0">
-  <meta name="generator" content="Hugo 0.55.3" />
+  <meta name="generator" content="Hugo 0.90.0" />
   
 
   
@@ -16,7 +16,7 @@
     
   
   <meta name="description" content="Part I: Preliminaries Required packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
-if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
+if(!requireNamespace(&#34;raster&#34;)) install.packages(&#34;raster&#34;) if(!requireNamespace(&#34;sf&#34;)) install.packages(&#34;sf&#34;) if(!requireNamespace(&#34;ggplot2&#34;)) install.packages(&#34;ggplot2&#34;) if(!requireNamespace(&#34;ggspatial&#34;)) install.packages(&#34;ggspatial&#34;) if(!requireNamespace(&#34;rgdal&#34;)) install.packages(&#34;rgdal&#34;) if(!requireNamespace(&#34;RPostgreSQL&#34;)) install.packages(&#34;RPostgreSQL&#34;) if(!requireNamespace(&#34;rgbif&#34;)) install.packages(&#34;rgbif&#34;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif) The data for this tutorial are available from [here](needs link).
 What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
 
   
@@ -101,7 +101,7 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
   <meta property="og:url" content="https://BES-QSIG.github.io/courses/advancingr-spatial/">
   <meta property="og:title" content="Day Two: Spatial data manipulation and visualisation in R | BES QUANTITATIVE ECOLOGY GROUP">
   <meta property="og:description" content="Part I: Preliminaries Required packages For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies
-if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;) if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;) if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;) if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;) if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;) if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;) if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif)  The data for this tutorial are available from here.
+if(!requireNamespace(&#34;raster&#34;)) install.packages(&#34;raster&#34;) if(!requireNamespace(&#34;sf&#34;)) install.packages(&#34;sf&#34;) if(!requireNamespace(&#34;ggplot2&#34;)) install.packages(&#34;ggplot2&#34;) if(!requireNamespace(&#34;ggspatial&#34;)) install.packages(&#34;ggspatial&#34;) if(!requireNamespace(&#34;rgdal&#34;)) install.packages(&#34;rgdal&#34;) if(!requireNamespace(&#34;RPostgreSQL&#34;)) install.packages(&#34;RPostgreSQL&#34;) if(!requireNamespace(&#34;rgbif&#34;)) install.packages(&#34;rgbif&#34;) library(raster) library(sf) library(ggplot2) library(ggspatial) library(RPostgreSQL) library(rgdal) library(rgbif) The data for this tutorial are available from [here](needs link).
 What is a spatial object? A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.">
   
   
@@ -343,52 +343,51 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
       
 
       <nav id="TableOfContents">
-<ul>
-<li><a href="#part-i-preliminaries">Part I: Preliminaries</a>
-<ul>
-<li><a href="#required-packages">Required packages</a></li>
-<li><a href="#what-is-a-spatial-object">What is a spatial object?</a></li>
-</ul></li>
-<li><a href="#part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</a>
-<ul>
-<li><a href="#modify-sf-sfc-objects">Modify sf - sfc objects</a>
-<ul>
-<li><a href="#lines">Lines</a></li>
-<li><a href="#polygon">Polygon</a></li>
-<li><a href="#intersects-and-intesections">Intersects and intesections</a></li>
-<li><a href="#circle-buffer-intersection">circle buffer intersection</a></li>
-<li><a href="#difference-between-objects">Difference between objects</a></li>
-<li><a href="#union-merge-and-melt-objects">Union (merge and melt) objects</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#part-iii-load-and-manipulate-spatial-objects">PART III: Load and manipulate spatial objects</a>
-<ul>
-<li><a href="#raster-object">Raster object</a>
-<ul>
-<li><a href="#land-cover">Land cover</a></li>
-<li><a href="#spatial-extraction-raster-value-for-a-vector-object">Spatial extraction (raster value for a vector object)</a></li>
-</ul></li>
-<li><a href="#vector-object">Vector object</a></li>
-<li><a href="#read-and-write-your-spatial-object-in-shapefile">Read and write your spatial object in Shapefile</a></li>
-<li><a href="#subseting-and-filtering">Subseting and filtering</a></li>
-</ul></li>
-<li><a href="#part-iv-interfacing-r-and-posgresql-postgis">PART IV: Interfacing R and PosgreSQL/PostGIS</a>
-<ul>
-<li><a href="#create-postgresql-database">Create PostgreSQL database</a></li>
-<li><a href="#send-spatial-data-to-your-newly-created-database-located-on-your-local-server">Send spatial data to your newly created database located on your local server</a></li>
-<li><a href="#interacting-with-postgresql-through-your-terminal">Interacting with PostgreSQL through your terminal</a></li>
-<li><a href="#some-more-raster-operations">Some more raster operations</a>
-<ul>
-<li><a href="#hillshade-and-terrain-map">Hillshade and Terrain map</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#part-v-plot-your-spatial-object-data-with-ggplot2">PART V: Plot your spatial object data with ggplot2</a>
-<ul>
-<li><a href="#adding-a-raster-to-a-ggplot">Adding a raster to a ggplot</a></li>
-<li><a href="#can-you-plot-the-deer-occurrence-extracted-from-gbif-on-a-uk-map">Can you plot the deer occurrence extracted from GBIF on a UK map?</a></li>
-</ul></li>
-<li><a href="#your-challenge-build-some-wider-map-for-europe">Your challenge, build some wider map for Europe</a></li>
-</ul>
+  <ul>
+    <li><a href="#required-packages">Required packages</a></li>
+    <li><a href="#what-is-a-spatial-object">What is a spatial object?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#modify-sf---sfc-objects">Modify sf - sfc objects</a>
+      <ul>
+        <li><a href="#lines">Lines</a></li>
+        <li><a href="#polygon">Polygon</a></li>
+        <li><a href="#intersects-and-intesections">Intersects and intesections</a></li>
+        <li><a href="#circle-buffer-intersection">circle buffer intersection</a></li>
+        <li><a href="#difference-between-objects">Difference between objects</a></li>
+        <li><a href="#union-merge-and-melt-objects">Union (merge and melt) objects</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#raster-object">Raster object</a>
+      <ul>
+        <li><a href="#land-cover">Land cover</a></li>
+        <li><a href="#spatial-extraction-raster-value-for-a-vector-object">Spatial extraction (raster value for a vector object)</a></li>
+      </ul>
+    </li>
+    <li><a href="#vector-object">Vector object</a></li>
+    <li><a href="#read-and-write-your-spatial-object-in-shapefile">Read and write your spatial object in Shapefile</a></li>
+    <li><a href="#subseting-and-filtering">Subseting and filtering</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#create-postgresql-database">Create PostgreSQL database</a></li>
+    <li><a href="#send-spatial-data-to-your-newly-created-database-located-on-your-local-server">Send spatial data to your newly created database located on your local server</a></li>
+    <li><a href="#interacting-with-postgresql-through-your-terminal">Interacting with PostgreSQL through your terminal</a></li>
+    <li><a href="#some-more-raster-operations">Some more raster operations</a>
+      <ul>
+        <li><a href="#hillshade-and-terrain-map">Hillshade and Terrain map</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#adding-a-raster-to-a-ggplot">Adding a raster to a ggplot</a></li>
+    <li><a href="#can-you-plot-the-deer-occurrence-extracted-from-gbif-on-a-uk-map">Can you plot the deer occurrence extracted from GBIF on a UK map?</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -412,549 +411,448 @@ What is a spatial object? A spatial object is an entity with coordinates in a ge
           
           <hr>
           <div class="article-style" itemprop="articleBody">
-            
-
-<h1 id="part-i-preliminaries">Part I: Preliminaries</h1>
-
+            <h1 id="part-i-preliminaries">Part I: Preliminaries</h1>
 <h2 id="required-packages">Required packages</h2>
-
 <p>For this &ldquo;tutorial&rdquo;, you will need some packages and their dependencies</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;raster&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;raster&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;sf&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;sf&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;ggplot2&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;ggplot2&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;ggspatial&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;ggspatial&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;rgdal&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rgdal&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;RPostgreSQL&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;RPostgreSQL&#34;</span>)
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">requireNamespace</span>(<span style="color:#e6db74">&#34;rgbif&#34;</span>)) <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rgbif&#34;</span>)
 
-<pre><code class="language-r">if(!requireNamespace(&quot;raster&quot;)) install.packages(&quot;raster&quot;)
-if(!requireNamespace(&quot;sf&quot;)) install.packages(&quot;sf&quot;)
-if(!requireNamespace(&quot;ggplot2&quot;)) install.packages(&quot;ggplot2&quot;)
-if(!requireNamespace(&quot;ggspatial&quot;)) install.packages(&quot;ggspatial&quot;)
-if(!requireNamespace(&quot;rgdal&quot;)) install.packages(&quot;rgdal&quot;)
-if(!requireNamespace(&quot;RPostgreSQL&quot;)) install.packages(&quot;RPostgreSQL&quot;)
-if(!requireNamespace(&quot;rgbif&quot;)) install.packages(&quot;rgbif&quot;)
-
-library(raster)
-library(sf)
-library(ggplot2)
-library(ggspatial)
-library(RPostgreSQL)
-library(rgdal)
-library(rgbif)
-</code></pre>
-
-<p>The data for this tutorial are available from <a href="needs link" target="_blank">here</a>.</p>
-
+<span style="color:#a6e22e">library</span>(raster)
+<span style="color:#a6e22e">library</span>(sf)
+<span style="color:#a6e22e">library</span>(ggplot2)
+<span style="color:#a6e22e">library</span>(ggspatial)
+<span style="color:#a6e22e">library</span>(RPostgreSQL)
+<span style="color:#a6e22e">library</span>(rgdal)
+<span style="color:#a6e22e">library</span>(rgbif)
+</code></pre></div><p>The data for this tutorial are available from [here](needs link).</p>
 <h2 id="what-is-a-spatial-object">What is a spatial object?</h2>
-
 <p>A spatial object is an entity with coordinates in a geographical space (x, y) or (x, y, z) with a specific projection.</p>
-
 <blockquote>
 <p><strong>Coordinates are not enough!</strong> To illustrate this affirmation, just have a look at this example.</p>
 </blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># create two ojbects with their long/lat coordinates</span>
+point_liverpool <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Liverpool&#39;</span>, longitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">-2.98</span>, latitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">53.41</span>)
+point_edinburgh <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Edinburgh&#39;</span>, longitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">-3.19</span>, latitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">55.95</span>)
+city_points <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(point_liverpool, point_edinburgh)
 
-<pre><code class="language-r"># create two ojbects with their long/lat coordinates
-point_liverpool &lt;- data.frame(name = 'Liverpool', longitude = -2.98, latitude = 53.41)
-point_edinburgh &lt;- data.frame(name = 'Edinburgh', longitude = -3.19, latitude = 55.95)
-city_points &lt;- rbind(point_liverpool, point_edinburgh)
-
-# Now have a look at them in a 2D space.
-plot(city_points[,c(&quot;longitude&quot;, &quot;latitude&quot;)], pch = 19, col = 'magenta')
-text(city_points[,c(&quot;longitude&quot;, &quot;latitude&quot;)], labels = city_points$name, pos = c(2, 4))
-</code></pre>
-
-<p>With these two cities, although the coordinates are right, you have no information about the context of their coordinates.</p>
-
+<span style="color:#75715e"># Now have a look at them in a 2D space.</span>
+<span style="color:#a6e22e">plot</span>(city_points[,<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;longitude&#34;</span>, <span style="color:#e6db74">&#34;latitude&#34;</span>)], pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;magenta&#39;</span>)
+<span style="color:#a6e22e">text</span>(city_points[,<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;longitude&#34;</span>, <span style="color:#e6db74">&#34;latitude&#34;</span>)], labels <span style="color:#f92672">=</span> city_points<span style="color:#f92672">$</span>name, pos <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>))
+</code></pre></div><p>With these two cities, although the coordinates are right, you have no information about the context of their coordinates.</p>
 <blockquote>
 <p><em>Spatial projection</em>
-The Coordinate Reference System or CRS of a spatial object tells R where the spatial object is located in geographic space (<em>see</em> <a href="http://spatialreference.org/" target="_blank">http://spatialreference.org/</a>).</p>
+The Coordinate Reference System or CRS of a spatial object tells R where the spatial object is located in geographic space (<em>see</em> <a href="http://spatialreference.org/)">http://spatialreference.org/)</a>.</p>
 </blockquote>
-
 <p>For example, you might have seen the expression WGS84, the common longitude-latitude (degree decimal), or maybe EPSG:4326.
 In other words, spatial objects should come with some information relative to their reference system (CRS), no matter if it&rsquo;s a raster, a point, a line of a complex polygon. To locate an object in space, you need to know the reference system and the units in which the coordinates are expressed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Adding a projection to our cities, using WGS84</span>
+proj_city_points <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(city_points, coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;longitude&#34;</span>, <span style="color:#e6db74">&#34;latitude&#34;</span>), crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">4326</span>)
+<span style="color:#a6e22e">plot</span>(proj_city_points, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>)
+<span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;topleft&#34;</span>, legend <span style="color:#f92672">=</span> proj_city_points<span style="color:#f92672">$</span>name, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, bty<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>)
 
-<pre><code class="language-r"># Adding a projection to our cities, using WGS84
-proj_city_points &lt;- sf::st_as_sf(city_points, coords = c(&quot;longitude&quot;, &quot;latitude&quot;), crs = 4326)
-plot(proj_city_points, pch = 19, col = c(&quot;magenta&quot;, &quot;blue&quot;), cex = 1.5)
-legend(&quot;topleft&quot;, legend = proj_city_points$name, col = c(&quot;magenta&quot;, &quot;blue&quot;), pch = 19, cex = 1.5, bty=&quot;n&quot;)
+<span style="color:#75715e"># get some base layer to see this in perspective</span>
+country_sf_gbr <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(raster<span style="color:#f92672">::</span><span style="color:#a6e22e">getData</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GADM&#34;</span>, country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;GBR&#39;</span>, level <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>))
 
-# get some base layer to see this in perspective
-country_sf_gbr &lt;- sf::st_as_sf(raster::getData(name = &quot;GADM&quot;, country = 'GBR', level = 1))
-
-# visualize the points on a map
-plot(country_sf_gbr$geometry, graticule = TRUE, axes = TRUE, col = &quot;wheat1&quot;, xlim = c(-15, 5), ylim = c(50, 61))
-plot(proj_city_points, pch = 19, col = c(&quot;magenta&quot;, &quot;blue&quot;), cex = 1.5, add = TRUE)
-legend(&quot;topleft&quot;, legend = proj_city_points$name, col = c(&quot;magenta&quot;, &quot;blue&quot;), pch = 19, cex = 1.5, bty=&quot;n&quot;)
-text(x = -15, y = 50.2, &quot;EPSG:4326 - WGS84&quot;, pos = 4, cex = 0.7)
-</code></pre>
-
-<p>The advantage of having a CRS is that you can transform your coordinates, so it is expressed to other reference system (i.e. on other origin and units).</p>
-
+<span style="color:#75715e"># visualize the points on a map</span>
+<span style="color:#a6e22e">plot</span>(country_sf_gbr<span style="color:#f92672">$</span>geometry, graticule <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wheat1&#34;</span>, xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-15</span>, <span style="color:#ae81ff">5</span>), ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">61</span>))
+<span style="color:#a6e22e">plot</span>(proj_city_points, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;topleft&#34;</span>, legend <span style="color:#f92672">=</span> proj_city_points<span style="color:#f92672">$</span>name, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, bty<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>)
+<span style="color:#a6e22e">text</span>(x <span style="color:#f92672">=</span> <span style="color:#ae81ff">-15</span>, y <span style="color:#f92672">=</span> <span style="color:#ae81ff">50.2</span>, <span style="color:#e6db74">&#34;EPSG:4326 - WGS84&#34;</span>, pos <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>)
+</code></pre></div><p>The advantage of having a CRS is that you can transform your coordinates, so it is expressed to other reference system (i.e. on other origin and units).</p>
 <blockquote>
 <p><em>Changing Projection</em> (st_tranform)
 Some projections more appropriate for representing specific geographic context. Why is their so many CRS?</p>
 </blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Reproject your city points in OSGB 1936 / British National Grid (EPSG:27700)</span>
+proj_city_points_osgb <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(proj_city_points, crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">27700</span>)
+country_sf_gbr_osgb <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(country_sf_gbr, crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">27700</span>)
 
-<pre><code class="language-r"># Reproject your city points in OSGB 1936 / British National Grid (EPSG:27700)
-proj_city_points_osgb &lt;- sf::st_transform(proj_city_points, crs = 27700)
-country_sf_gbr_osgb &lt;- sf::st_transform(country_sf_gbr, crs = 27700)
-
-# visualize the points on a map
-dev.new()
-plot(country_sf_gbr_osgb$geometry, graticule = TRUE, axes = TRUE, col = &quot;wheat1&quot;, xlim = c(-333585, 713000), ylim = c(20000, 1290000))
-plot(proj_city_points_osgb, pch = 19, col = c(&quot;magenta&quot;, &quot;blue&quot;), cex = 1.5, add = TRUE)
-legend(&quot;topleft&quot;, legend = proj_city_points_osgb$name, col = c(&quot;magenta&quot;, &quot;blue&quot;), pch = 19, cex = 1.5, bty=&quot;n&quot;)
-text(x = -453585, y = 25000, &quot;EPSG:27700 - OSGB 1936 &quot;, pos = 4, cex = 0.7)
-</code></pre>
-
-<blockquote>
+<span style="color:#75715e"># visualize the points on a map</span>
+<span style="color:#a6e22e">dev.new</span>()
+<span style="color:#a6e22e">plot</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>geometry, graticule <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wheat1&#34;</span>, xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-333585</span>, <span style="color:#ae81ff">713000</span>), ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">20000</span>, <span style="color:#ae81ff">1290000</span>))
+<span style="color:#a6e22e">plot</span>(proj_city_points_osgb, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;topleft&#34;</span>, legend <span style="color:#f92672">=</span> proj_city_points_osgb<span style="color:#f92672">$</span>name, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, bty<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>)
+<span style="color:#a6e22e">text</span>(x <span style="color:#f92672">=</span> <span style="color:#ae81ff">-453585</span>, y <span style="color:#f92672">=</span> <span style="color:#ae81ff">25000</span>, <span style="color:#e6db74">&#34;EPSG:27700 - OSGB 1936 &#34;</span>, pos <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>)
+</code></pre></div><blockquote>
 <p>to get coordinates on a plot, you can use the function drawExtent() from the raster package that allow you to clic on a map to get the coordinates of an extent.</p>
 </blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">plot</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>geometry, graticule <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wheat1&#34;</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">drawExtent</span>()
+</code></pre></div><h1 id="part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</h1>
+<p>This is a revolution, providing a modern, stronger and cleaner workflow to deal with spatial object in R, at least vector data. The &ldquo;sf&rdquo; is developed by some of the same people that provide us with &ldquo;sp&rdquo;, offering an ecosystem that open new opportunities to do GIS in R. The firs place to look for resource is the sf package website <a href="https://r-spatial.github.io/sf/index.html">https://r-spatial.github.io/sf/index.html</a>, this a first stop to learn how it work and develop new skills in R.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(sf)
 
-<pre><code class="language-r">plot(country_sf_gbr_osgb$geometry, graticule = TRUE, axes = TRUE, col = &quot;wheat1&quot;)
-raster::drawExtent()
-</code></pre>
+p1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_point</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+p2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_point</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>))
+p3 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_multipoint</span>(<span style="color:#a6e22e">matrix</span>(<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">3</span>), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, byrow <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+p4 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(<span style="color:#a6e22e">data.frame</span>(X <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>), Y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>) ), coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;X&#34;</span>, <span style="color:#e6db74">&#34;Y&#34;</span>))
+p5 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_sfc</span>(p1, p2, p3)
 
-<h1 id="part-ii-building-and-working-with-spatial-objects-using-sf-in-r">PART II: Building and working with spatial objects using sf in R</h1>
+<span style="color:#a6e22e">plot</span>(p1)
+<span style="color:#a6e22e">plot</span>(p3, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>)
+<span style="color:#a6e22e">plot</span>(p2, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;magenta&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h2 id="modify-sf---sfc-objects">Modify sf - sfc objects</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p6 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">st_sfc</span>(p3), to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;POINT&#34;</span>)
+p_multi <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_cast</span>(p6, ids <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>), group_or_plist <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MULTIPOINT&#34;</span>)
 
-<p>This is a revolution, providing a modern, stronger and cleaner workflow to deal with spatial object in R, at least vector data. The &ldquo;sf&rdquo; is developed by some of the same people that provide us with &ldquo;sp&rdquo;, offering an ecosystem that open new opportunities to do GIS in R. The firs place to look for resource is the sf package website <a href="https://r-spatial.github.io/sf/index.html" target="_blank">https://r-spatial.github.io/sf/index.html</a>, this a first stop to learn how it work and develop new skills in R.</p>
+<span style="color:#a6e22e">plot</span>(p_multi[1], ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>), xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tomato3&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>)
+<span style="color:#a6e22e">plot</span>(p_multi[2], col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;magenta&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<pre><code class="language-r">library(sf)
-
-p1 &lt;- sf::st_point(c(1, 2))
-p2 &lt;- sf::st_point(c(3, 5))
-p3 &lt;- sf::st_multipoint(matrix(2 * c(1, 2, 4, 2, 3, 5, 7, 3), ncol = 2, byrow = TRUE))
-p4 &lt;- sf::st_as_sf(data.frame(X = c(1, 4, 3, 7), Y = c(2, 2, 5, 3) ), coords = c(&quot;X&quot;, &quot;Y&quot;))
-p5 &lt;- sf::st_sfc(p1, p2, p3)
-
-plot(p1)
-plot(p3, col = &quot;blue&quot;, pch = 19)
-plot(p2, col = &quot;magenta&quot;, pch = 19, add = TRUE)
-</code></pre>
-
-<h2 id="modify-sf-sfc-objects">Modify sf - sfc objects</h2>
-
-<pre><code class="language-r">p6 &lt;- sf::st_cast(x = st_sfc(p3), to = &quot;POINT&quot;)
-p_multi &lt;- sf::st_cast(p6, ids = c(1, 2, 1, 2), group_or_plist = TRUE, to = &quot;MULTIPOINT&quot;)
-
-plot(p_multi[1], ylim = c(0, 20), xlim = c(0, 20), col = &quot;tomato3&quot;, pch = 19)
-plot(p_multi[2], col = &quot;magenta&quot;, pch = 19, add = TRUE)
-
-p7 &lt;- st_cast(x = p4, to = &quot;POINT&quot;)
-p8 &lt;- rbind(st_cast(x = p4[1:3,], to = &quot;MULTIPOINT&quot;), p4[4,])
+p7 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> p4, to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;POINT&#34;</span>)
+p8 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(<span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> p4[1<span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>,], to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MULTIPOINT&#34;</span>), p4[4,])
 p8
-</code></pre>
+</code></pre></div><h3 id="lines">Lines</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">l1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_linestring</span>(<span style="color:#a6e22e">matrix</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>), ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, byrow <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+lp <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_sfc</span>(l1), to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MULTIPOINT&#34;</span>)
+bl1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(l1, <span style="color:#ae81ff">2</span>)
+blp <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_sfc</span>(bl1), to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MULTIPOINT&#34;</span>)
 
-<h3 id="lines">Lines</h3>
+<span style="color:#a6e22e">plot</span>(lp, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-5</span>, <span style="color:#ae81ff">10</span>), xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-5</span>, <span style="color:#ae81ff">10</span>))
+<span style="color:#a6e22e">plot</span>(blp, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;magenta&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(l1, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tomato3&#34;</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h3 id="polygon">Polygon</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">bl1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(l1, <span style="color:#ae81ff">2</span>)
+blp <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_cast</span>(x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_sfc</span>(bl1), to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MULTIPOINT&#34;</span>)
 
-<pre><code class="language-r">l1 &lt;- sf::st_linestring(matrix(c(1, 1, 2, 2, 3, 3, 4, 4, 4, 2), ncol = 2, byrow = TRUE))
-lp &lt;- sf::st_cast(x = sf::st_sfc(l1), to = &quot;MULTIPOINT&quot;)
-bl1 &lt;- sf::st_buffer(l1, 2)
-blp &lt;- sf::st_cast(x = sf::st_sfc(bl1), to = &quot;MULTIPOINT&quot;)
+<span style="color:#a6e22e">plot</span>(bl1, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, border <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>)
+<span style="color:#a6e22e">plot</span>(lp, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-5</span>, <span style="color:#ae81ff">10</span>), xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-5</span>, <span style="color:#ae81ff">10</span>), add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(blp, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;magenta&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(l1, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tomato3&#34;</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h3 id="intersects-and-intesections">Intersects and intesections</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(<span style="color:#a6e22e">data.frame</span>(X <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>), Y <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>) ), coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;X&#34;</span>, <span style="color:#e6db74">&#34;Y&#34;</span>), crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">4326</span>)
+poly1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">st_as_sfc</span>(<span style="color:#a6e22e">st_bbox</span>(<span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">2</span>)))
+poly2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">st_as_sfc</span>(<span style="color:#a6e22e">st_bbox</span>(<span style="color:#a6e22e">st_buffer</span>(p1[3,], <span style="color:#ae81ff">1.5</span>)))
 
-plot(lp, col = &quot;blue&quot;, pch = 19, cex = 2, ylim = c(-5, 10), xlim = c(-5, 10))
-plot(blp, col = &quot;magenta&quot;, pch = 19, cex = 1, add = TRUE)
-plot(l1, col = &quot;tomato3&quot;, lwd = 1.5, add = TRUE)
-</code></pre>
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;goldenrod&#34;</span>, xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-5</span>, <span style="color:#ae81ff">5</span>), ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>))
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly2), col <span style="color:#f92672">=</span> <span style="color:#a6e22e">rgb</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0.3</span>), add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(p1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;magenta&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex<span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<h3 id="polygon">Polygon</h3>
+<span style="color:#75715e">## INTERSECTION</span>
+poly3 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_intersection</span>(poly1, poly2)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly3), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<pre><code class="language-r">bl1 &lt;- sf::st_buffer(l1, 2)
-blp &lt;- sf::st_cast(x = sf::st_sfc(bl1), to = &quot;MULTIPOINT&quot;)
+<span style="color:#75715e">## INTERSECT</span>
+p1_poly1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_intersects</span>(p1, poly1, sparse <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(p1[p1_poly1,]), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;turquoise&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h3 id="circle-buffer-intersection">circle buffer intersection</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">poly1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">2</span>)
+poly2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[3,], <span style="color:#ae81ff">1.5</span>)
+int_b2_b1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_intersection</span>(poly2, poly1)
 
-plot(bl1, col = &quot;lightblue&quot;, border = NA)
-plot(lp, col = &quot;blue&quot;, pch = 19, cex = 2, ylim = c(-5, 10), xlim = c(-5, 10), add = TRUE)
-plot(blp, col = &quot;magenta&quot;, pch = 19, cex = 1, add = TRUE)
-plot(l1, col = &quot;tomato3&quot;, lwd = 1.5, add = TRUE)
-</code></pre>
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly1), col <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>, border <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>, ylim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>), axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly2), add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(p1[2,]), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;black&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(p1[3,]), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(int_b2_b1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, boder <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h3 id="difference-between-objects">Difference between objects</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">poly1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">2</span>)
+poly2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">4</span>)
+dif_poly2_poly1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_difference</span>(poly2, poly1)
 
-<h3 id="intersects-and-intesections">Intersects and intesections</h3>
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(dif_poly2_poly1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;orange&#34;</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h3 id="union-merge-and-melt-objects">Union (merge and melt) objects</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">poly1 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">2</span>)
+poly2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(p1[2,], <span style="color:#ae81ff">4</span>)
+uni_poly1_2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_union</span>(dif_poly2_poly1, poly1)
 
-<pre><code class="language-r">p1 &lt;- sf::st_as_sf(data.frame(X = c(1, 4, 3, 7), Y = c(2, 2, 5, 3) ), coords = c(&quot;X&quot;, &quot;Y&quot;), crs = 4326)
-poly1 &lt;- st_as_sfc(st_bbox(st_buffer(p1[2,], 2)))
-poly2 &lt;- st_as_sfc(st_bbox(st_buffer(p1[3,], 1.5)))
-
-plot(st_geometry(poly1), col = &quot;goldenrod&quot;, xlim = c(-5, 5), ylim = c(0, 10))
-plot(st_geometry(poly2), col = rgb(1,1,0,0.3), add = TRUE)
-plot(st_geometry(p1), col = &quot;magenta&quot;, pch = 19, cex= 1.5, add = TRUE)
-
-## INTERSECTION
-poly3 &lt;- sf::st_intersection(poly1, poly2)
-plot(st_geometry(poly3), col = &quot;lightblue&quot;, add = TRUE)
-
-## INTERSECT
-p1_poly1 &lt;- sf::st_intersects(p1, poly1, sparse = FALSE)
-plot(st_geometry(p1[p1_poly1,]), col = &quot;turquoise&quot;, pch = 19, cex = 2, add = TRUE)
-</code></pre>
-
-<h3 id="circle-buffer-intersection">circle buffer intersection</h3>
-
-<pre><code class="language-r">poly1 &lt;- sf::st_buffer(p1[2,], 2)
-poly2 &lt;- sf::st_buffer(p1[3,], 1.5)
-int_b2_b1 &lt;- sf::st_intersection(poly2, poly1)
-
-plot(st_geometry(poly1), col = NA, border = &quot;red&quot;, ylim = c(0, 7), axes = TRUE)
-plot(st_geometry(poly2), add = TRUE)
-plot(st_geometry(p1[2,]), col = &quot;black&quot;, pch = 19, add = TRUE)
-plot(st_geometry(p1[3,]), col = &quot;blue&quot;, pch = 19, add = TRUE)
-plot(st_geometry(int_b2_b1), col = &quot;lightblue&quot;, boder = NA, add = TRUE)
-</code></pre>
-
-<h3 id="difference-between-objects">Difference between objects</h3>
-
-<pre><code class="language-r">poly1 &lt;- sf::st_buffer(p1[2,], 2)
-poly2 &lt;- sf::st_buffer(p1[2,], 4)
-dif_poly2_poly1 &lt;- sf::st_difference(poly2, poly1)
-
-plot(st_geometry(dif_poly2_poly1), col = &quot;orange&quot;, axes = TRUE)
-plot(st_geometry(poly1), col = &quot;blue&quot;, add = TRUE)
-</code></pre>
-
-<h3 id="union-merge-and-melt-objects">Union (merge and melt) objects</h3>
-
-<pre><code class="language-r">poly1 &lt;- sf::st_buffer(p1[2,], 2)
-poly2 &lt;- sf::st_buffer(p1[2,], 4)
-uni_poly1_2 &lt;- sf::st_union(dif_poly2_poly1, poly1)
-
-plot(st_geometry(uni_poly1_2), col = &quot;lightblue&quot;, axes = TRUE)
-plot(st_geometry(poly1), col = &quot;tomato3&quot;, add = TRUE)
-plot(st_geometry(st_buffer(poly1,-1)), col = &quot;white&quot;, add = TRUE)
-plot(st_geometry(st_centroid(poly1)), col = &quot;black&quot;, pch = 19, add = TRUE)
-</code></pre>
-
-<p>If you like it tidy and the dplyr way? Since sf is essentally a data.frame with  a list of spatial attribute attached, it works well in the tidy univers. Have a look at this blog to get a first feel <a href="http://strimas.com/r/tidy-sf/" target="_blank">http://strimas.com/r/tidy-sf/</a>.</p>
-
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(uni_poly1_2), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(poly1), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tomato3&#34;</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(<span style="color:#a6e22e">st_buffer</span>(poly1,<span style="color:#ae81ff">-1</span>)), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">st_geometry</span>(<span style="color:#a6e22e">st_centroid</span>(poly1)), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;black&#34;</span>, pch <span style="color:#f92672">=</span> <span style="color:#ae81ff">19</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><p>If you like it tidy and the dplyr way? Since sf is essentally a data.frame with  a list of spatial attribute attached, it works well in the tidy univers. Have a look at this blog to get a first feel <a href="http://strimas.com/r/tidy-sf/">http://strimas.com/r/tidy-sf/</a>.</p>
 <h1 id="part-iii-load-and-manipulate-spatial-objects">PART III: Load and manipulate spatial objects</h1>
-
-<p>Spatial data are increasingly available from the Web, from species occurrence to natural and cultural features data, accessing spatial data is now relatively easy. For base layers, you can find many freely available data sets such as the ones provided by the Natural Earth [<a href="http://www.naturalearthdata.com" target="_blank">http://www.naturalearthdata.com</a>], the IUCN Protected Planet database [www.protectedplanet.net], the GADM project [<a href="https://gadm.org" target="_blank">https://gadm.org</a>], worldclim [<a href="http://worldclim.org/version2" target="_blank">http://worldclim.org/version2</a>] the CHELSA climate data sets [<a href="http://chelsa-climate.org" target="_blank">http://chelsa-climate.org</a>] or the European Environmental Agency [<a href="https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;c11=&amp;c5=all&amp;b_start=0" target="_blank">https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;c11=&amp;c5=all&amp;b_start=0</a>]</p>
-
+<p>Spatial data are increasingly available from the Web, from species occurrence to natural and cultural features data, accessing spatial data is now relatively easy. For base layers, you can find many freely available data sets such as the ones provided by the Natural Earth [http://www.naturalearthdata.com], the IUCN Protected Planet database [www.protectedplanet.net], the GADM project [https://gadm.org], worldclim [http://worldclim.org/version2] the CHELSA climate data sets [http://chelsa-climate.org] or the European Environmental Agency [https://www.eea.europa.eu/data-and-maps/data#c0=5&amp;c11=&amp;c5=all&amp;b_start=0]</p>
 <h2 id="raster-object">Raster object</h2>
-
-<pre><code class="language-r">library(raster)
-# annual mean temperature
-chelsa_amt &lt;- raster::raster(&quot;data/CHELSA_bio10_1.tif&quot;)
-raster::plot(chelsa_amt)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(raster)
+<span style="color:#75715e"># annual mean temperature</span>
+chelsa_amt <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">raster</span>(<span style="color:#e6db74">&#34;data/CHELSA_bio10_1.tif&#34;</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(chelsa_amt)
 chelsa_amt
 
-# crop climate data for a specific bounding box
-chelsa_amt_gbr &lt;- raster::crop(chelsa_amt, raster::extent(country_sf_gbr)) # cut the worldwide raster according to
-raster::plot(chelsa_amt_gbr)
+<span style="color:#75715e"># crop climate data for a specific bounding box</span>
+chelsa_amt_gbr <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">crop</span>(chelsa_amt, raster<span style="color:#f92672">::</span><span style="color:#a6e22e">extent</span>(country_sf_gbr)) <span style="color:#75715e"># cut the worldwide raster according to</span>
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(chelsa_amt_gbr)
 
-# convert temperature data in usual unit
-chelsa_amt_gbr[] &lt;- chelsa_amt_gbr[]*0.1 # convert temperature data in usual unit
-raster::res(chelsa_amt_gbr)
+<span style="color:#75715e"># convert temperature data in usual unit</span>
+chelsa_amt_gbr[] <span style="color:#f92672">&lt;-</span> chelsa_amt_gbr[]<span style="color:#f92672">*</span><span style="color:#ae81ff">0.1</span> <span style="color:#75715e"># convert temperature data in usual unit</span>
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">res</span>(chelsa_amt_gbr)
 
-# change resolution aggregate() or disaggregate()
-chelsa_amt_gbr_2 &lt;- raster::disaggregate(chelsa_amt_gbr, fact=4)
-raster::res(chelsa_amt_gbr_2)
+<span style="color:#75715e"># change resolution aggregate() or disaggregate()</span>
+chelsa_amt_gbr_2 <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">disaggregate</span>(chelsa_amt_gbr, fact<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">res</span>(chelsa_amt_gbr_2)
 
-chelsa_amt_gbr_3 &lt;- raster::aggregate(chelsa_amt_gbr, fact=4)
-raster::res(chelsa_amt_gbr_3)
-raster::plot(chelsa_amt_gbr_3)
-</code></pre>
-
-<blockquote>
+chelsa_amt_gbr_3 <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">aggregate</span>(chelsa_amt_gbr, fact<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">res</span>(chelsa_amt_gbr_3)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(chelsa_amt_gbr_3)
+</code></pre></div><blockquote>
 <p><em>Other format for gridded data</em>
 netCDF format is commonly used for gridded time series (temperature)</p>
 </blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">rast_1 <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">raster</span>(<span style="color:#e6db74">&#34;data/tg_0.25deg_reg_2011-2017_v17.0.nc&#34;</span>, band <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+rast_2 <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">raster</span>(<span style="color:#e6db74">&#34;data/tg_0.25deg_reg_2011-2017_v17.0.nc&#34;</span>, band <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+rast_stack <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">stack</span>(rast_1, rast_2)
+<span style="color:#a6e22e">plot</span>(rast_stack<span style="color:#f92672">$</span>mean.temperature.1)
+<span style="color:#a6e22e">plot</span>(rast_stack)
+</code></pre></div><h3 id="land-cover">Land cover</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">eunis_1km <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">raster</span>(<span style="color:#e6db74">&#34;data/es_l1_1km.tif&#34;</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(eunis_1km)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">projection</span>(eunis_1km)
+</code></pre></div><h3 id="spatial-extraction-raster-value-for-a-vector-object">Spatial extraction (raster value for a vector object)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">proj_city_points_laea <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(proj_city_points, raster<span style="color:#f92672">::</span><span style="color:#a6e22e">projection</span>(eunis_1km))
+eunis_city <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">extract</span>(eunis_1km, <span style="color:#a6e22e">as</span>(proj_city_points_laea, <span style="color:#e6db74">&#34;Spatial&#34;</span>))
+eunis_city <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">extract</span>(eunis_1km, <span style="color:#a6e22e">as</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_buffer</span>(proj_city_points_laea, <span style="color:#ae81ff">10000</span>), <span style="color:#e6db74">&#34;Spatial&#34;</span>))
 
-<pre><code class="language-r">rast_1 &lt;- raster::raster(&quot;data/tg_0.25deg_reg_2011-2017_v17.0.nc&quot;, band = 1)
-rast_2 &lt;- raster::raster(&quot;data/tg_0.25deg_reg_2011-2017_v17.0.nc&quot;, band = 2)
-rast_stack &lt;- raster::stack(rast_1, rast_2)
-plot(rast_stack$mean.temperature.1)
-plot(rast_stack)
-</code></pre>
+<span style="color:#a6e22e">str</span>(eunis_city)
+<span style="color:#a6e22e">table</span>(eunis_city[[1]])
 
-<h3 id="land-cover">Land cover</h3>
-
-<pre><code class="language-r">eunis_1km &lt;- raster::raster(&quot;data/es_l1_1km.tif&quot;)
-raster::plot(eunis_1km)
-raster::projection(eunis_1km)
-</code></pre>
-
-<h3 id="spatial-extraction-raster-value-for-a-vector-object">Spatial extraction (raster value for a vector object)</h3>
-
-<pre><code class="language-r">proj_city_points_laea &lt;- sf::st_transform(proj_city_points, raster::projection(eunis_1km))
-eunis_city &lt;- raster::extract(eunis_1km, as(proj_city_points_laea, &quot;Spatial&quot;))
-eunis_city &lt;- raster::extract(eunis_1km, as(sf::st_buffer(proj_city_points_laea, 10000), &quot;Spatial&quot;))
-
-str(eunis_city)
-table(eunis_city[[1]])
-
-proportion &lt;- as.numeric(table(eunis_city[[1]]))[which(names(table(eunis_city[[1]]))!=&quot;10&quot;)] / sum(as.numeric(table(eunis_city[[1]]))) * 100
+proportion <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.numeric</span>(<span style="color:#a6e22e">table</span>(eunis_city[[1]]))<span style="color:#a6e22e">[which</span>(<span style="color:#a6e22e">names</span>(<span style="color:#a6e22e">table</span>(eunis_city[[1]]))<span style="color:#f92672">!=</span><span style="color:#e6db74">&#34;10&#34;</span>)] <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">as.numeric</span>(<span style="color:#a6e22e">table</span>(eunis_city[[1]]))) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>
 proportion
-</code></pre>
+</code></pre></div><h2 id="vector-object">Vector object</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(sf)
+st_prov <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_read</span>(<span style="color:#e6db74">&#34;data/GADM_2.8_GBR_adm2.shp&#34;</span>)
+<span style="color:#a6e22e">plot</span>(st_prov[,<span style="color:#e6db74">&#34;HASC_2&#34;</span>], graticule <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<h2 id="vector-object">Vector object</h2>
+<span style="color:#75715e"># Older option</span>
+<span style="color:#a6e22e">library</span>(rgdal)
+st_prov_sp <span style="color:#f92672">&lt;-</span> rgdal<span style="color:#f92672">::</span><span style="color:#a6e22e">readOGR</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;GADM_2.8_GBR_adm2&#34;</span>)
+<span style="color:#a6e22e">class</span>(st_prov_sp)
+<span style="color:#a6e22e">plot</span>(st_prov_sp, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<pre><code class="language-r">library(sf)
-st_prov &lt;- sf::st_read(&quot;data/GADM_2.8_GBR_adm2.shp&quot;)
-plot(st_prov[,&quot;HASC_2&quot;], graticule = TRUE, axes = TRUE)
+<span style="color:#75715e"># Change projection of an &#34;sp&#34; object</span>
+crs.osgb <span style="color:#f92672">=</span> <span style="color:#a6e22e">CRS</span>(<span style="color:#e6db74">&#34;+init=epsg:27700&#34;</span>)
+st_prov_sp.osgb <span style="color:#f92672">=</span> sp<span style="color:#f92672">::</span><span style="color:#a6e22e">spTransform</span>(st_prov_sp, crs.osgb)
+<span style="color:#a6e22e">plot</span>(st_prov_sp.osgb, axes <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-# Older option
-library(rgdal)
-st_prov_sp &lt;- rgdal::readOGR(&quot;data&quot;, &quot;GADM_2.8_GBR_adm2&quot;)
-class(st_prov_sp)
-plot(st_prov_sp, axes = TRUE)
+<span style="color:#a6e22e">spplot</span>(st_prov_sp.osgb, <span style="color:#e6db74">&#34;HASC_2&#34;</span>, colorkey <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</code></pre></div><h2 id="read-and-write-your-spatial-object-in-shapefile">Read and write your spatial object in Shapefile</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># read with &#34;sf&#34;</span>
+st_prov <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_read</span>(<span style="color:#e6db74">&#34;data/GADM_2.8_GBR_adm2.shp&#34;</span>)
 
-# Change projection of an &quot;sp&quot; object
-crs.osgb = CRS(&quot;+init=epsg:27700&quot;)
-st_prov_sp.osgb = sp::spTransform(st_prov_sp, crs.osgb)
-plot(st_prov_sp.osgb, axes = TRUE)
+<span style="color:#75715e"># write with &#34;sf&#34;</span>
+sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_write</span>(st_prov, dsn <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;st_prov.shp&#34;</span>, delete_layer <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-spplot(st_prov_sp.osgb, &quot;HASC_2&quot;, colorkey = FALSE)
-</code></pre>
+<span style="color:#75715e"># write with OGR (rgdal)</span>
+st_prov_sp <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">as</span>(st_prov, <span style="color:#e6db74">&#34;Spatial&#34;</span>)
+rgdal<span style="color:#f92672">::</span><span style="color:#a6e22e">writeOGR</span>(st_prov_sp, <span style="color:#e6db74">&#34;st_prov_sp&#34;</span>, driver <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ESRI Shapefile&#34;</span>)
+</code></pre></div><h2 id="subseting-and-filtering">Subseting and filtering</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">wdpa_gbr <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_read</span>(<span style="color:#e6db74">&#34;data/wdpa_gbr.shp&#34;</span>)
+wdpa_gbr <span style="color:#f92672">&lt;-</span> wdpa_gbr[wdpa_gbr<span style="color:#f92672">$</span>MARINE <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>,]
+<span style="color:#a6e22e">plot</span>(wdpa_gbr<span style="color:#f92672">$</span>geometry)
 
-<h2 id="read-and-write-your-spatial-object-in-shapefile">Read and write your spatial object in Shapefile</h2>
-
-<pre><code class="language-r"># read with &quot;sf&quot;
-st_prov &lt;- sf::st_read(&quot;data/GADM_2.8_GBR_adm2.shp&quot;)
-
-# write with &quot;sf&quot;
-sf::st_write(st_prov, dsn = &quot;st_prov.shp&quot;, delete_layer = TRUE)
-
-# write with OGR (rgdal)
-st_prov_sp &lt;- sf::as(st_prov, &quot;Spatial&quot;)
-rgdal::writeOGR(st_prov_sp, &quot;st_prov_sp&quot;, driver = &quot;ESRI Shapefile&quot;)
-</code></pre>
-
-<h2 id="subseting-and-filtering">Subseting and filtering</h2>
-
-<pre><code class="language-r">wdpa_gbr &lt;- sf::st_read(&quot;data/wdpa_gbr.shp&quot;)
-wdpa_gbr &lt;- wdpa_gbr[wdpa_gbr$MARINE == 0,]
-plot(wdpa_gbr$geometry)
-
-## bounding box
-bb &lt;- sf::st_bbox(country_sf_gbr)
+<span style="color:#75715e">## bounding box</span>
+bb <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_bbox</span>(country_sf_gbr)
 bb
 
-## faster solution
-bb_poly &lt;- sf::st_make_grid(country_sf_gbr, n = 1)
-wdpa_gbr_2 &lt;- sf::st_intersects(wdpa_gbr, bb_poly, sparse = FALSE)
-wdpa_gbr &lt;- wdpa_gbr[wdpa_gbr_2,]
-plot(wdpa_gbr$geometry[wdpa_gbr$IUCN_CAT == &quot;V&quot;])
+<span style="color:#75715e">## faster solution</span>
+bb_poly <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_make_grid</span>(country_sf_gbr, n <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+wdpa_gbr_2 <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_intersects</span>(wdpa_gbr, bb_poly, sparse <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+wdpa_gbr <span style="color:#f92672">&lt;-</span> wdpa_gbr[wdpa_gbr_2,]
+<span style="color:#a6e22e">plot</span>(wdpa_gbr<span style="color:#f92672">$</span>geometry[wdpa_gbr<span style="color:#f92672">$</span>IUCN_CAT <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;V&#34;</span>])
 
-wdpa_cntr &lt;- sf::st_centroid(wdpa_gbr)
-plot(wdpa_cntr$geometry)
+wdpa_cntr <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(wdpa_gbr)
+<span style="color:#a6e22e">plot</span>(wdpa_cntr<span style="color:#f92672">$</span>geometry)
 
-## building a box from the st_bbox output
-g.bbox &lt;- raster::extent(as.numeric(sf::st_bbox(country_sf_gbr))[c(1,3,2,4)])
-g.bbox_sf &lt;- sf::st_set_crs(sf::st_as_sfc(as(g.bbox, 'SpatialPolygons')), 3035)
-plot(g.bbox_sf, add = TRUE)
-</code></pre>
-
-<blockquote>
+<span style="color:#75715e">## building a box from the st_bbox output</span>
+g.bbox <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">extent</span>(<span style="color:#a6e22e">as.numeric</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_bbox</span>(country_sf_gbr))<span style="color:#a6e22e">[c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>)])
+g.bbox_sf <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_set_crs</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sfc</span>(<span style="color:#a6e22e">as</span>(g.bbox, <span style="color:#e6db74">&#39;SpatialPolygons&#39;</span>)), <span style="color:#ae81ff">3035</span>)
+<span style="color:#a6e22e">plot</span>(g.bbox_sf, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><blockquote>
 <p><em>Try it your self</em>
 Get some river data from
-<a href="http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view" target="_blank">http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view</a></p>
+<a href="http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view">http://land.copernicus.eu/pan-european/satellite-derived-products/eu-hydro/eu-hydro-public-beta/eu-hydro-river-network/view</a></p>
 </blockquote>
-
-<h1 id="part-iv-interfacing-r-and-posgresql-postgis">PART IV: Interfacing R and PosgreSQL/PostGIS</h1>
-
+<h1 id="part-iv-interfacing-r-and-posgresqlpostgis">PART IV: Interfacing R and PosgreSQL/PostGIS</h1>
 <ol>
 <li>Install PostgreSQL, with the PostGIS extension</li>
 <li>Create a database</li>
 <li>Populate your database</li>
 <li>Extract from your database</li>
 </ol>
-
 <h2 id="create-postgresql-database">Create PostgreSQL database</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#39;RPostgreSQL&#39;</span>)
 
-<pre><code class="language-r">library('RPostgreSQL')
+<span style="color:#75715e"># create a new database in on your local PostgreSQL server</span>
+sql_createdb <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;-h localhost -U &#34;</span>, <span style="color:#e6db74">&#34;postgres&#34;</span>, <span style="color:#e6db74">&#34; -T &#34;</span>, <span style="color:#e6db74">&#34;postgis_22_sample&#34;</span>, <span style="color:#e6db74">&#34; -E UTF8 -O postgres &#34;</span>, <span style="color:#e6db74">&#34;RGIS_workshop&#34;</span>)
+<span style="color:#a6e22e">system2</span>(<span style="color:#e6db74">&#34;createdb&#34;</span>, sql_createdb, invisible <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 
-# create a new database in on your local PostgreSQL server
-sql_createdb &lt;- paste0(&quot;-h localhost -U &quot;, &quot;postgres&quot;, &quot; -T &quot;, &quot;postgis_22_sample&quot;, &quot; -E UTF8 -O postgres &quot;, &quot;RGIS_workshop&quot;)
-system2(&quot;createdb&quot;, sql_createdb, invisible = FALSE)
+<span style="color:#75715e"># connect R to your server and newly created database</span>
+drv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbDriver</span>(<span style="color:#e6db74">&#34;PostgreSQL&#34;</span>)
+dbcon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbConnect</span>(drv, dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;RGIS_workshop&#34;</span>,
+                 host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>, port <span style="color:#f92672">=</span> <span style="color:#ae81ff">5432</span>,
+                 user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;postgres&#34;</span>, password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;****&#34;</span>)
 
-# connect R to your server and newly created database
-drv &lt;- dbDriver(&quot;PostgreSQL&quot;)
-dbcon &lt;- dbConnect(drv, dbname = &quot;RGIS_workshop&quot;,
-                 host = &quot;localhost&quot;, port = 5432,
-                 user = &quot;postgres&quot;, password = &quot;****&quot;)
+<span style="color:#75715e"># create a schema, send your first SQL statement (query)</span>
+sql_createschema <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;CREATE SCHEMA IF NOT EXISTS my_shemas AUTHORIZATION postgres;&#34;</span>)
+<span style="color:#a6e22e">dbSendStatement</span>(dbcon, sql_createschema)
 
-# create a schema, send your first SQL statement (query)
-sql_createschema &lt;- paste0(&quot;CREATE SCHEMA IF NOT EXISTS my_shemas AUTHORIZATION postgres;&quot;)
-dbSendStatement(dbcon, sql_createschema)
+<span style="color:#75715e"># have a look at your PostgreSQL database, using pgAdmin</span>
+</code></pre></div><h2 id="send-spatial-data-to-your-newly-created-database-located-on-your-local-server">Send spatial data to your newly created database located on your local server</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(sf)
+dbcon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbConnect</span>(drv, dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;RGIS_workshop&#34;</span>,
+                 host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>, port <span style="color:#f92672">=</span> <span style="color:#ae81ff">5432</span>,
+                 user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;postgres&#34;</span>, password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*****&#34;</span>)
 
-# have a look at your PostgreSQL database, using pgAdmin
-</code></pre>
+wdpa_gbr <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_read</span>(<span style="color:#e6db74">&#34;data/wdpa_gbr.shp&#34;</span>)
+sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_write</span>(wdpa_gbr, dbcon, overwrite <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 
-<h2 id="send-spatial-data-to-your-newly-created-database-located-on-your-local-server">Send spatial data to your newly created database located on your local server</h2>
+<span style="color:#75715e"># check if you succeeded</span>
+<span style="color:#a6e22e">dbExistsTable</span>(dbcon, <span style="color:#e6db74">&#34;wdpa_gbr&#34;</span>)
 
-<pre><code class="language-r">library(sf)
-dbcon &lt;- dbConnect(drv, dbname = &quot;RGIS_workshop&quot;,
-                 host = &quot;localhost&quot;, port = 5432,
-                 user = &quot;postgres&quot;, password = &quot;*****&quot;)
+<span style="color:#75715e"># extract some data with a SQL query and a condition</span>
+psql_extract <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbGetQuery</span>(dbcon, <span style="color:#e6db74">&#34;SELECT \&#34;IUCN_CAT\&#34;, ST_AsText(geometry) as geom FROM wdpa_gbr WHERE \&#34;IUCN_CAT\&#34; = \&#39;V\&#39; AND \&#34;MARINE\&#34; = \&#39;0\&#39;&#34;</span>)
 
-wdpa_gbr &lt;- sf::st_read(&quot;data/wdpa_gbr.shp&quot;)
-sf::st_write(wdpa_gbr, dbcon, overwrite = TRUE)
+<span style="color:#a6e22e">str</span>(psql_extract)
+new_extract <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(psql_extract, wkt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;geom&#34;</span>)
+new_extract <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_set_crs</span>(new_extract, <span style="color:#ae81ff">4326</span>)
+<span style="color:#a6e22e">plot</span>(new_extract)
 
-# check if you succeeded
-dbExistsTable(dbcon, &quot;wdpa_gbr&quot;)
-
-# extract some data with a SQL query and a condition
-psql_extract &lt;- dbGetQuery(dbcon, &quot;SELECT \&quot;IUCN_CAT\&quot;, ST_AsText(geometry) as geom FROM wdpa_gbr WHERE \&quot;IUCN_CAT\&quot; = \'V\' AND \&quot;MARINE\&quot; = \'0\'&quot;)
-
-str(psql_extract)
-new_extract &lt;- sf::st_as_sf(psql_extract, wkt = &quot;geom&quot;)
-new_extract &lt;- sf::st_set_crs(new_extract, 4326)
-plot(new_extract)
-
-new_area &lt;- sf::st_area(sf::st_transform(new_extract, 27700))
-head(new_area)
-</code></pre>
-
-<h2 id="interacting-with-postgresql-through-your-terminal">Interacting with PostgreSQL through your terminal</h2>
-
+new_area <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_area</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(new_extract, <span style="color:#ae81ff">27700</span>))
+<span style="color:#a6e22e">head</span>(new_area)
+</code></pre></div><h2 id="interacting-with-postgresql-through-your-terminal">Interacting with PostgreSQL through your terminal</h2>
 <blockquote>
 <p><em>In your terminal, type</em>
 ogr2ogr -f &ldquo;PostgreSQL&rdquo; -t_srs EPSG:27700 PG:&ldquo;host=localhost port=5432 dbname=RGIS_workshop user=postgres password=****&rdquo; &lsquo;C:\Users\retoschm\OneDrive - Natural Environment Research Council\Rgis_workshop\data\GADM_2.8_GBR_adm2.shp&rsquo; -nln public.wdpa_gbr2 -nlt MULTIPOLYGON -overwrite -progress -unsetFid &ndash;config PG_USE_COPY YES</p>
 </blockquote>
-
 <h2 id="some-more-raster-operations">Some more raster operations</h2>
-
 <h3 id="hillshade-and-terrain-map">Hillshade and Terrain map</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(raster)
+alt <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">getData</span>(<span style="color:#e6db74">&#34;alt&#34;</span>, country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GBR&#34;</span>)
+slope <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">terrain</span>(alt, opt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;slope&#34;</span>)
+aspect <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">terrain</span>(alt, opt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aspect&#34;</span>)
+hill <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">hillShade</span>(slope, aspect, angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">270</span>)
 
-<pre><code class="language-r">library(raster)
-alt &lt;- raster::getData(&quot;alt&quot;, country = &quot;GBR&quot;)
-slope &lt;- raster::terrain(alt, opt = &quot;slope&quot;)
-aspect &lt;- raster::terrain(alt, opt = &quot;aspect&quot;)
-hill &lt;- raster::hillShade(slope, aspect, angle = 40, direction = 270)
+<span style="color:#75715e"># plot your raster and newly extracted polygons on a map</span>
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(hill, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">grey</span>(<span style="color:#ae81ff">0</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span><span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>), legend <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+<span style="color:#a6e22e">plot</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(new_extract, <span style="color:#ae81ff">4326</span>), add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+raster<span style="color:#f92672">::</span><span style="color:#a6e22e">plot</span>(alt, col <span style="color:#f92672">=</span> <span style="color:#a6e22e">terrain.colors</span>(<span style="color:#ae81ff">25</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>), add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><h1 id="part-v-plot-your-spatial-object-data-with-ggplot2">PART V: Plot your spatial object data with ggplot2</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(ggplot2)
+<span style="color:#a6e22e">library</span>(ggspatial)
 
-# plot your raster and newly extracted polygons on a map
-raster::plot(hill, col = grey(0:100/100), legend = FALSE)
-plot(sf::st_transform(new_extract, 4326), add = TRUE)
-raster::plot(alt, col = terrain.colors(25, alpha = 0.5), add = TRUE)
-</code></pre>
+country_sf_gbr <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(raster<span style="color:#f92672">::</span><span style="color:#a6e22e">getData</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GADM&#34;</span>, country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;GBR&#39;</span>, level <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>))
+country_sf_gbr_osgb <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(country_sf_gbr, crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">27700</span>)
 
-<h1 id="part-v-plot-your-spatial-object-data-with-ggplot2">PART V: Plot your spatial object data with ggplot2</h1>
+point_liverpool <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Liverpool&#39;</span>, longitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">-2.98</span>, latitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">53.41</span>)
+point_edinburgh <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Edinburgh&#39;</span>, longitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">-3.19</span>, latitude <span style="color:#f92672">=</span> <span style="color:#ae81ff">55.95</span>)
+city_points <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(point_liverpool, point_edinburgh)
+proj_city_points_osgb <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_transform</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(city_points, coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;longitude&#34;</span>, <span style="color:#e6db74">&#34;latitude&#34;</span>), crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">4326</span>), crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">27700</span>)
 
-<pre><code class="language-r">library(ggplot2)
-library(ggspatial)
+<span style="color:#75715e">## simple plot with ggplot</span>
+<span style="color:#a6e22e">ggplot</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>() <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>))
 
-country_sf_gbr &lt;- sf::st_as_sf(raster::getData(name = &quot;GADM&quot;, country = 'GBR', level = 1))
-country_sf_gbr_osgb &lt;- sf::st_transform(country_sf_gbr, crs = 27700)
+<span style="color:#75715e">## some colors</span>
+<span style="color:#a6e22e">ggplot</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;black&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wheat1&#34;</span> ) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>))
 
-point_liverpool &lt;- data.frame(name = 'Liverpool', longitude = -2.98, latitude = 53.41)
-point_edinburgh &lt;- data.frame(name = 'Edinburgh', longitude = -3.19, latitude = 55.95)
-city_points &lt;- rbind(point_liverpool, point_edinburgh)
-proj_city_points_osgb &lt;- sf::st_transform(sf::st_as_sf(city_points, coords = c(&quot;longitude&quot;, &quot;latitude&quot;), crs = 4326), crs = 27700)
+<span style="color:#75715e">## color with some qualitative meaning</span>
+<span style="color:#a6e22e">ggplot</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(<span style="color:#a6e22e">aes</span>(fill <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.numeric</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_area</span>(country_sf_gbr_osgb)))) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">scale_fill_viridis_c</span>(option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;plasma&#34;</span>, name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Area&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>))
 
-## simple plot with ggplot
-ggplot(data = country_sf_gbr_osgb) +
-    geom_sf() +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;))
+<span style="color:#75715e"># add a scale bar and a north arrow</span>
+<span style="color:#a6e22e">ggplot</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>() <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_scale</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, width_hint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_north_arrow</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, which_north <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>,
+          pad_x <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.75</span>, <span style="color:#e6db74">&#34;in&#34;</span>), pad_y <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;in&#34;</span>),
+          style <span style="color:#f92672">=</span> north_arrow_fancy_orienteering) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>))
 
-## some colors
-ggplot(data = country_sf_gbr_osgb) +
-    geom_sf(color = &quot;black&quot;, fill = &quot;wheat1&quot; ) +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;))
+<span style="color:#75715e"># add more spatial object with geom_sf</span>
+<span style="color:#a6e22e">ggplot</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>() <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(data <span style="color:#f92672">=</span> proj_city_points_osgb, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, color <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotate</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;text&#34;</span>,
+            x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">1</span>],
+            y <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">2</span>],
+            label <span style="color:#f92672">=</span> country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1,
+        fontface <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;italic&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grey22&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)  <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_scale</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, width_hint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_north_arrow</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, which_north <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>,
+          pad_x <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.75</span>, <span style="color:#e6db74">&#34;in&#34;</span>), pad_y <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;in&#34;</span>),
+          style <span style="color:#f92672">=</span> north_arrow_fancy_orienteering) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>))
+</code></pre></div><h2 id="adding-a-raster-to-a-ggplot">Adding a raster to a ggplot</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(raster)
+alt <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">getData</span>(<span style="color:#e6db74">&#34;alt&#34;</span>, country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GBR&#34;</span>)
+<span style="color:#75715e"># need to reproject your raster to match the other layer and get a regular resolution</span>
+alt_prj <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">projectRaster</span>(alt, crs <span style="color:#f92672">=</span> sp<span style="color:#f92672">::</span><span style="color:#a6e22e">CRS</span>(<span style="color:#e6db74">&#34;+init=epsg:27700&#34;</span>), res <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>)
 
-## color with some qualitative meaning
-ggplot(data = country_sf_gbr_osgb) +
-    geom_sf(aes(fill = as.numeric(sf::st_area(country_sf_gbr_osgb)))) +
-    scale_fill_viridis_c(option = &quot;plasma&quot;, name = &quot;Area&quot;) +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;))
+<span style="color:#75715e"># first method</span>
+alt_prj_df <span style="color:#f92672">&lt;-</span> raster<span style="color:#f92672">::</span><span style="color:#a6e22e">as.data.frame</span>(alt_prj, xy <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">colnames</span>(alt_prj_df)  <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#e6db74">&#34;y&#34;</span>, <span style="color:#e6db74">&#34;Altitude&#34;</span>)
 
-# add a scale bar and a north arrow
-ggplot(data = country_sf_gbr_osgb) +
-    geom_sf() +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    annotation_scale(location = &quot;bl&quot;, width_hint = 0.5) +
-    annotation_north_arrow(location = &quot;bl&quot;, which_north = &quot;true&quot;,
-          pad_x = unit(0.75, &quot;in&quot;), pad_y = unit(0.5, &quot;in&quot;),
-          style = north_arrow_fancy_orienteering) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;))
+<span style="color:#a6e22e">ggplot</span>() <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_tile</span>(data <span style="color:#f92672">=</span> alt_prj_df, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> x, y <span style="color:#f92672">=</span> y, fill <span style="color:#f92672">=</span> Altitude)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotate</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;text&#34;</span>,
+            x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">1</span>],
+            y <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">2</span>],
+            label <span style="color:#f92672">=</span> country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1,
+        fontface <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;italic&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_scale</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, width_hint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_north_arrow</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, which_north <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>,
+          pad_x <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.75</span>, <span style="color:#e6db74">&#34;in&#34;</span>), pad_y <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;in&#34;</span>),
+          style <span style="color:#f92672">=</span> north_arrow_fancy_orienteering) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">theme</span>(panel.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aliceblue&#34;</span>))
 
-# add more spatial object with geom_sf
-ggplot(data = country_sf_gbr_osgb) +
-    geom_sf() +
-    geom_sf(data = proj_city_points_osgb, size = 4, color = c(&quot;magenta&quot;, &quot;blue&quot;)) +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    annotate(geom = &quot;text&quot;,
-            x = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,1],
-            y = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,2],
-            label = country_sf_gbr_osgb$NAME_1,
-        fontface = &quot;italic&quot;, color = &quot;grey22&quot;, size = 3)  +
-    annotation_scale(location = &quot;bl&quot;, width_hint = 0.5) +
-    annotation_north_arrow(location = &quot;bl&quot;, which_north = &quot;true&quot;,
-          pad_x = unit(0.75, &quot;in&quot;), pad_y = unit(0.5, &quot;in&quot;),
-          style = north_arrow_fancy_orienteering) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;))
-</code></pre>
+<span style="color:#75715e">## second method (better)</span>
+alt_prj_spdf <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as</span>(alt_prj, <span style="color:#e6db74">&#34;SpatialPixelsDataFrame&#34;</span>)
+alt_prj_df2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(alt_prj_spdf)
+<span style="color:#a6e22e">colnames</span>(alt_prj_df2) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Altitude&#34;</span>, <span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#e6db74">&#34;y&#34;</span>)
 
-<h2 id="adding-a-raster-to-a-ggplot">Adding a raster to a ggplot</h2>
-
-<pre><code class="language-r">library(raster)
-alt &lt;- raster::getData(&quot;alt&quot;, country = &quot;GBR&quot;)
-# need to reproject your raster to match the other layer and get a regular resolution
-alt_prj &lt;- raster::projectRaster(alt, crs = sp::CRS(&quot;+init=epsg:27700&quot;), res = 1000)
-
-# first method
-alt_prj_df &lt;- raster::as.data.frame(alt_prj, xy = TRUE)
-colnames(alt_prj_df)  &lt;- c(&quot;x&quot;, &quot;y&quot;, &quot;Altitude&quot;)
-
-ggplot() +
-    geom_tile(data = alt_prj_df, aes(x = x, y = y, fill = Altitude)) +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    annotate(geom = &quot;text&quot;,
-            x = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,1],
-            y = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,2],
-            label = country_sf_gbr_osgb$NAME_1,
-        fontface = &quot;italic&quot;, color = &quot;white&quot;, size = 3) +
-    annotation_scale(location = &quot;bl&quot;, width_hint = 0.5) +
-    annotation_north_arrow(location = &quot;bl&quot;, which_north = &quot;true&quot;,
-          pad_x = unit(0.75, &quot;in&quot;), pad_y = unit(0.5, &quot;in&quot;),
-          style = north_arrow_fancy_orienteering) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;)) +
-    theme(panel.background = element_rect(fill = &quot;aliceblue&quot;))
-
-## second method (better)
-alt_prj_spdf &lt;- as(alt_prj, &quot;SpatialPixelsDataFrame&quot;)
-alt_prj_df2 &lt;- as.data.frame(alt_prj_spdf)
-colnames(alt_prj_df2) &lt;- c(&quot;Altitude&quot;, &quot;x&quot;, &quot;y&quot;)
-
-ggplot() +
-    geom_sf(data = country_sf_gbr_osgb) +
-    geom_tile(data = alt_prj_df2, aes(x = x, y = y, fill = Altitude)) +
-    geom_sf(data = proj_city_points_osgb, size = 4, color = c(&quot;magenta&quot;, &quot;blue&quot;)) +
-    xlab(&quot;Longitude&quot;) + ylab(&quot;Latitude&quot;) +
-    annotate(geom = &quot;text&quot;,
-            x = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,1],
-            y = sf::st_coordinates(sf::st_centroid(country_sf_gbr_osgb))[,2],
-            label = country_sf_gbr_osgb$NAME_1,
-        fontface = &quot;italic&quot;, color = &quot;white&quot;, size = 3) +
-    annotation_scale(location = &quot;bl&quot;, width_hint = 0.5) +
-    annotation_north_arrow(location = &quot;bl&quot;,which_north = &quot;true&quot;,
-          pad_x = unit(0.75, &quot;in&quot;), pad_y = unit(0.5, &quot;in&quot;),
-          style = north_arrow_fancy_orienteering) +
-    ggtitle(&quot;GBR map&quot;, subtitle = paste0(&quot;(&quot;, length(unique(country_sf_gbr_osgb$NAME_1)), &quot; countries)&quot;)) +
-    theme(panel.background = element_rect(fill = &quot;aliceblue&quot;))
-</code></pre>
-
-<h2 id="can-you-plot-the-deer-occurrence-extracted-from-gbif-on-a-uk-map">Can you plot the deer occurrence extracted from GBIF on a UK map?</h2>
-
-<pre><code class="language-r">library(rgbif)
-deer_locations &lt;- occ_search(scientificName = &quot;Cervus elaphus&quot;, limit = 5000,
-                             hasCoordinate = TRUE, country = &quot;GB&quot;,
-                             return = &quot;data&quot;) %&gt;% dplyr::select(key, name, decimalLongitude,
+<span style="color:#a6e22e">ggplot</span>() <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(data <span style="color:#f92672">=</span> country_sf_gbr_osgb) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_tile</span>(data <span style="color:#f92672">=</span> alt_prj_df2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> x, y <span style="color:#f92672">=</span> y, fill <span style="color:#f92672">=</span> Altitude)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(data <span style="color:#f92672">=</span> proj_city_points_osgb, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, color <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;magenta&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Longitude&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Latitude&#34;</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotate</span>(geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;text&#34;</span>,
+            x <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">1</span>],
+            y <span style="color:#f92672">=</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_coordinates</span>(sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_centroid</span>(country_sf_gbr_osgb))[,<span style="color:#ae81ff">2</span>],
+            label <span style="color:#f92672">=</span> country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1,
+        fontface <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;italic&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_scale</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>, width_hint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">annotation_north_arrow</span>(location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bl&#34;</span>,which_north <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;true&#34;</span>,
+          pad_x <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.75</span>, <span style="color:#e6db74">&#34;in&#34;</span>), pad_y <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#e6db74">&#34;in&#34;</span>),
+          style <span style="color:#f92672">=</span> north_arrow_fancy_orienteering) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;GBR map&#34;</span>, subtitle <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(country_sf_gbr_osgb<span style="color:#f92672">$</span>NAME_1)), <span style="color:#e6db74">&#34; countries)&#34;</span>)) <span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">theme</span>(panel.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aliceblue&#34;</span>))
+</code></pre></div><h2 id="can-you-plot-the-deer-occurrence-extracted-from-gbif-on-a-uk-map">Can you plot the deer occurrence extracted from GBIF on a UK map?</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(rgbif)
+deer_locations <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">occ_search</span>(scientificName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cervus elaphus&#34;</span>, limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>,
+                             hasCoordinate <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, country <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GB&#34;</span>,
+                             return <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;data&#34;</span>) <span style="color:#f92672">%&gt;%</span> dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(key, name, decimalLongitude,
 		                         decimalLatitude, year, individualCount, datasetKey, country)
 
-deer_locations_sf &lt;- sf::st_as_sf(deer_locations, coords = c(&quot;decimalLongitude&quot;, &quot;decimalLatitude&quot;), crs = 4326)
-plot(deer_locations_sf[, &quot;datasetKey&quot;])
-# ============
-# YOUR TURN!
-# ===========
-</code></pre>
-
-<h1 id="your-challenge-build-some-wider-map-for-europe">Your challenge, build some wider map for Europe</h1>
-
+deer_locations_sf <span style="color:#f92672">&lt;-</span> sf<span style="color:#f92672">::</span><span style="color:#a6e22e">st_as_sf</span>(deer_locations, coords <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;decimalLongitude&#34;</span>, <span style="color:#e6db74">&#34;decimalLatitude&#34;</span>), crs <span style="color:#f92672">=</span> <span style="color:#ae81ff">4326</span>)
+<span style="color:#a6e22e">plot</span>(deer_locations_sf[, <span style="color:#e6db74">&#34;datasetKey&#34;</span>])
+<span style="color:#75715e"># ============</span>
+<span style="color:#75715e"># YOUR TURN!</span>
+<span style="color:#75715e"># ===========</span>
+</code></pre></div><h1 id="your-challenge-build-some-wider-map-for-europe">Your challenge, build some wider map for Europe</h1>
 <p>Have a look at tutorial 1, 2 and 3 on how to draw beautiful map with sf.</p>
-
 <ol>
-<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html" target="_blank">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html</a></li>
-<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-2.html" target="_blank">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-2.html</a></li>
-<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-3.html" target="_blank">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-3.html</a></li>
+<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html</a></li>
+<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-2.html">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-2.html</a></li>
+<li><a href="https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-3.html">https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-3.html</a></li>
 </ol>
-
-<p>Look at the exellent sf vignettes (<em>see list here</em>: <a href="https://cran.r-project.org/web/packages/sf/index.html" target="_blank">https://cran.r-project.org/web/packages/sf/index.html</a>)</p>
+<p>Look at the exellent sf vignettes (<em>see list here</em>: <a href="https://cran.r-project.org/web/packages/sf/index.html">https://cran.r-project.org/web/packages/sf/index.html</a>)</p>
 
           </div>
 
@@ -972,7 +870,7 @@ plot(deer_locations_sf[, &quot;datasetKey&quot;])
   
 
   <p class="powered-by">
-    &copy; 2021 &middot; 
+    © 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

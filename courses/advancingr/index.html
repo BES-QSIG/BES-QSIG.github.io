@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.0">
-  <meta name="generator" content="Hugo 0.55.3" />
+  <meta name="generator" content="Hugo 0.90.0" />
   
 
   
@@ -19,7 +19,7 @@
 You will need to have an up-to-date installation of R and RStudio.
 You will need to install PostgreSQL.
 You will also need to install some R packages using the below code:
-install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) install.">
+install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) install.packages(&quot;broom&quot;) install.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://BES-QSIG.github.io/courses/advancingr/">
@@ -106,7 +106,7 @@ install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) 
 You will need to have an up-to-date installation of R and RStudio.
 You will need to install PostgreSQL.
 You will also need to install some R packages using the below code:
-install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) install.">
+install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) install.packages(&quot;broom&quot;) install.">
   
   
     
@@ -347,18 +347,16 @@ install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) 
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#pre-course-instructions">Pre-course Instructions</a></li>
-<li><a href="#getting-here">Getting here</a>
-<ul>
-<li><a href="#road">Road</a></li>
-<li><a href="#rail">Rail</a></li>
-<li><a href="#air">Air</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#pre-course-instructions">Pre-course Instructions</a></li>
+    <li><a href="#getting-here">Getting here</a>
+      <ul>
+        <li><a href="#road">Road</a></li>
+        <li><a href="#rail">Rail</a></li>
+        <li><a href="#air">Air</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -380,19 +378,12 @@ install.packages(&quot;rmarkdown&quot;) install.packages(&quot;tidyverse&quot;) 
           
           <hr>
           <div class="article-style" itemprop="articleBody">
-            
-
-<h2 id="pre-course-instructions">Pre-course Instructions</h2>
-
+            <h2 id="pre-course-instructions">Pre-course Instructions</h2>
 <p>Below see instructions on the software and R packages to install <strong>before</strong> you arrive. Note that you will receive the greatest benefit of the course if you have already installed the software and packages.</p>
-
-<p>You will need to have an up-to-date installation of <a href="https://cran.r-project.org/mirrors.html" target="_blank">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio</a>.</p>
-
-<p>You will need to install <a href="https://www.postgresql.org/download/" target="_blank">PostgreSQL</a>.</p>
-
+<p>You will need to have an up-to-date installation of <a href="https://cran.r-project.org/mirrors.html">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a>.</p>
+<p>You will need to install <a href="https://www.postgresql.org/download/">PostgreSQL</a>.</p>
 <p>You will also need to install some R packages using the below code:</p>
-
-<pre><code>install.packages(&quot;rmarkdown&quot;)
+<pre tabindex="0"><code>install.packages(&quot;rmarkdown&quot;)
 install.packages(&quot;tidyverse&quot;)
 install.packages(&quot;broom&quot;)
 install.packages(&quot;ggExtra&quot;)
@@ -407,32 +398,18 @@ install.packages(&quot;mapdata&quot;)
 install.packages(&quot;ggthemes&quot;)
 install.packages(&quot;sf&quot;)
 install.packages(&quot;RPostgreSQL&quot;)
-</code></pre>
-
-<h2 id="getting-here">Getting here</h2>
-
-<p>The course is taking place in the Waterhouse Room at the <a href="https://www.liverpool.ac.uk/conferences-and-events/venue-finder/foresight-centre/" target="_blank">Foresight Centre</a>, University of Liverpool.</p>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.7435965583238!2d-2.9694946677972656!3d53.40866296464316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b211782d9e8e3%3A0x8524f47e6bc7433d!2sForesight+Centre+(Block+J)%2C+Liverpool+L3+5QA!5e0!3m2!1sen!2suk!4v1543347942213" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+</code></pre><h2 id="getting-here">Getting here</h2>
+<p>The course is taking place in the Waterhouse Room at the <a href="https://www.liverpool.ac.uk/conferences-and-events/venue-finder/foresight-centre/">Foresight Centre</a>, University of Liverpool.</p>
+<!-- raw HTML omitted -->
 <h3 id="road">Road</h3>
-
 <p>From the M62 (end of motorway 3 miles)</p>
-
-<p>From the M53( Wirral/Mersey Tunnels <sup>3</sup>&frasl;<sub>4</sub> mile)</p>
-
+<p>From the M53( Wirral/Mersey Tunnels 3/4 mile)</p>
 <p>Please use L3 5DA for sat nav</p>
-
 <h3 id="rail">Rail</h3>
-
 <p>Liverpool Lime St Station is a 10 minute walk.</p>
-
 <p>For local public transport please contact Merseytravel</p>
-
 <h3 id="air">Air</h3>
-
 <p>Liverpool John Lennon  Airport is 7 Miles away from the Foresight Centre.</p>
-
 <p>The Airlink 500 loops to the city centre every 30 minutes.</p>
 
           </div>
@@ -451,7 +428,7 @@ install.packages(&quot;RPostgreSQL&quot;)
   
 
   <p class="powered-by">
-    &copy; 2021 &middot; 
+    © 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
